@@ -1,0 +1,200 @@
+{
+  "$defs": {
+    "DateSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "format": "date",
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "format": "date",
+          "title": "End",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "label"
+      ],
+      "title": "DateSpan",
+      "type": "object"
+    },
+    "NdviPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "ndvi": {
+          "title": "Ndvi",
+          "type": "number"
+        },
+        "ndvi_smooth": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ndvi Smooth"
+        },
+        "reliability": {
+          "title": "Reliability",
+          "type": "integer"
+        },
+        "flagged": {
+          "title": "Flagged",
+          "type": "boolean"
+        },
+        "satellite": {
+          "default": "terra",
+          "enum": [
+            "terra",
+            "aqua",
+            "hls_s30",
+            "hls_l30"
+          ],
+          "title": "Satellite",
+          "type": "string"
+        }
+      },
+      "required": [
+        "date",
+        "ndvi",
+        "ndvi_smooth",
+        "reliability",
+        "flagged",
+        "satellite"
+      ],
+      "title": "NdviPoint",
+      "type": "object"
+    },
+    "NdviWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "mean": {
+          "title": "Mean",
+          "type": "number"
+        },
+        "min": {
+          "title": "Min",
+          "type": "number"
+        },
+        "max": {
+          "title": "Max",
+          "type": "number"
+        },
+        "n_ok": {
+          "title": "N Ok",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "date",
+        "mean",
+        "min",
+        "max",
+        "n_ok"
+      ],
+      "title": "NdviWindow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "site_id": {
+      "title": "Site Id",
+      "type": "string"
+    },
+    "product": {
+      "title": "Product",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "pending"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "points": {
+      "items": {
+        "$ref": "#/$defs/NdviPoint"
+      },
+      "title": "Points",
+      "type": "array"
+    },
+    "gaps": {
+      "items": {
+        "$ref": "#/$defs/DateSpan"
+      },
+      "title": "Gaps",
+      "type": "array"
+    },
+    "low_veg_windows": {
+      "items": {
+        "$ref": "#/$defs/DateSpan"
+      },
+      "title": "Low Veg Windows",
+      "type": "array"
+    },
+    "qa_pass_share_by_month": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Qa Pass Share By Month",
+      "type": "object"
+    },
+    "window_3x3": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/NdviWindow"
+      },
+      "title": "Window 3X3",
+      "type": "array"
+    },
+    "tag": {
+      "const": "Observed",
+      "default": "Observed",
+      "title": "Tag",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "site_id",
+    "product",
+    "status",
+    "points",
+    "gaps",
+    "low_veg_windows",
+    "qa_pass_share_by_month",
+    "window_3x3",
+    "tag"
+  ],
+  "title": "NdviSeries",
+  "type": "object"
+}

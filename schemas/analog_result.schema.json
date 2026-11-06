@@ -1,0 +1,533 @@
+{
+  "$defs": {
+    "AnalogFeatures": {
+      "additionalProperties": false,
+      "properties": {
+        "rain_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Rain Mm"
+        },
+        "tmin_c": {
+          "title": "Tmin C",
+          "type": "number"
+        },
+        "rh_pct": {
+          "title": "Rh Pct",
+          "type": "number"
+        }
+      },
+      "required": [
+        "rain_mm",
+        "tmin_c",
+        "rh_pct"
+      ],
+      "title": "AnalogFeatures",
+      "type": "object"
+    },
+    "Analogs": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "enum": [
+            "ledoit_wolf",
+            "euclidean"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "weather_pool": {
+          "items": {
+            "$ref": "#/$defs/WeatherAnalog"
+          },
+          "title": "Weather Pool",
+          "type": "array"
+        },
+        "ndvi_pool": {
+          "items": {
+            "$ref": "#/$defs/NdviAnalog"
+          },
+          "title": "Ndvi Pool",
+          "type": "array"
+        },
+        "euclid_overlap": {
+          "title": "Euclid Overlap",
+          "type": "string"
+        },
+        "shrinkage": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Shrinkage"
+        }
+      },
+      "required": [
+        "method",
+        "weather_pool",
+        "ndvi_pool",
+        "euclid_overlap",
+        "shrinkage"
+      ],
+      "title": "Analogs",
+      "type": "object"
+    },
+    "Confidence": {
+      "additionalProperties": false,
+      "properties": {
+        "k": {
+          "title": "K",
+          "type": "integer"
+        },
+        "agree_count": {
+          "title": "Agree Count",
+          "type": "integer"
+        },
+        "direction": {
+          "enum": [
+            "below_normal",
+            "above_normal"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "weighted_agreement": {
+          "title": "Weighted Agreement",
+          "type": "number"
+        },
+        "chance_rate": {
+          "title": "Chance Rate",
+          "type": "number"
+        },
+        "label": {
+          "enum": [
+            "high",
+            "moderate",
+            "split"
+          ],
+          "title": "Label",
+          "type": "string"
+        },
+        "sentence": {
+          "title": "Sentence",
+          "type": "string"
+        },
+        "basis": {
+          "enum": [
+            "ndvi",
+            "rainfall"
+          ],
+          "title": "Basis",
+          "type": "string"
+        },
+        "tag": {
+          "default": "Derived",
+          "enum": [
+            "Derived",
+            "Scenario"
+          ],
+          "title": "Tag",
+          "type": "string"
+        }
+      },
+      "required": [
+        "k",
+        "agree_count",
+        "direction",
+        "weighted_agreement",
+        "chance_rate",
+        "label",
+        "sentence",
+        "basis",
+        "tag"
+      ],
+      "title": "Confidence",
+      "type": "object"
+    },
+    "NdviAnalog": {
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "distance": {
+          "title": "Distance",
+          "type": "number"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        },
+        "ndvi_anomaly": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ndvi Anomaly"
+        },
+        "ndvi_status": {
+          "enum": [
+            "ok",
+            "flagged",
+            "missing"
+          ],
+          "title": "Ndvi Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "year",
+        "rank",
+        "distance",
+        "weight",
+        "ndvi_anomaly",
+        "ndvi_status"
+      ],
+      "title": "NdviAnalog",
+      "type": "object"
+    },
+    "NdviProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "product": {
+          "title": "Product",
+          "type": "string"
+        },
+        "layers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Layers",
+          "type": "array"
+        },
+        "route": {
+          "enum": [
+            "appeears",
+            "ornl"
+          ],
+          "title": "Route",
+          "type": "string"
+        },
+        "task_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Task Id"
+        },
+        "accessed": {
+          "format": "date",
+          "title": "Accessed",
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Sha256"
+        }
+      },
+      "required": [
+        "product",
+        "layers",
+        "route",
+        "task_id",
+        "accessed",
+        "sha256"
+      ],
+      "title": "NdviProvenance",
+      "type": "object"
+    },
+    "PowerProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "endpoint": {
+          "title": "Endpoint",
+          "type": "string"
+        },
+        "parameters": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Parameters",
+          "type": "array"
+        },
+        "community": {
+          "title": "Community",
+          "type": "string"
+        },
+        "accessed": {
+          "format": "date",
+          "title": "Accessed",
+          "type": "string"
+        },
+        "api_version": {
+          "title": "Api Version",
+          "type": "string"
+        },
+        "header_sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Header Sources",
+          "type": "array"
+        },
+        "fill_value": {
+          "title": "Fill Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "endpoint",
+        "parameters",
+        "community",
+        "accessed",
+        "api_version",
+        "header_sources",
+        "fill_value"
+      ],
+      "title": "PowerProvenance",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "power": {
+          "$ref": "#/$defs/PowerProvenance"
+        },
+        "ndvi": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NdviProvenance"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "power",
+        "ndvi"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "Site": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "lat": {
+          "title": "Lat",
+          "type": "number"
+        },
+        "lon": {
+          "title": "Lon",
+          "type": "number"
+        },
+        "hazard": {
+          "enum": [
+            "salinity",
+            "drought"
+          ],
+          "title": "Hazard",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "lat",
+        "lon",
+        "hazard"
+      ],
+      "title": "Site",
+      "type": "object"
+    },
+    "WeatherAnalog": {
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "distance": {
+          "title": "Distance",
+          "type": "number"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        },
+        "close_match": {
+          "title": "Close Match",
+          "type": "boolean"
+        },
+        "features": {
+          "$ref": "#/$defs/AnalogFeatures"
+        }
+      },
+      "required": [
+        "year",
+        "rank",
+        "distance",
+        "weight",
+        "close_match",
+        "features"
+      ],
+      "title": "WeatherAnalog",
+      "type": "object"
+    },
+    "Window": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "format": "date",
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "format": "date",
+          "title": "End",
+          "type": "string"
+        },
+        "days_available": {
+          "title": "Days Available",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "days_available"
+      ],
+      "title": "Window",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "engine_version": {
+      "title": "Engine Version",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "site": {
+      "$ref": "#/$defs/Site"
+    },
+    "decision_date": {
+      "format": "date",
+      "title": "Decision Date",
+      "type": "string"
+    },
+    "season_year": {
+      "title": "Season Year",
+      "type": "integer"
+    },
+    "window": {
+      "$ref": "#/$defs/Window"
+    },
+    "analogs": {
+      "$ref": "#/$defs/Analogs"
+    },
+    "confidence": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Confidence"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ndvi_status": {
+      "enum": [
+        "ok",
+        "partial",
+        "pending"
+      ],
+      "title": "Ndvi Status",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "engine_version",
+    "generated_at",
+    "site",
+    "decision_date",
+    "season_year",
+    "window",
+    "analogs",
+    "confidence",
+    "ndvi_status",
+    "warnings",
+    "provenance",
+    "disclaimer"
+  ],
+  "title": "AnalogResult",
+  "type": "object"
+}

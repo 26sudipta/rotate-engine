@@ -1,0 +1,56 @@
+{
+  "decision_date": "2026-11-13",
+  "fixtures": {
+    "cards_ctg": {
+      "site": "ctg_anwara",
+      "about": "Anwara, coastal salinity. Farm B of the two-farm pair: salt class 4-8 dS/m, salinity first, water available.",
+      "request": {"current_rotation": "boro-fallow-t_aman", "salinity_class": "slight_4_8",
+                  "priorities": {"salinity": 0.7, "water": 0.0, "soil_n": 0.1, "yield_stability": 0.2},
+                  "constraints": {"water_availability": "high"}}
+    },
+    "cards_ctg_farm_a": {
+      "site": "ctg_anwara",
+      "about": "Anwara, same weather as cards_ctg. Farm A of the two-farm pair: no salt problem, water first, little water.",
+      "request": {"current_rotation": "boro-fallow-t_aman", "salinity_class": "non_saline_lt2",
+                  "priorities": {"water": 0.6, "soil_n": 0.2, "yield_stability": 0.2},
+                  "constraints": {"water_availability": "low"}}
+    },
+    "cards_barind": {
+      "site": "barind_godagari",
+      "about": "Godagari, Barind drought. Pairs with cards_ctg for the two-regions, two-hazards demo: water first, little water.",
+      "request": {"current_rotation": "boro-fallow-t_aman", "salinity_class": "unknown",
+                  "priorities": {"water": 0.7, "soil_n": 0.1, "yield_stability": 0.2},
+                  "constraints": {"water_availability": "low"}}
+    },
+    "cards_ctg_high_salinity": {
+      "site": "ctg_anwara",
+      "about": "Anwara with salt class 8-12 dS/m: card 3 becomes 'Fallow, short oilseed, or local review'.",
+      "request": {"current_rotation": "boro-fallow-t_aman", "salinity_class": "moderate_8_12",
+                  "priorities": {"salinity": 0.6, "soil_n": 0.2, "yield_stability": 0.2},
+                  "constraints": {"water_availability": "medium"}}
+    },
+    "cards_barind_four": {
+      "site": "barind_godagari",
+      "about": "cards_barind with the optional 4th card (extra_card: true).",
+      "request": {"current_rotation": "boro-fallow-t_aman", "salinity_class": "unknown",
+                  "priorities": {"water": 0.7, "soil_n": 0.1, "yield_stability": 0.2},
+                  "constraints": {"water_availability": "low"}, "extra_card": true}
+    },
+    "cards_ctg_tercile_dry": {
+      "site": "ctg_anwara",
+      "about": "Tercile scenario on cards_ctg: look-alike years only from past seasons whose rain after 13 Nov up to 30 Apr fell in the driest third (IMERG). All tags are Scenario.",
+      "request": {"current_rotation": "boro-fallow-t_aman", "salinity_class": "slight_4_8",
+                  "priorities": {"salinity": 0.7, "water": 0.0, "soil_n": 0.1, "yield_stability": 0.2},
+                  "constraints": {"water_availability": "high"},
+                  "mode": "scenario", "tercile": "dry"}
+    },
+    "cards_barind_whatif_dry": {
+      "site": "barind_godagari",
+      "about": "What-if on cards_barind: this season's 60-day window with half the rain and 1.5 °C warmer. Every evidence item and the confidence are tagged Scenario.",
+      "request": {"current_rotation": "boro-fallow-t_aman", "salinity_class": "unknown",
+                  "priorities": {"water": 0.7, "soil_n": 0.1, "yield_stability": 0.2},
+                  "constraints": {"water_availability": "low"},
+                  "mode": "scenario", "shift": {"rain_pct": -50, "temp_c": 1.5}}
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "task_id": "1a7fe273-b13a-4d94-a0de-3c4f7565a469",
+  "route": "appeears",
+  "downloaded": "2026-11-06",
+  "files": [
+    {
+      "file_name": "rotate-hls-2sites-HLSL30-020-results.csv",
+      "sha256": "f51175b9e7e1a4ca44968ff93715aa2d5fa4f2f94db647385b244eb8244588ff"
+    },
+    {
+      "file_name": "rotate-hls-2sites-HLSL30-VI-020-results.csv",
+      "sha256": "46f1369d014319393716f7f355d0bc94c65f631c7061de6636c683588273b0e9"
+    },
+    {
+      "file_name": "rotate-hls-2sites-HLSS30-020-results.csv",
+      "sha256": "07c7890413680112fb4b373c1af6b16c34807541002d40a9790fe01df7f0d9ac"
+    },
+    {
+      "file_name": "rotate-hls-2sites-HLSS30-VI-020-results.csv",
+      "sha256": "fa095429c489b5c5ce2361e961d48586e1bcf9dc07a3bacdff17b9c0e8cca234"
+    },
+    {
+      "file_name": "rotate-hls-2sites-granule-list.txt",
+      "sha256": "49227c12a22a59a16298f2713a7752b60305c9230446af8e209a446b8d471cef"
+    },
+    {
+      "file_name": "rotate-hls-2sites-request.json",
+      "sha256": "98e7f08b364411699bdef6aab206034bc4a63cc9df31f8f79b3baea2648c252a"
+    },
+    {
+      "file_name": "rotate-hls-2sites-HLSL30-020-metadata.xml",
+      "sha256": "d3e8ad8fa8618cb7db27664915599428064355ab1884d0f44833c2c51bfdd875"
+    },
+    {
+      "file_name": "rotate-hls-2sites-HLSL30-VI-020-metadata.xml",
+      "sha256": "6f1130db57c0e15aba0a2b2d0a3ea5bc12d9a84eb8ea06a3384b72a7ecab95b0"
+    },
+    {
+      "file_name": "rotate-hls-2sites-HLSS30-020-metadata.xml",
+      "sha256": "6af124a1ffa7c4f828d964dbd51df7eafc797265687084f3fa6a3ef4b303efba"
+    },
+    {
+      "file_name": "rotate-hls-2sites-HLSS30-VI-020-metadata.xml",
+      "sha256": "5c686ba4295470a5652d9613e9d821a9e56299abfa93193f7327329afe59f280"
+    },
+    {
+      "file_name": "README.md",
+      "sha256": "48025fb6e71fe48cb8f337b2ac8aba182b422086d291227a2a4670db375b71c3"
+    }
+  ]
+}

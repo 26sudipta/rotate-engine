@@ -1,0 +1,617 @@
+{
+  "schema_version": "1.0",
+  "site_id": "ctg_anwara",
+  "product": "MOD13Q1.061",
+  "status": "ok",
+  "years": [
+    {
+      "year": 2003,
+      "start": "2002-11-01",
+      "end": "2003-05-31",
+      "status": "ok",
+      "points": [
+        {
+          "date": "2002-11-16",
+          "ndvi": 0.7656,
+          "ndvi_smooth": 0.7746,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2002-11-20",
+          "ndvi": 0.7044,
+          "ndvi_smooth": 0.7067,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2002-12-04",
+          "ndvi": 0.5909,
+          "ndvi_smooth": 0.5662,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2002-12-20",
+          "ndvi": 0.3916,
+          "ndvi_smooth": 0.4264,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-01-03",
+          "ndvi": 0.3614,
+          "ndvi_smooth": 0.3507,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-01-28",
+          "ndvi": 0.3492,
+          "ndvi_smooth": 0.3357,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-02-13",
+          "ndvi": 0.3288,
+          "ndvi_smooth": 0.3462,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-03-01",
+          "ndvi": 0.4313,
+          "ndvi_smooth": 0.4329,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-03-19",
+          "ndvi": 0.5853,
+          "ndvi_smooth": 0.5779,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-03-26",
+          "ndvi": 0.7003,
+          "ndvi_smooth": 0.7044,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-04-16",
+          "ndvi": 0.7722,
+          "ndvi_smooth": 0.7901,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-04-25",
+          "ndvi": 0.7485,
+          "ndvi_smooth": 0.6604,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-05-18",
+          "ndvi": 0.3677,
+          "ndvi_smooth": 0.5274,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2003-05-31",
+          "ndvi": 0.3963,
+          "ndvi_smooth": 0.3311,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        }
+      ],
+      "gaps": [],
+      "low_veg_windows": []
+    },
+    {
+      "year": 2015,
+      "start": "2014-11-01",
+      "end": "2015-05-31",
+      "status": "ok",
+      "points": [
+        {
+          "date": "2014-11-03",
+          "ndvi": 0.8102,
+          "ndvi_smooth": 0.7797,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2014-11-19",
+          "ndvi": 0.5856,
+          "ndvi_smooth": 0.584,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2014-12-05",
+          "ndvi": 0.3622,
+          "ndvi_smooth": 0.3988,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2014-12-19",
+          "ndvi": 0.3485,
+          "ndvi_smooth": 0.3235,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-01-06",
+          "ndvi": 0.3259,
+          "ndvi_smooth": 0.3452,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-01-24",
+          "ndvi": 0.3671,
+          "ndvi_smooth": 0.3332,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-02-16",
+          "ndvi": 0.32,
+          "ndvi_smooth": 0.343,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-02-23",
+          "ndvi": 0.4284,
+          "ndvi_smooth": 0.4503,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-03-18",
+          "ndvi": 0.6681,
+          "ndvi_smooth": 0.6454,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-03-29",
+          "ndvi": 0.7592,
+          "ndvi_smooth": 0.7472,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-04-12",
+          "ndvi": 0.6871,
+          "ndvi_smooth": 0.7021,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-04-28",
+          "ndvi": 0.5774,
+          "ndvi_smooth": 0.5453,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-05-14",
+          "ndvi": 0.381,
+          "ndvi_smooth": 0.4166,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-05-30",
+          "ndvi": 0.4231,
+          "ndvi_smooth": 0.4464,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        }
+      ],
+      "gaps": [],
+      "low_veg_windows": []
+    },
+    {
+      "year": 2016,
+      "start": "2015-11-01",
+      "end": "2016-05-31",
+      "status": "ok",
+      "points": [
+        {
+          "date": "2015-11-06",
+          "ndvi": 0.8498,
+          "ndvi_smooth": 0.8791,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-11-22",
+          "ndvi": 0.785,
+          "ndvi_smooth": 0.7163,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-12-17",
+          "ndvi": 0.4309,
+          "ndvi_smooth": 0.5076,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2015-12-24",
+          "ndvi": 0.3842,
+          "ndvi_smooth": 0.3567,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-01-02",
+          "ndvi": 0.3471,
+          "ndvi_smooth": 0.3598,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-01-18",
+          "ndvi": 0.3432,
+          "ndvi_smooth": 0.2807,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-02-17",
+          "ndvi": 0.2481,
+          "ndvi_smooth": 0.3685,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-03-04",
+          "ndvi": 0.667,
+          "ndvi_smooth": 0.5887,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-03-18",
+          "ndvi": 0.8004,
+          "ndvi_smooth": 0.8099,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-03-22",
+          "ndvi": 0.7621,
+          "ndvi_smooth": 0.7275,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-04-19",
+          "ndvi": 0.5553,
+          "ndvi_smooth": 0.6354,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-04-26",
+          "ndvi": 0.5872,
+          "ndvi_smooth": 0.4714,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2016-05-09",
+          "ndvi": 0.33,
+          "ndvi_smooth": 0.4664,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        }
+      ],
+      "gaps": [],
+      "low_veg_windows": []
+    },
+    {
+      "year": 2019,
+      "start": "2018-11-01",
+      "end": "2019-05-31",
+      "status": "ok",
+      "points": [
+        {
+          "date": "2018-11-10",
+          "ndvi": 0.8178,
+          "ndvi_smooth": 0.8052,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2018-11-23",
+          "ndvi": 0.7172,
+          "ndvi_smooth": 0.6995,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2018-12-07",
+          "ndvi": 0.5112,
+          "ndvi_smooth": 0.5199,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-01-01",
+          "ndvi": 0.3643,
+          "ndvi_smooth": 0.3913,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-01-10",
+          "ndvi": 0.34,
+          "ndvi_smooth": 0.294,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-01-24",
+          "ndvi": 0.1867,
+          "ndvi_smooth": 0.1978,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-02-14",
+          "ndvi": 0.1896,
+          "ndvi_smooth": 0.2419,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-03-02",
+          "ndvi": 0.5046,
+          "ndvi_smooth": 0.456,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-03-13",
+          "ndvi": 0.677,
+          "ndvi_smooth": 0.7047,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-04-03",
+          "ndvi": 0.8186,
+          "ndvi_smooth": 0.7803,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-04-14",
+          "ndvi": 0.7186,
+          "ndvi_smooth": 0.7497,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-04-23",
+          "ndvi": 0.6129,
+          "ndvi_smooth": 0.5596,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-05-09",
+          "ndvi": 0.3746,
+          "ndvi_smooth": 0.4461,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        },
+        {
+          "date": "2019-05-30",
+          "ndvi": 0.4988,
+          "ndvi_smooth": 0.5079,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        }
+      ],
+      "gaps": [],
+      "low_veg_windows": [
+        {
+          "start": "2019-01-10",
+          "end": "2019-02-14",
+          "label": "low-vegetation window (bare, flooded or newly planted)"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "start": "2022-11-01",
+      "end": "2023-05-31",
+      "status": "ok",
+      "points": [
+        {
+          "date": "2022-11-03",
+          "ndvi": 0.7723,
+          "ndvi_smooth": 0.7716,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2022-11-22",
+          "ndvi": 0.5725,
+          "ndvi_smooth": 0.5863,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2022-12-04",
+          "ndvi": 0.4459,
+          "ndvi_smooth": 0.4531,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2022-12-23",
+          "ndvi": 0.3991,
+          "ndvi_smooth": 0.3938,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-01-04",
+          "ndvi": 0.3551,
+          "ndvi_smooth": 0.348,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-01-30",
+          "ndvi": 0.2991,
+          "ndvi_smooth": 0.2941,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-02-16",
+          "ndvi": 0.2995,
+          "ndvi_smooth": 0.3344,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-03-02",
+          "ndvi": 0.4834,
+          "ndvi_smooth": 0.4397,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-03-07",
+          "ndvi": 0.5702,
+          "ndvi_smooth": 0.6237,
+          "reliability": 1,
+          "flagged": true,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-04-02",
+          "ndvi": 0.7889,
+          "ndvi_smooth": 0.7329,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-04-22",
+          "ndvi": 0.7444,
+          "ndvi_smooth": 0.785,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-04-24",
+          "ndvi": 0.695,
+          "ndvi_smooth": 0.6278,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-05-11",
+          "ndvi": 0.4252,
+          "ndvi_smooth": 0.5018,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        },
+        {
+          "date": "2023-05-30",
+          "ndvi": 0.5037,
+          "ndvi_smooth": 0.4903,
+          "reliability": 0,
+          "flagged": false,
+          "satellite": "terra"
+        }
+      ],
+      "gaps": [],
+      "low_veg_windows": []
+    }
+  ],
+  "tag": "Observed"
+}

@@ -1,0 +1,663 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "0.1.0",
+  "generated_at": "2026-11-06T11:00:16.791565+06:00",
+  "request": {
+    "site_id": "ctg_anwara",
+    "decision_date": "2026-11-13",
+    "season": "boro",
+    "mode": "season_to_date",
+    "current_rotation": "boro-fallow-t_aman",
+    "hazard": "salinity",
+    "salinity_class": "slight_4_8",
+    "priorities": {
+      "water": 0.0,
+      "soil_n": 0.1,
+      "salinity": 0.7,
+      "yield_stability": 0.2,
+      "income": 0.0,
+      "forage": 0.0
+    },
+    "constraints": {
+      "water_availability": "high",
+      "equipment": "none",
+      "market": "local"
+    },
+    "shift": null,
+    "tercile": null,
+    "extra_card": false
+  },
+  "site": {
+    "id": "ctg_anwara",
+    "name": "Anwara, Chattogram",
+    "lat": 22.1753,
+    "lon": 91.8846,
+    "hazard": "salinity"
+  },
+  "window": {
+    "start": "2026-09-04",
+    "end": "2026-11-02",
+    "days_available": 60
+  },
+  "analogs": {
+    "method": "ledoit_wolf",
+    "weather_pool": [
+      {
+        "year": 2015,
+        "rank": 1,
+        "distance": 2.2237,
+        "weight": 0.2376,
+        "close_match": true,
+        "features": {
+          "rain_mm": null,
+          "tmin_c": 26.1,
+          "rh_pct": 81.9
+        }
+      },
+      {
+        "year": 2016,
+        "rank": 2,
+        "distance": 2.6993,
+        "weight": 0.2045,
+        "close_match": false,
+        "features": {
+          "rain_mm": null,
+          "tmin_c": 26.27,
+          "rh_pct": 82.7
+        }
+      },
+      {
+        "year": 2019,
+        "rank": 3,
+        "distance": 2.7964,
+        "weight": 0.1977,
+        "close_match": false,
+        "features": {
+          "rain_mm": null,
+          "tmin_c": 25.83,
+          "rh_pct": 81.8
+        }
+      },
+      {
+        "year": 2026,
+        "rank": 4,
+        "distance": 2.9759,
+        "weight": 0.185,
+        "close_match": false,
+        "features": {
+          "rain_mm": null,
+          "tmin_c": 27.0,
+          "rh_pct": 82.9
+        }
+      },
+      {
+        "year": 2003,
+        "rank": 5,
+        "distance": 3.115,
+        "weight": 0.1752,
+        "close_match": false,
+        "features": {
+          "rain_mm": null,
+          "tmin_c": 25.67,
+          "rh_pct": 82.9
+        }
+      }
+    ],
+    "ndvi_pool": [
+      {
+        "year": 2015,
+        "rank": 1,
+        "distance": 2.3902,
+        "weight": 0.2439,
+        "ndvi_anomaly": 0.0172,
+        "ndvi_status": "ok"
+      },
+      {
+        "year": 2016,
+        "rank": 2,
+        "distance": 2.9047,
+        "weight": 0.21,
+        "ndvi_anomaly": -0.0513,
+        "ndvi_status": "ok"
+      },
+      {
+        "year": 2019,
+        "rank": 3,
+        "distance": 3.017,
+        "weight": 0.2025,
+        "ndvi_anomaly": 0.0464,
+        "ndvi_status": "ok"
+      },
+      {
+        "year": 2003,
+        "rank": 4,
+        "distance": 3.3434,
+        "weight": 0.1806,
+        "ndvi_anomaly": 0.0788,
+        "ndvi_status": "ok"
+      },
+      {
+        "year": 2023,
+        "rank": 5,
+        "distance": 3.6124,
+        "weight": 0.163,
+        "ndvi_anomaly": 0.0283,
+        "ndvi_status": "ok"
+      }
+    ],
+    "euclid_overlap": "5 of 5",
+    "shrinkage": 1.0
+  },
+  "confidence": {
+    "k": 5,
+    "agree_count": 4,
+    "direction": "above_normal",
+    "weighted_agreement": 0.79,
+    "chance_rate": 0.375,
+    "label": "moderate",
+    "sentence": "In 4 of the 5 past seasons that started like this one, Boro peak (mid-March to mid-April) greenness in the area around this field (250 m) was above normal. Random years agree this much about 38% of the time. These are past examples, not a prediction for this season.",
+    "basis": "ndvi",
+    "tag": "Derived"
+  },
+  "cards": [
+    {
+      "card_id": "existing",
+      "is_existing": true,
+      "strategy": {
+        "name": "Boro–Fallow–T.Aman",
+        "slots": [
+          "boro",
+          "fallow",
+          "t_aman"
+        ],
+        "seasons": [
+          "rabi",
+          "kharif1",
+          "kharif2"
+        ]
+      },
+      "why": "This is your current rotation, shown for comparison.",
+      "evidence": [
+        {
+          "label": "Mean minimum temperature in the 60 days before the decision",
+          "value": "26.7 (Boro seasons 1999–2026 averaged 26.2)",
+          "unit": "°C",
+          "source": "NASA POWER daily T2M_MIN, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Mean relative humidity in the 60 days before the decision",
+          "value": "79 (Boro seasons 1999–2026 averaged 84)",
+          "unit": "%",
+          "source": "NASA POWER daily RH2M, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Days with a maximum temperature of 35 °C or more in the 60 days before the decision",
+          "value": "0 (Boro seasons 1999–2026 averaged 0.0)",
+          "unit": "days",
+          "source": "NASA POWER daily T2M_MAX, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Look-alike years (weather), closest first",
+          "value": "2015, 2016, 2019, 2026, 2003",
+          "unit": null,
+          "source": "ROTATE analog matching on NASA POWER window weather (Ledoit-Wolf Mahalanobis distance)",
+          "tag": "Derived",
+          "analog_year": null
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2015",
+          "value": "+0.017",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2015
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2016",
+          "value": "-0.051",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2016
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2019",
+          "value": "+0.046",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2019
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2003",
+          "value": "+0.079",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2003
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2023",
+          "value": "+0.028",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2023
+        },
+        {
+          "label": "Agreement among look-alike years",
+          "value": "In 4 of the 5 past seasons that started like this one, Boro peak (mid-March to mid-April) greenness in the area around this field (250 m) was above normal. Random years agree this much about 38% of the time. These are past examples, not a prediction for this season.",
+          "unit": null,
+          "source": "ROTATE analog matching on NASA POWER window weather (Ledoit-Wolf Mahalanobis distance); NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": null
+        },
+        {
+          "label": "How the look-alike method did on past seasons",
+          "value": "No demonstrable skill: MSE skill score -0.148 against the plain average over 24 Boro seasons (2001–2024), permutation p = 0.528. The analog years are shown as historical examples only.",
+          "unit": null,
+          "source": "ROTATE leave-one-year-out backtest of the NDVI look-alike years against the plain average, rule fixed before the first run (docs/ENGINE.md)",
+          "tag": "Derived",
+          "analog_year": null
+        }
+      ],
+      "benefits": [],
+      "gaps": [
+        "Field-level salinity is not measured by any NASA product",
+        "Local market prices",
+        "Pest pressure",
+        "Equipment needed",
+        "No sourced yield-stability data in the rule table",
+        "No sourced income data in the rule table",
+        "No sourced forage data in the rule table"
+      ],
+      "risks": [
+        {
+          "text": "Your salinity class starts at 4 dS/m, above the whole-season full-yield value for Boro rice (3 dS/m).",
+          "review_need": "high",
+          "citation_id": "fao29"
+        },
+        {
+          "text": "Full yield only up to about 3 dS/m whole-season soil salinity (FAO guide value for paddy rice).",
+          "review_need": "high",
+          "citation_id": "fao29"
+        },
+        {
+          "text": "Highest irrigation and fertilizer costs of the options compared: Boro area has declined largely because of these costs in coastal south-central Bangladesh.",
+          "review_need": "medium",
+          "citation_id": "emran2022"
+        },
+        {
+          "text": "No dry-season harvest.",
+          "review_need": "medium",
+          "citation_id": null
+        }
+      ],
+      "score_breakdown": {
+        "water": 0.0,
+        "soil_n": null,
+        "salinity": 0.2625,
+        "yield_stability": null,
+        "income": null,
+        "forage": null
+      },
+      "needs_local_review": true
+    },
+    {
+      "card_id": "alt_1",
+      "is_existing": false,
+      "strategy": {
+        "name": "Soybean–Fallow–T.Aman",
+        "slots": [
+          "soybean",
+          "fallow",
+          "t_aman"
+        ],
+        "seasons": [
+          "rabi",
+          "kharif1",
+          "kharif2"
+        ]
+      },
+      "why": "Shown as the salt-tolerant option with a legume crop that scores highest on your priorities (top priority: salinity resilience). In 4 of the 5 past seasons that started like this one, Boro peak (mid-March to mid-April) greenness in the area around this field (250 m) was above normal. Random years agree this much about 38% of the time. These are past examples, not a prediction for this season.",
+      "evidence": [
+        {
+          "label": "Mean minimum temperature in the 60 days before the decision",
+          "value": "26.7 (Boro seasons 1999–2026 averaged 26.2)",
+          "unit": "°C",
+          "source": "NASA POWER daily T2M_MIN, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Mean relative humidity in the 60 days before the decision",
+          "value": "79 (Boro seasons 1999–2026 averaged 84)",
+          "unit": "%",
+          "source": "NASA POWER daily RH2M, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Days with a maximum temperature of 35 °C or more in the 60 days before the decision",
+          "value": "0 (Boro seasons 1999–2026 averaged 0.0)",
+          "unit": "days",
+          "source": "NASA POWER daily T2M_MAX, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Look-alike years (weather), closest first",
+          "value": "2015, 2016, 2019, 2026, 2003",
+          "unit": null,
+          "source": "ROTATE analog matching on NASA POWER window weather (Ledoit-Wolf Mahalanobis distance)",
+          "tag": "Derived",
+          "analog_year": null
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2015",
+          "value": "+0.017",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2015
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2016",
+          "value": "-0.051",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2016
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2019",
+          "value": "+0.046",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2019
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2003",
+          "value": "+0.079",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2003
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2023",
+          "value": "+0.028",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2023
+        },
+        {
+          "label": "Agreement among look-alike years",
+          "value": "In 4 of the 5 past seasons that started like this one, Boro peak (mid-March to mid-April) greenness in the area around this field (250 m) was above normal. Random years agree this much about 38% of the time. These are past examples, not a prediction for this season.",
+          "unit": null,
+          "source": "ROTATE analog matching on NASA POWER window weather (Ledoit-Wolf Mahalanobis distance); NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": null
+        },
+        {
+          "label": "How the look-alike method did on past seasons",
+          "value": "No demonstrable skill: MSE skill score -0.148 against the plain average over 24 Boro seasons (2001–2024), permutation p = 0.528. The analog years are shown as historical examples only.",
+          "unit": null,
+          "source": "ROTATE leave-one-year-out backtest of the NDVI look-alike years against the plain average, rule fixed before the first run (docs/ENGINE.md)",
+          "tag": "Derived",
+          "analog_year": null
+        }
+      ],
+      "benefits": [],
+      "gaps": [
+        "Field-level salinity is not measured by any NASA product",
+        "Local market prices",
+        "Pest pressure",
+        "Equipment needed",
+        "No sourced irrigation figure for Soybean",
+        "No sourced nitrogen-fixation figure for Soybean",
+        "No sourced yield-stability data in the rule table",
+        "No sourced income data in the rule table",
+        "No sourced forage data in the rule table"
+      ],
+      "risks": [
+        {
+          "text": "Soybean: sourced whole-season value is 5 dS/m; your salinity class reaches 8 dS/m, so yield may fall in the saltier part of it.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        },
+        {
+          "text": "FAO guide value for full yield is 5 dS/m whole-season soil salinity.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        },
+        {
+          "text": "No sourced water need or nitrogen-fixation figure for this crop in the rule table: check locally.",
+          "review_need": "high",
+          "citation_id": null
+        },
+        {
+          "text": "No dry-season harvest.",
+          "review_need": "medium",
+          "citation_id": null
+        }
+      ],
+      "score_breakdown": {
+        "water": null,
+        "soil_n": null,
+        "salinity": 0.4375,
+        "yield_stability": null,
+        "income": null,
+        "forage": null
+      },
+      "needs_local_review": true
+    },
+    {
+      "card_id": "alt_2",
+      "is_existing": false,
+      "strategy": {
+        "name": "Boro (BRRI salt-tolerant variety)–Fallow–T.Aman",
+        "slots": [
+          "boro_salt_tolerant",
+          "fallow",
+          "t_aman"
+        ],
+        "seasons": [
+          "rabi",
+          "kharif1",
+          "kharif2"
+        ]
+      },
+      "why": "Shown as the salt-tolerant option that scores highest on your priorities (top priority: salinity resilience). In 4 of the 5 past seasons that started like this one, Boro peak (mid-March to mid-April) greenness in the area around this field (250 m) was above normal. Random years agree this much about 38% of the time. These are past examples, not a prediction for this season.",
+      "evidence": [
+        {
+          "label": "Mean minimum temperature in the 60 days before the decision",
+          "value": "26.7 (Boro seasons 1999–2026 averaged 26.2)",
+          "unit": "°C",
+          "source": "NASA POWER daily T2M_MIN, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Mean relative humidity in the 60 days before the decision",
+          "value": "79 (Boro seasons 1999–2026 averaged 84)",
+          "unit": "%",
+          "source": "NASA POWER daily RH2M, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Days with a maximum temperature of 35 °C or more in the 60 days before the decision",
+          "value": "0 (Boro seasons 1999–2026 averaged 0.0)",
+          "unit": "days",
+          "source": "NASA POWER daily T2M_MAX, API v2.10.2; sources listed in the response header: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER. Reanalysis/model output, not field measurement.",
+          "tag": "Observed",
+          "analog_year": null
+        },
+        {
+          "label": "Look-alike years (weather), closest first",
+          "value": "2015, 2016, 2019, 2026, 2003",
+          "unit": null,
+          "source": "ROTATE analog matching on NASA POWER window weather (Ledoit-Wolf Mahalanobis distance)",
+          "tag": "Derived",
+          "analog_year": null
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2015",
+          "value": "+0.017",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2015
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2016",
+          "value": "-0.051",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2016
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2019",
+          "value": "+0.046",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2019
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2003",
+          "value": "+0.079",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2003
+        },
+        {
+          "label": "Greenness anomaly in look-alike year 2023",
+          "value": "+0.028",
+          "unit": "NDVI",
+          "source": "NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": 2023
+        },
+        {
+          "label": "Agreement among look-alike years",
+          "value": "In 4 of the 5 past seasons that started like this one, Boro peak (mid-March to mid-April) greenness in the area around this field (250 m) was above normal. Random years agree this much about 38% of the time. These are past examples, not a prediction for this season.",
+          "unit": null,
+          "source": "ROTATE analog matching on NASA POWER window weather (Ledoit-Wolf Mahalanobis distance); NASA MODIS MOD13Q1.061 NDVI via AppEEARS, vegetation in the area around this field (250 m); anomaly from ROTATE's trend fit",
+          "tag": "Derived",
+          "analog_year": null
+        },
+        {
+          "label": "How the look-alike method did on past seasons",
+          "value": "No demonstrable skill: MSE skill score -0.148 against the plain average over 24 Boro seasons (2001–2024), permutation p = 0.528. The analog years are shown as historical examples only.",
+          "unit": null,
+          "source": "ROTATE leave-one-year-out backtest of the NDVI look-alike years against the plain average, rule fixed before the first run (docs/ENGINE.md)",
+          "tag": "Derived",
+          "analog_year": null
+        }
+      ],
+      "benefits": [
+        {
+          "attribute": "salinity",
+          "text": "BRRI salt-tolerant Boro lines produced grain yield at 8–10 dS/m salinity through all the salt-sensitive stages in trials in Satkhira (south-west coast).",
+          "citation_id": "debsharma2024"
+        }
+      ],
+      "gaps": [
+        "Field-level salinity is not measured by any NASA product",
+        "Local market prices",
+        "Pest pressure",
+        "Equipment needed",
+        "No sourced yield-stability data in the rule table",
+        "No sourced income data in the rule table",
+        "No sourced forage data in the rule table"
+      ],
+      "risks": [
+        {
+          "text": "Trial sites were in Satkhira; tolerance at this field depends on its actual salinity, which no NASA product measures.",
+          "review_need": "high",
+          "citation_id": "debsharma2024"
+        },
+        {
+          "text": "Irrigation need assumed equal to other Boro rice: no variety-specific water figure was found.",
+          "review_need": "medium",
+          "citation_id": null
+        },
+        {
+          "text": "No dry-season harvest.",
+          "review_need": "medium",
+          "citation_id": null
+        }
+      ],
+      "score_breakdown": {
+        "water": 0.0,
+        "soil_n": null,
+        "salinity": 0.7,
+        "yield_stability": null,
+        "income": null,
+        "forage": null
+      },
+      "needs_local_review": true
+    }
+  ],
+  "ndvi_status": "ok",
+  "warnings": [
+    "The matching window ends 11 days before the decision date (2026-11-02); refetch POWER data closer to the decision.",
+    "The most recent days come from POWER's near-real-time products, not the long-term reanalysis; the response header lists these sources: MERRA2, GEOSIT, SRB, SYN1DEG, FLASHFLUX, POWER.",
+    "Look-alike years are drawn from Boro seasons 1999-2026 only: POWER humidity, temperature and rain series shift in 1997, so earlier years are not comparable.",
+    "Rainfall is not used for matching at this site: POWER's rain series here has an unrealistic jump from 2015, so matching uses temperature and humidity only. POWER's soil wetness here follows the same jump, so it is not shown either.",
+    "Backtest: No demonstrable skill: MSE skill score -0.148 against the plain average over 24 Boro seasons (2001–2024), permutation p = 0.528. The analog years are shown as historical examples only.",
+    "The extreme-day thresholds (35 °C, 50 mm) are working values, not yet confirmed by the team's science translator.",
+    "The crop rule table is an unreviewed draft (drafted with AI assistance from cited sources) and has not yet been checked by the team's science translator."
+  ],
+  "provenance": {
+    "power": {
+      "endpoint": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&end=20261105&format=JSON&latitude=22.1753&longitude=91.8846&parameters=PRECTOTCORR%2CT2M_MIN%2CT2M_MAX%2CRH2M%2CALLSKY_SFC_SW_DWN%2CGWETROOT&start=19810101",
+      "parameters": [
+        "PRECTOTCORR",
+        "T2M_MIN",
+        "T2M_MAX",
+        "RH2M",
+        "ALLSKY_SFC_SW_DWN",
+        "GWETROOT"
+      ],
+      "community": "AG",
+      "accessed": "2026-11-05",
+      "api_version": "v2.10.2",
+      "header_sources": [
+        "MERRA2",
+        "GEOSIT",
+        "SRB",
+        "SYN1DEG",
+        "FLASHFLUX",
+        "POWER"
+      ],
+      "fill_value": -999.0
+    },
+    "ndvi": {
+      "product": "MOD13Q1.061",
+      "layers": [
+        "_250m_16_days_NDVI",
+        "_250m_16_days_pixel_reliability",
+        "_250m_16_days_VI_Quality",
+        "_250m_16_days_composite_day_of_the_year"
+      ],
+      "route": "appeears",
+      "task_id": "dfdede24-460a-454b-bdcf-b4c52f397bf8",
+      "accessed": "2026-11-05",
+      "sha256": "2ce76b954bc03a16dbd6f06b254149e7a8363b900312accd83f95f3e2ccff455"
+    }
+  },
+  "disclaimer": "ROTATE helps you compare options. It does not forecast the season and does not replace local agricultural advice."
+}

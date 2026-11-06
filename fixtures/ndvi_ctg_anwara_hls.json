@@ -1,0 +1,3511 @@
+{
+  "schema_version": "1.0",
+  "site_id": "ctg_anwara",
+  "product": "HLS v2.0 NDVI (HLSS30_VI.020 + HLSL30_VI.020, 30 m pixel, Fmask-filtered, via AppEEARS)",
+  "status": "ok",
+  "points": [
+    {
+      "date": "2015-11-05",
+      "ndvi": 0.8644,
+      "ndvi_smooth": 0.8738,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2015-11-21",
+      "ndvi": 0.8186,
+      "ndvi_smooth": 0.7698,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2015-12-06",
+      "ndvi": 0.5611,
+      "ndvi_smooth": 0.6513,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2015-12-07",
+      "ndvi": 0.5898,
+      "ndvi_smooth": 0.501,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2015-12-23",
+      "ndvi": 0.3503,
+      "ndvi_smooth": 0.4103,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2016-01-05",
+      "ndvi": 0.3243,
+      "ndvi_smooth": 0.312,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2016-01-08",
+      "ndvi": 0.2932,
+      "ndvi_smooth": 0.226,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2016-02-09",
+      "ndvi": 0.1821,
+      "ndvi_smooth": 0.3536,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2016-03-05",
+      "ndvi": 0.6997,
+      "ndvi_smooth": 0.6251,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2016-08-03",
+      "ndvi": 0.407,
+      "ndvi_smooth": null,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2016-08-19",
+      "ndvi": 0.2839,
+      "ndvi_smooth": null,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2016-09-21",
+      "ndvi": 0.766,
+      "ndvi_smooth": 0.7802,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2016-10-22",
+      "ndvi": 0.8548,
+      "ndvi_smooth": 0.8318,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2016-10-24",
+      "ndvi": 0.828,
+      "ndvi_smooth": 0.8122,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2016-11-20",
+      "ndvi": 0.6772,
+      "ndvi_smooth": 0.6962,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2016-11-23",
+      "ndvi": 0.5788,
+      "ndvi_smooth": 0.5804,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2016-11-30",
+      "ndvi": 0.4871,
+      "ndvi_smooth": 0.4638,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2016-12-10",
+      "ndvi": 0.3376,
+      "ndvi_smooth": 0.364,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2016-12-25",
+      "ndvi": 0.3382,
+      "ndvi_smooth": 0.3389,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2016-12-30",
+      "ndvi": 0.3888,
+      "ndvi_smooth": 0.3765,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-01-09",
+      "ndvi": 0.381,
+      "ndvi_smooth": 0.3958,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-01-10",
+      "ndvi": 0.3495,
+      "ndvi_smooth": 0.3048,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-01-26",
+      "ndvi": 0.1558,
+      "ndvi_smooth": 0.1828,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-02-11",
+      "ndvi": 0.1834,
+      "ndvi_smooth": 0.2184,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-02-27",
+      "ndvi": 0.5006,
+      "ndvi_smooth": 0.4915,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-03-15",
+      "ndvi": 0.7676,
+      "ndvi_smooth": 0.7231,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-03-23",
+      "ndvi": 0.7506,
+      "ndvi_smooth": 0.7977,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-03-31",
+      "ndvi": 0.7355,
+      "ndvi_smooth": 0.6688,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-05-02",
+      "ndvi": 0.4584,
+      "ndvi_smooth": 0.5229,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-05-09",
+      "ndvi": 0.4336,
+      "ndvi_smooth": 0.4458,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-05-18",
+      "ndvi": 0.423,
+      "ndvi_smooth": 0.4061,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-10-16",
+      "ndvi": 0.8898,
+      "ndvi_smooth": 0.8722,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-10-25",
+      "ndvi": 0.7968,
+      "ndvi_smooth": 0.8381,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-11-10",
+      "ndvi": 0.8413,
+      "ndvi_smooth": 0.8232,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-11-10",
+      "ndvi": 0.8445,
+      "ndvi_smooth": 0.8505,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-11-13",
+      "ndvi": 0.8389,
+      "ndvi_smooth": 0.831,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-11-20",
+      "ndvi": 0.7873,
+      "ndvi_smooth": 0.7918,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-11-25",
+      "ndvi": 0.7452,
+      "ndvi_smooth": 0.7633,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-11-26",
+      "ndvi": 0.7152,
+      "ndvi_smooth": 0.669,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-12-15",
+      "ndvi": 0.4887,
+      "ndvi_smooth": 0.5237,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-12-20",
+      "ndvi": 0.3965,
+      "ndvi_smooth": 0.3947,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2017-12-28",
+      "ndvi": 0.3605,
+      "ndvi_smooth": 0.351,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2017-12-30",
+      "ndvi": 0.3231,
+      "ndvi_smooth": 0.3337,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-01-04",
+      "ndvi": 0.338,
+      "ndvi_smooth": 0.3351,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-01-09",
+      "ndvi": 0.3347,
+      "ndvi_smooth": 0.3177,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-01-13",
+      "ndvi": 0.2765,
+      "ndvi_smooth": 0.3031,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2018-01-19",
+      "ndvi": 0.3251,
+      "ndvi_smooth": 0.3247,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-01-24",
+      "ndvi": 0.3319,
+      "ndvi_smooth": 0.257,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-01-29",
+      "ndvi": 0.1524,
+      "ndvi_smooth": 0.2739,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2018-03-02",
+      "ndvi": 0.5161,
+      "ndvi_smooth": 0.4637,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2018-03-10",
+      "ndvi": 0.7347,
+      "ndvi_smooth": 0.7059,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-03-18",
+      "ndvi": 0.731,
+      "ndvi_smooth": 0.7605,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2018-03-20",
+      "ndvi": 0.7636,
+      "ndvi_smooth": 0.7528,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-03-30",
+      "ndvi": 0.7474,
+      "ndvi_smooth": 0.7467,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-04-03",
+      "ndvi": 0.723,
+      "ndvi_smooth": 0.7312,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2018-04-04",
+      "ndvi": 0.7389,
+      "ndvi_smooth": 0.7334,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-04-09",
+      "ndvi": 0.7479,
+      "ndvi_smooth": 0.7631,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-04-14",
+      "ndvi": 0.7669,
+      "ndvi_smooth": 0.7412,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-04-29",
+      "ndvi": 0.6353,
+      "ndvi_smooth": 0.6483,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-05-09",
+      "ndvi": 0.4927,
+      "ndvi_smooth": 0.4905,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-08-25",
+      "ndvi": 0.2115,
+      "ndvi_smooth": 0.1853,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2018-09-16",
+      "ndvi": 0.458,
+      "ndvi_smooth": 0.5369,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-10-16",
+      "ndvi": 0.8437,
+      "ndvi_smooth": 0.7643,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-10-21",
+      "ndvi": 0.8405,
+      "ndvi_smooth": 0.8779,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-10-26",
+      "ndvi": 0.8466,
+      "ndvi_smooth": 0.8394,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-11-05",
+      "ndvi": 0.8241,
+      "ndvi_smooth": 0.8336,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-11-10",
+      "ndvi": 0.8194,
+      "ndvi_smooth": 0.8085,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-11-15",
+      "ndvi": 0.7679,
+      "ndvi_smooth": 0.7733,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-11-20",
+      "ndvi": 0.7322,
+      "ndvi_smooth": 0.7409,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-11-25",
+      "ndvi": 0.7114,
+      "ndvi_smooth": 0.6814,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-11-29",
+      "ndvi": 0.6027,
+      "ndvi_smooth": 0.6571,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2018-11-30",
+      "ndvi": 0.6528,
+      "ndvi_smooth": 0.5977,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-12-10",
+      "ndvi": 0.474,
+      "ndvi_smooth": 0.4878,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-12-25",
+      "ndvi": 0.3211,
+      "ndvi_smooth": 0.3358,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-12-30",
+      "ndvi": 0.2882,
+      "ndvi_smooth": 0.2883,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2018-12-31",
+      "ndvi": 0.2979,
+      "ndvi_smooth": 0.2851,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2019-01-04",
+      "ndvi": 0.2718,
+      "ndvi_smooth": 0.2833,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-01-09",
+      "ndvi": 0.2804,
+      "ndvi_smooth": 0.2729,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-01-19",
+      "ndvi": 0.2598,
+      "ndvi_smooth": 0.2661,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-01-24",
+      "ndvi": 0.2338,
+      "ndvi_smooth": 0.2243,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-02-01",
+      "ndvi": 0.1524,
+      "ndvi_smooth": 0.1561,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2019-03-10",
+      "ndvi": 0.6858,
+      "ndvi_smooth": 0.6788,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-03-15",
+      "ndvi": 0.7372,
+      "ndvi_smooth": 0.7471,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-03-20",
+      "ndvi": 0.7745,
+      "ndvi_smooth": 0.7865,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-03-25",
+      "ndvi": 0.8228,
+      "ndvi_smooth": 0.7971,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-03-30",
+      "ndvi": 0.7674,
+      "ndvi_smooth": 0.7964,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-04-09",
+      "ndvi": 0.7933,
+      "ndvi_smooth": 0.773,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-04-14",
+      "ndvi": 0.7475,
+      "ndvi_smooth": 0.7541,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-04-19",
+      "ndvi": 0.7133,
+      "ndvi_smooth": 0.7153,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-04-22",
+      "ndvi": 0.6973,
+      "ndvi_smooth": 0.6963,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2019-04-24",
+      "ndvi": 0.6827,
+      "ndvi_smooth": 0.7047,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-04-29",
+      "ndvi": 0.6642,
+      "ndvi_smooth": 0.5726,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-05-08",
+      "ndvi": 0.3794,
+      "ndvi_smooth": 0.5494,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2019-05-29",
+      "ndvi": 0.6351,
+      "ndvi_smooth": 0.5654,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-10-16",
+      "ndvi": 0.858,
+      "ndvi_smooth": 0.8592,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-10-21",
+      "ndvi": 0.8475,
+      "ndvi_smooth": 0.8508,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-10-26",
+      "ndvi": 0.8572,
+      "ndvi_smooth": 0.8404,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-10-31",
+      "ndvi": 0.8088,
+      "ndvi_smooth": 0.8261,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2019-10-31",
+      "ndvi": 0.8202,
+      "ndvi_smooth": 0.8121,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-11-05",
+      "ndvi": 0.8076,
+      "ndvi_smooth": 0.8075,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-11-15",
+      "ndvi": 0.7814,
+      "ndvi_smooth": 0.7887,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-11-16",
+      "ndvi": 0.7535,
+      "ndvi_smooth": 0.7411,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2019-11-20",
+      "ndvi": 0.651,
+      "ndvi_smooth": 0.6515,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-11-25",
+      "ndvi": 0.546,
+      "ndvi_smooth": 0.5555,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-11-30",
+      "ndvi": 0.5044,
+      "ndvi_smooth": 0.5034,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-12-03",
+      "ndvi": 0.4813,
+      "ndvi_smooth": 0.4786,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-12-05",
+      "ndvi": 0.4434,
+      "ndvi_smooth": 0.4394,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-12-10",
+      "ndvi": 0.389,
+      "ndvi_smooth": 0.3938,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-12-13",
+      "ndvi": 0.3625,
+      "ndvi_smooth": 0.3641,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-12-15",
+      "ndvi": 0.3528,
+      "ndvi_smooth": 0.3462,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-12-18",
+      "ndvi": 0.3297,
+      "ndvi_smooth": 0.339,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2019-12-18",
+      "ndvi": 0.3397,
+      "ndvi_smooth": 0.3272,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-12-20",
+      "ndvi": 0.3207,
+      "ndvi_smooth": 0.3325,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2019-12-30",
+      "ndvi": 0.3569,
+      "ndvi_smooth": 0.356,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-01-07",
+      "ndvi": 0.3953,
+      "ndvi_smooth": 0.3887,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-01-09",
+      "ndvi": 0.3934,
+      "ndvi_smooth": 0.3965,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-01-17",
+      "ndvi": 0.3853,
+      "ndvi_smooth": 0.3828,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-01-19",
+      "ndvi": 0.3685,
+      "ndvi_smooth": 0.3724,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-01-19",
+      "ndvi": 0.37,
+      "ndvi_smooth": 0.3807,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-01-27",
+      "ndvi": 0.3717,
+      "ndvi_smooth": 0.3415,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-02-04",
+      "ndvi": 0.2306,
+      "ndvi_smooth": 0.1982,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-02-20",
+      "ndvi": 0.1558,
+      "ndvi_smooth": 0.3126,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-03-23",
+      "ndvi": 0.7339,
+      "ndvi_smooth": 0.5744,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-03-24",
+      "ndvi": 0.7216,
+      "ndvi_smooth": 0.7766,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-03-29",
+      "ndvi": 0.7361,
+      "ndvi_smooth": 0.7346,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-04-03",
+      "ndvi": 0.7534,
+      "ndvi_smooth": 0.7696,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-04-24",
+      "ndvi": 0.7668,
+      "ndvi_smooth": 0.7277,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-05-08",
+      "ndvi": 0.581,
+      "ndvi_smooth": 0.5995,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-05-10",
+      "ndvi": 0.4571,
+      "ndvi_smooth": 0.4616,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-05-26",
+      "ndvi": 0.4409,
+      "ndvi_smooth": 0.4367,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-06-11",
+      "ndvi": 0.5254,
+      "ndvi_smooth": 0.5351,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-06-12",
+      "ndvi": 0.7521,
+      "ndvi_smooth": 0.748,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-09-30",
+      "ndvi": 0.8777,
+      "ndvi_smooth": 0.8759,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-10-01",
+      "ndvi": 0.8537,
+      "ndvi_smooth": 0.8525,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-10-17",
+      "ndvi": 0.8043,
+      "ndvi_smooth": 0.819,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-11-09",
+      "ndvi": 0.7939,
+      "ndvi_smooth": 0.7809,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-11-14",
+      "ndvi": 0.7153,
+      "ndvi_smooth": 0.7054,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-11-18",
+      "ndvi": 0.6124,
+      "ndvi_smooth": 0.6554,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-11-19",
+      "ndvi": 0.6447,
+      "ndvi_smooth": 0.5877,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-11-29",
+      "ndvi": 0.4698,
+      "ndvi_smooth": 0.5033,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-12-04",
+      "ndvi": 0.4101,
+      "ndvi_smooth": 0.4091,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-12-04",
+      "ndvi": 0.3976,
+      "ndvi_smooth": 0.3881,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-12-09",
+      "ndvi": 0.3757,
+      "ndvi_smooth": 0.3862,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-12-14",
+      "ndvi": 0.3987,
+      "ndvi_smooth": 0.3923,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-12-19",
+      "ndvi": 0.3988,
+      "ndvi_smooth": 0.3959,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2020-12-20",
+      "ndvi": 0.3826,
+      "ndvi_smooth": 0.3906,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2020-12-24",
+      "ndvi": 0.3905,
+      "ndvi_smooth": 0.3832,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-01-03",
+      "ndvi": 0.3693,
+      "ndvi_smooth": 0.3701,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-01-05",
+      "ndvi": 0.351,
+      "ndvi_smooth": 0.3569,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-01-08",
+      "ndvi": 0.3581,
+      "ndvi_smooth": 0.3506,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-01-13",
+      "ndvi": 0.344,
+      "ndvi_smooth": 0.3511,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-01-18",
+      "ndvi": 0.35,
+      "ndvi_smooth": 0.343,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-01-23",
+      "ndvi": 0.3345,
+      "ndvi_smooth": 0.3627,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-01-28",
+      "ndvi": 0.3374,
+      "ndvi_smooth": 0.2445,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-02-06",
+      "ndvi": 0.0696,
+      "ndvi_smooth": 0.175,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-02-22",
+      "ndvi": 0.3259,
+      "ndvi_smooth": 0.324,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-03-09",
+      "ndvi": 0.6719,
+      "ndvi_smooth": 0.6139,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-03-14",
+      "ndvi": 0.6955,
+      "ndvi_smooth": 0.709,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-03-24",
+      "ndvi": 0.6618,
+      "ndvi_smooth": 0.6735,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-03-26",
+      "ndvi": 0.6786,
+      "ndvi_smooth": 0.6812,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-03-29",
+      "ndvi": 0.7168,
+      "ndvi_smooth": 0.7086,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-04-08",
+      "ndvi": 0.7164,
+      "ndvi_smooth": 0.7354,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-04-13",
+      "ndvi": 0.7136,
+      "ndvi_smooth": 0.6745,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-04-28",
+      "ndvi": 0.5225,
+      "ndvi_smooth": 0.5352,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-05-03",
+      "ndvi": 0.4132,
+      "ndvi_smooth": 0.454,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-05-08",
+      "ndvi": 0.5074,
+      "ndvi_smooth": 0.4336,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-05-29",
+      "ndvi": 0.4504,
+      "ndvi_smooth": 0.4805,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-09-02",
+      "ndvi": 0.0522,
+      "ndvi_smooth": 0.1371,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-09-25",
+      "ndvi": 0.8333,
+      "ndvi_smooth": 0.6368,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-09-30",
+      "ndvi": 0.8261,
+      "ndvi_smooth": 0.9064,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-10-05",
+      "ndvi": 0.8564,
+      "ndvi_smooth": 0.8346,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-10-10",
+      "ndvi": 0.8134,
+      "ndvi_smooth": 0.8394,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-10-30",
+      "ndvi": 0.8407,
+      "ndvi_smooth": 0.8136,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-11-05",
+      "ndvi": 0.7781,
+      "ndvi_smooth": 0.8064,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-11-09",
+      "ndvi": 0.7817,
+      "ndvi_smooth": 0.7464,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-11-19",
+      "ndvi": 0.677,
+      "ndvi_smooth": 0.7171,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-11-19",
+      "ndvi": 0.701,
+      "ndvi_smooth": 0.6696,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-11-21",
+      "ndvi": 0.6234,
+      "ndvi_smooth": 0.6301,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-11-24",
+      "ndvi": 0.5801,
+      "ndvi_smooth": 0.6058,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-11-24",
+      "ndvi": 0.6285,
+      "ndvi_smooth": 0.5958,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-11-29",
+      "ndvi": 0.5257,
+      "ndvi_smooth": 0.5305,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-12-09",
+      "ndvi": 0.4108,
+      "ndvi_smooth": 0.4201,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-12-14",
+      "ndvi": 0.3668,
+      "ndvi_smooth": 0.37,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-12-15",
+      "ndvi": 0.3681,
+      "ndvi_smooth": 0.3601,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-12-19",
+      "ndvi": 0.3514,
+      "ndvi_smooth": 0.3528,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-12-23",
+      "ndvi": 0.3469,
+      "ndvi_smooth": 0.3519,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2021-12-24",
+      "ndvi": 0.3682,
+      "ndvi_smooth": 0.3624,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-12-29",
+      "ndvi": 0.3705,
+      "ndvi_smooth": 0.373,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2021-12-31",
+      "ndvi": 0.3772,
+      "ndvi_smooth": 0.378,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-01-08",
+      "ndvi": 0.3831,
+      "ndvi_smooth": 0.3788,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-01-08",
+      "ndvi": 0.3739,
+      "ndvi_smooth": 0.3799,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-01-16",
+      "ndvi": 0.3857,
+      "ndvi_smooth": 0.3824,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-01-18",
+      "ndvi": 0.3842,
+      "ndvi_smooth": 0.3992,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-01-23",
+      "ndvi": 0.3738,
+      "ndvi_smooth": 0.3386,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-02-01",
+      "ndvi": 0.1844,
+      "ndvi_smooth": 0.1931,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-02-09",
+      "ndvi": 0.0561,
+      "ndvi_smooth": 0.0732,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-02-17",
+      "ndvi": 0.1279,
+      "ndvi_smooth": 0.123,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-02-25",
+      "ndvi": 0.3397,
+      "ndvi_smooth": 0.3797,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-03-09",
+      "ndvi": 0.6881,
+      "ndvi_smooth": 0.6209,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-03-13",
+      "ndvi": 0.7029,
+      "ndvi_smooth": 0.7172,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-03-19",
+      "ndvi": 0.6983,
+      "ndvi_smooth": 0.7413,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-03-21",
+      "ndvi": 0.8211,
+      "ndvi_smooth": 0.7576,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-04-03",
+      "ndvi": 0.7164,
+      "ndvi_smooth": 0.7728,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-04-06",
+      "ndvi": 0.7697,
+      "ndvi_smooth": 0.7369,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-04-18",
+      "ndvi": 0.7089,
+      "ndvi_smooth": 0.7235,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-04-28",
+      "ndvi": 0.6444,
+      "ndvi_smooth": 0.6149,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-05-13",
+      "ndvi": 0.5161,
+      "ndvi_smooth": 0.5615,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-06-12",
+      "ndvi": 0.6075,
+      "ndvi_smooth": 0.6068,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-07-12",
+      "ndvi": 0.6722,
+      "ndvi_smooth": 0.5955,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-07-27",
+      "ndvi": 0.4721,
+      "ndvi_smooth": 0.5961,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-07-27",
+      "ndvi": 0.6636,
+      "ndvi_smooth": 0.554,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-08-20",
+      "ndvi": 0.4559,
+      "ndvi_smooth": 0.49,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-10-05",
+      "ndvi": 0.7303,
+      "ndvi_smooth": 0.7356,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-10-15",
+      "ndvi": 0.8301,
+      "ndvi_smooth": 0.8166,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-10-15",
+      "ndvi": 0.851,
+      "ndvi_smooth": 0.8598,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-10-20",
+      "ndvi": 0.8635,
+      "ndvi_smooth": 0.8574,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-10-30",
+      "ndvi": 0.8353,
+      "ndvi_smooth": 0.8322,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-10-31",
+      "ndvi": 0.8058,
+      "ndvi_smooth": 0.8275,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-11-04",
+      "ndvi": 0.8502,
+      "ndvi_smooth": 0.8215,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-11-08",
+      "ndvi": 0.7908,
+      "ndvi_smooth": 0.8076,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-11-09",
+      "ndvi": 0.7846,
+      "ndvi_smooth": 0.7853,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-11-14",
+      "ndvi": 0.7929,
+      "ndvi_smooth": 0.7837,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-11-16",
+      "ndvi": 0.7693,
+      "ndvi_smooth": 0.783,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-11-19",
+      "ndvi": 0.7745,
+      "ndvi_smooth": 0.7539,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-11-24",
+      "ndvi": 0.709,
+      "ndvi_smooth": 0.7397,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-11-24",
+      "ndvi": 0.7133,
+      "ndvi_smooth": 0.6688,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-12-02",
+      "ndvi": 0.5692,
+      "ndvi_smooth": 0.6171,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-12-04",
+      "ndvi": 0.5776,
+      "ndvi_smooth": 0.5483,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-12-09",
+      "ndvi": 0.4811,
+      "ndvi_smooth": 0.481,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-12-14",
+      "ndvi": 0.3638,
+      "ndvi_smooth": 0.3727,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-12-24",
+      "ndvi": 0.3108,
+      "ndvi_smooth": 0.3117,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2022-12-26",
+      "ndvi": 0.3031,
+      "ndvi_smooth": 0.3043,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2022-12-29",
+      "ndvi": 0.311,
+      "ndvi_smooth": 0.3028,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-01-03",
+      "ndvi": 0.2909,
+      "ndvi_smooth": 0.2993,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-01-03",
+      "ndvi": 0.295,
+      "ndvi_smooth": 0.2874,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-01-11",
+      "ndvi": 0.2772,
+      "ndvi_smooth": 0.2824,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-01-13",
+      "ndvi": 0.2801,
+      "ndvi_smooth": 0.2792,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-01-16",
+      "ndvi": 0.2858,
+      "ndvi_smooth": 0.2864,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-01-18",
+      "ndvi": 0.2864,
+      "ndvi_smooth": 0.2807,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-01-19",
+      "ndvi": 0.267,
+      "ndvi_smooth": 0.2742,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-01-23",
+      "ndvi": 0.2787,
+      "ndvi_smooth": 0.278,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-01-28",
+      "ndvi": 0.2887,
+      "ndvi_smooth": 0.2779,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-02-04",
+      "ndvi": 0.2718,
+      "ndvi_smooth": 0.3083,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-02-07",
+      "ndvi": 0.3292,
+      "ndvi_smooth": 0.2572,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-02-12",
+      "ndvi": 0.1357,
+      "ndvi_smooth": 0.1928,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-02-20",
+      "ndvi": 0.2063,
+      "ndvi_smooth": 0.197,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-02-28",
+      "ndvi": 0.3894,
+      "ndvi_smooth": 0.4095,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-03-09",
+      "ndvi": 0.6417,
+      "ndvi_smooth": 0.5941,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-03-14",
+      "ndvi": 0.6852,
+      "ndvi_smooth": 0.7271,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-03-24",
+      "ndvi": 0.7976,
+      "ndvi_smooth": 0.7677,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-04-08",
+      "ndvi": 0.7681,
+      "ndvi_smooth": 0.7766,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-04-09",
+      "ndvi": 0.7345,
+      "ndvi_smooth": 0.7487,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-04-13",
+      "ndvi": 0.7355,
+      "ndvi_smooth": 0.7088,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-04-18",
+      "ndvi": 0.6443,
+      "ndvi_smooth": 0.6659,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-04-23",
+      "ndvi": 0.6461,
+      "ndvi_smooth": 0.6684,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-04-25",
+      "ndvi": 0.6745,
+      "ndvi_smooth": 0.6036,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-05-08",
+      "ndvi": 0.403,
+      "ndvi_smooth": 0.444,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-05-11",
+      "ndvi": 0.3325,
+      "ndvi_smooth": 0.3739,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-05-23",
+      "ndvi": 0.486,
+      "ndvi_smooth": 0.4079,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-05-27",
+      "ndvi": 0.4038,
+      "ndvi_smooth": 0.4541,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-06-02",
+      "ndvi": 0.5369,
+      "ndvi_smooth": 0.5248,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-07-06",
+      "ndvi": 0.4839,
+      "ndvi_smooth": null,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-07-22",
+      "ndvi": 0.5354,
+      "ndvi_smooth": null,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-07-22",
+      "ndvi": 0.5666,
+      "ndvi_smooth": null,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-10-10",
+      "ndvi": 0.842,
+      "ndvi_smooth": 0.8313,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-10-15",
+      "ndvi": 0.8141,
+      "ndvi_smooth": 0.8402,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-10-18",
+      "ndvi": 0.8657,
+      "ndvi_smooth": 0.8516,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-10-20",
+      "ndvi": 0.8731,
+      "ndvi_smooth": 0.8797,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-11-03",
+      "ndvi": 0.8766,
+      "ndvi_smooth": 0.8673,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-11-09",
+      "ndvi": 0.8391,
+      "ndvi_smooth": 0.8512,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-11-11",
+      "ndvi": 0.8316,
+      "ndvi_smooth": 0.8175,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-11-14",
+      "ndvi": 0.7834,
+      "ndvi_smooth": 0.8034,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-11-24",
+      "ndvi": 0.7882,
+      "ndvi_smooth": 0.7619,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-11-27",
+      "ndvi": 0.7067,
+      "ndvi_smooth": 0.7494,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-11-29",
+      "ndvi": 0.706,
+      "ndvi_smooth": 0.6303,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-12-13",
+      "ndvi": 0.4547,
+      "ndvi_smooth": 0.5448,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-12-14",
+      "ndvi": 0.5046,
+      "ndvi_smooth": 0.4281,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-12-19",
+      "ndvi": 0.3569,
+      "ndvi_smooth": 0.4116,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-12-24",
+      "ndvi": 0.4057,
+      "ndvi_smooth": 0.3803,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2023-12-29",
+      "ndvi": 0.4072,
+      "ndvi_smooth": 0.4098,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2023-12-29",
+      "ndvi": 0.4137,
+      "ndvi_smooth": 0.4202,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-01-06",
+      "ndvi": 0.4475,
+      "ndvi_smooth": 0.4427,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-01-08",
+      "ndvi": 0.4555,
+      "ndvi_smooth": 0.4531,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-01-16",
+      "ndvi": 0.4405,
+      "ndvi_smooth": 0.4383,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-01-18",
+      "ndvi": 0.4328,
+      "ndvi_smooth": 0.4483,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-01-26",
+      "ndvi": 0.488,
+      "ndvi_smooth": 0.4659,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-01-28",
+      "ndvi": 0.4804,
+      "ndvi_smooth": 0.4985,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-02-17",
+      "ndvi": 0.5426,
+      "ndvi_smooth": 0.5385,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-02-27",
+      "ndvi": 0.5956,
+      "ndvi_smooth": 0.5892,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-03-02",
+      "ndvi": 0.6085,
+      "ndvi_smooth": 0.614,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-03-03",
+      "ndvi": 0.6253,
+      "ndvi_smooth": 0.6246,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-03-08",
+      "ndvi": 0.6253,
+      "ndvi_smooth": 0.6185,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-03-10",
+      "ndvi": 0.5958,
+      "ndvi_smooth": 0.6059,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-03-13",
+      "ndvi": 0.604,
+      "ndvi_smooth": 0.5981,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-03-18",
+      "ndvi": 0.5987,
+      "ndvi_smooth": 0.5979,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-03-18",
+      "ndvi": 0.5976,
+      "ndvi_smooth": 0.6044,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-03-26",
+      "ndvi": 0.6272,
+      "ndvi_smooth": 0.6241,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-04-03",
+      "ndvi": 0.6352,
+      "ndvi_smooth": 0.6324,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-04-19",
+      "ndvi": 0.6059,
+      "ndvi_smooth": 0.5999,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-04-27",
+      "ndvi": 0.5562,
+      "ndvi_smooth": 0.5672,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-04-27",
+      "ndvi": 0.573,
+      "ndvi_smooth": 0.5697,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-05-05",
+      "ndvi": 0.615,
+      "ndvi_smooth": 0.6228,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-05-22",
+      "ndvi": 0.6799,
+      "ndvi_smooth": 0.6628,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-06-11",
+      "ndvi": 0.6745,
+      "ndvi_smooth": 0.6885,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-06-16",
+      "ndvi": 0.7051,
+      "ndvi_smooth": 0.7009,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-08-30",
+      "ndvi": 0.4988,
+      "ndvi_smooth": null,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-09-02",
+      "ndvi": 0.2491,
+      "ndvi_smooth": null,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-10-14",
+      "ndvi": 0.7953,
+      "ndvi_smooth": 0.7872,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-10-20",
+      "ndvi": 0.7892,
+      "ndvi_smooth": 0.8141,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-10-28",
+      "ndvi": 0.8602,
+      "ndvi_smooth": 0.834,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-10-29",
+      "ndvi": 0.8369,
+      "ndvi_smooth": 0.8554,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-11-03",
+      "ndvi": 0.8533,
+      "ndvi_smooth": 0.8386,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-11-05",
+      "ndvi": 0.8281,
+      "ndvi_smooth": 0.8448,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-11-08",
+      "ndvi": 0.8512,
+      "ndvi_smooth": 0.8335,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-11-13",
+      "ndvi": 0.8176,
+      "ndvi_smooth": 0.833,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-11-13",
+      "ndvi": 0.8292,
+      "ndvi_smooth": 0.8245,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-11-18",
+      "ndvi": 0.8077,
+      "ndvi_smooth": 0.7936,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-11-21",
+      "ndvi": 0.7298,
+      "ndvi_smooth": 0.7555,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-11-23",
+      "ndvi": 0.7362,
+      "ndvi_smooth": 0.7067,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-11-28",
+      "ndvi": 0.6677,
+      "ndvi_smooth": 0.7052,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-11-29",
+      "ndvi": 0.7091,
+      "ndvi_smooth": 0.6642,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-12-07",
+      "ndvi": 0.6078,
+      "ndvi_smooth": 0.6507,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-12-08",
+      "ndvi": 0.6347,
+      "ndvi_smooth": 0.6026,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-12-13",
+      "ndvi": 0.5606,
+      "ndvi_smooth": 0.58,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-12-15",
+      "ndvi": 0.5307,
+      "ndvi_smooth": 0.5153,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-12-18",
+      "ndvi": 0.4634,
+      "ndvi_smooth": 0.4754,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-12-23",
+      "ndvi": 0.4568,
+      "ndvi_smooth": 0.456,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2024-12-23",
+      "ndvi": 0.4694,
+      "ndvi_smooth": 0.4725,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-12-28",
+      "ndvi": 0.4691,
+      "ndvi_smooth": 0.4439,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2024-12-31",
+      "ndvi": 0.3875,
+      "ndvi_smooth": 0.4333,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-01-07",
+      "ndvi": 0.4505,
+      "ndvi_smooth": 0.391,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-01-08",
+      "ndvi": 0.3495,
+      "ndvi_smooth": 0.4121,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-01-10",
+      "ndvi": 0.4702,
+      "ndvi_smooth": 0.4331,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-01-12",
+      "ndvi": 0.468,
+      "ndvi_smooth": 0.4677,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-01-16",
+      "ndvi": 0.4316,
+      "ndvi_smooth": 0.4509,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-01-17",
+      "ndvi": 0.4529,
+      "ndvi_smooth": 0.4295,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-01-22",
+      "ndvi": 0.3986,
+      "ndvi_smooth": 0.4177,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-01-24",
+      "ndvi": 0.4079,
+      "ndvi_smooth": 0.4012,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-01-27",
+      "ndvi": 0.3974,
+      "ndvi_smooth": 0.3894,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-02-01",
+      "ndvi": 0.3617,
+      "ndvi_smooth": 0.3742,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-02-01",
+      "ndvi": 0.3891,
+      "ndvi_smooth": 0.386,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-02-06",
+      "ndvi": 0.4217,
+      "ndvi_smooth": 0.4185,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-02-09",
+      "ndvi": 0.4373,
+      "ndvi_smooth": 0.4359,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-02-11",
+      "ndvi": 0.4509,
+      "ndvi_smooth": 0.4656,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-02-16",
+      "ndvi": 0.4942,
+      "ndvi_smooth": 0.4604,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-02-17",
+      "ndvi": 0.4273,
+      "ndvi_smooth": 0.4727,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-02-21",
+      "ndvi": 0.5052,
+      "ndvi_smooth": 0.4604,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-02-25",
+      "ndvi": 0.4529,
+      "ndvi_smooth": 0.4981,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-02-26",
+      "ndvi": 0.5185,
+      "ndvi_smooth": 0.4701,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-03-03",
+      "ndvi": 0.4229,
+      "ndvi_smooth": 0.457,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-03-05",
+      "ndvi": 0.4518,
+      "ndvi_smooth": 0.4547,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-03-08",
+      "ndvi": 0.4935,
+      "ndvi_smooth": 0.4573,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-03-13",
+      "ndvi": 0.402,
+      "ndvi_smooth": 0.4445,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-03-28",
+      "ndvi": 0.4536,
+      "ndvi_smooth": 0.4284,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-03-29",
+      "ndvi": 0.4286,
+      "ndvi_smooth": 0.4287,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-04-06",
+      "ndvi": 0.4008,
+      "ndvi_smooth": 0.4199,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-04-07",
+      "ndvi": 0.4431,
+      "ndvi_smooth": 0.4159,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-04-14",
+      "ndvi": 0.4054,
+      "ndvi_smooth": 0.4202,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-04-17",
+      "ndvi": 0.4553,
+      "ndvi_smooth": 0.4749,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-05-07",
+      "ndvi": 0.5875,
+      "ndvi_smooth": 0.5563,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-05-09",
+      "ndvi": 0.5676,
+      "ndvi_smooth": 0.5552,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-05-16",
+      "ndvi": 0.5254,
+      "ndvi_smooth": 0.6144,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-05-27",
+      "ndvi": 0.7349,
+      "ndvi_smooth": 0.6925,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-10-15",
+      "ndvi": 0.8785,
+      "ndvi_smooth": 0.8777,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-10-23",
+      "ndvi": 0.869,
+      "ndvi_smooth": 0.8717,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-10-24",
+      "ndvi": 0.8597,
+      "ndvi_smooth": 0.8562,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-10-31",
+      "ndvi": 0.8291,
+      "ndvi_smooth": 0.828,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-11-08",
+      "ndvi": 0.7971,
+      "ndvi_smooth": 0.8096,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-11-08",
+      "ndvi": 0.7962,
+      "ndvi_smooth": 0.7755,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-11-13",
+      "ndvi": 0.7136,
+      "ndvi_smooth": 0.7237,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-11-15",
+      "ndvi": 0.6783,
+      "ndvi_smooth": 0.6934,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-11-16",
+      "ndvi": 0.7018,
+      "ndvi_smooth": 0.6728,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-11-18",
+      "ndvi": 0.6192,
+      "ndvi_smooth": 0.6376,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-11-23",
+      "ndvi": 0.6035,
+      "ndvi_smooth": 0.6082,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-11-24",
+      "ndvi": 0.6131,
+      "ndvi_smooth": 0.596,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-11-28",
+      "ndvi": 0.551,
+      "ndvi_smooth": 0.5598,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-12-03",
+      "ndvi": 0.5192,
+      "ndvi_smooth": 0.5243,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-12-05",
+      "ndvi": 0.5167,
+      "ndvi_smooth": 0.5055,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-12-08",
+      "ndvi": 0.4828,
+      "ndvi_smooth": 0.4902,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-12-10",
+      "ndvi": 0.4873,
+      "ndvi_smooth": 0.4908,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-12-13",
+      "ndvi": 0.5139,
+      "ndvi_smooth": 0.5039,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-12-18",
+      "ndvi": 0.5053,
+      "ndvi_smooth": 0.5165,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2025-12-18",
+      "ndvi": 0.5205,
+      "ndvi_smooth": 0.5067,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-12-23",
+      "ndvi": 0.4873,
+      "ndvi_smooth": 0.4974,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2025-12-28",
+      "ndvi": 0.4943,
+      "ndvi_smooth": 0.5001,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-01-02",
+      "ndvi": 0.5123,
+      "ndvi_smooth": 0.4917,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-01-03",
+      "ndvi": 0.444,
+      "ndvi_smooth": 0.4513,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-01-12",
+      "ndvi": 0.4322,
+      "ndvi_smooth": 0.4554,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-01-17",
+      "ndvi": 0.5343,
+      "ndvi_smooth": 0.5122,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-01-19",
+      "ndvi": 0.5365,
+      "ndvi_smooth": 0.5273,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-01-22",
+      "ndvi": 0.4833,
+      "ndvi_smooth": 0.5062,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-01-27",
+      "ndvi": 0.5267,
+      "ndvi_smooth": 0.5146,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-01-27",
+      "ndvi": 0.5517,
+      "ndvi_smooth": 0.5591,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-02-06",
+      "ndvi": 0.5845,
+      "ndvi_smooth": 0.5783,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-02-11",
+      "ndvi": 0.5645,
+      "ndvi_smooth": 0.5524,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-02-12",
+      "ndvi": 0.503,
+      "ndvi_smooth": 0.5331,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-02-16",
+      "ndvi": 0.5522,
+      "ndvi_smooth": 0.5228,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-02-20",
+      "ndvi": 0.5137,
+      "ndvi_smooth": 0.534,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-02-21",
+      "ndvi": 0.5322,
+      "ndvi_smooth": 0.5217,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-02-26",
+      "ndvi": 0.5161,
+      "ndvi_smooth": 0.5149,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-02-28",
+      "ndvi": 0.496,
+      "ndvi_smooth": 0.5008,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-03-08",
+      "ndvi": 0.516,
+      "ndvi_smooth": 0.5207,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-03-08",
+      "ndvi": 0.5645,
+      "ndvi_smooth": 0.5599,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-03-23",
+      "ndvi": 0.5745,
+      "ndvi_smooth": 0.5614,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-03-24",
+      "ndvi": 0.5322,
+      "ndvi_smooth": 0.5395,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-05-04",
+      "ndvi": 0.5808,
+      "ndvi_smooth": 0.5634,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-05-17",
+      "ndvi": 0.5578,
+      "ndvi_smooth": 0.5934,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-05-27",
+      "ndvi": 0.6173,
+      "ndvi_smooth": 0.6151,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-06-01",
+      "ndvi": 0.661,
+      "ndvi_smooth": 0.6466,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-06-04",
+      "ndvi": 0.6168,
+      "ndvi_smooth": 0.6149,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-06-06",
+      "ndvi": 0.5802,
+      "ndvi_smooth": 0.624,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-06-11",
+      "ndvi": 0.6684,
+      "ndvi_smooth": 0.6468,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-09-19",
+      "ndvi": 0.7584,
+      "ndvi_smooth": 0.7332,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-09-24",
+      "ndvi": 0.6887,
+      "ndvi_smooth": 0.7463,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-10-02",
+      "ndvi": 0.8029,
+      "ndvi_smooth": 0.7813,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-10-09",
+      "ndvi": 0.867,
+      "ndvi_smooth": 0.8704,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-10-11",
+      "ndvi": 0.8987,
+      "ndvi_smooth": 0.8889,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-10-18",
+      "ndvi": 0.8756,
+      "ndvi_smooth": 0.8964,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-10-19",
+      "ndvi": 0.8897,
+      "ndvi_smooth": 0.8507,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    },
+    {
+      "date": "2026-10-26",
+      "ndvi": 0.7908,
+      "ndvi_smooth": 0.8477,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "hls_l30"
+    },
+    {
+      "date": "2026-10-31",
+      "ndvi": 0.8835,
+      "ndvi_smooth": 0.8616,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "hls_s30"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2016-03-05",
+      "end": "2016-08-03",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2016-08-19",
+      "end": "2016-09-21",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2017-05-18",
+      "end": "2017-10-16",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2018-05-09",
+      "end": "2018-08-25",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2019-02-01",
+      "end": "2019-03-10",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2019-05-29",
+      "end": "2019-10-16",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2020-06-12",
+      "end": "2020-09-30",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2021-05-29",
+      "end": "2021-09-02",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2022-08-20",
+      "end": "2022-10-05",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2023-06-02",
+      "end": "2023-07-06",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2023-07-22",
+      "end": "2023-10-10",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2024-06-16",
+      "end": "2024-08-30",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2024-09-02",
+      "end": "2024-10-14",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2025-05-27",
+      "end": "2025-10-15",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2026-03-24",
+      "end": "2026-05-04",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2026-06-11",
+      "end": "2026-09-19",
+      "label": "cloud gap"
+    }
+  ],
+  "low_veg_windows": [
+    {
+      "start": "2017-01-26",
+      "end": "2017-02-11",
+      "label": "low-vegetation window (bare, flooded or newly planted)"
+    },
+    {
+      "start": "2018-01-24",
+      "end": "2018-01-29",
+      "label": "low-vegetation window (bare, flooded or newly planted)"
+    },
+    {
+      "start": "2018-12-30",
+      "end": "2019-02-01",
+      "label": "low-vegetation window (bare, flooded or newly planted)"
+    },
+    {
+      "start": "2021-01-28",
+      "end": "2021-02-06",
+      "label": "low-vegetation window (bare, flooded or newly planted)"
+    },
+    {
+      "start": "2022-02-01",
+      "end": "2022-02-17",
+      "label": "low-vegetation window (bare, flooded or newly planted)"
+    },
+    {
+      "start": "2023-01-03",
+      "end": "2023-01-28",
+      "label": "low-vegetation window (bare, flooded or newly planted)"
+    },
+    {
+      "start": "2023-02-07",
+      "end": "2023-02-20",
+      "label": "low-vegetation window (bare, flooded or newly planted)"
+    }
+  ],
+  "qa_pass_share_by_month": {
+    "01": 0.73,
+    "02": 0.43,
+    "03": 0.573,
+    "04": 0.41,
+    "05": 0.351,
+    "06": 0.164,
+    "07": 0.115,
+    "08": 0.077,
+    "09": 0.132,
+    "10": 0.488,
+    "11": 0.887,
+    "12": 0.793
+  },
+  "window_3x3": [],
+  "tag": "Observed"
+}

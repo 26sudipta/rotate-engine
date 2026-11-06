@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ROTATE Engine: How to Run</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 18mm 15mm; }
+  :root { --ink:#1d2430; --muted:#5b6575; --line:#d9dee6; --accent:#2f6b4f; --code-bg:#f3f5f8; --note:#fff7e0; --note-line:#e6c766; }
+  * { box-sizing: border-box; }
+  body { font-family: "DejaVu Sans", Arial, sans-serif; color: var(--ink); background:#fff; font-size: 10pt; line-height: 1.45; margin: 0; }
+  h1 { font-size: 21pt; margin: 0 0 2mm; color: var(--accent); }
+  h2 { font-size: 13.5pt; margin: 7mm 0 2.5mm; padding-bottom: 1.2mm; border-bottom: 1.5px solid var(--accent); color: var(--accent); break-after: avoid; }
+  h3 { font-size: 11pt; margin: 4.5mm 0 1.5mm; break-after: avoid; }
+  p { margin: 1.5mm 0; }
+  .sub { color: var(--muted); font-size: 10.5pt; margin-bottom: 4mm; }
+  code, pre { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; }
+  code { background: var(--code-bg); padding: 0.2mm 1mm; border-radius: 2px; }
+  pre { background: var(--code-bg); border-left: 3px solid var(--accent); padding: 2.2mm 3mm; margin: 1.5mm 0 2.5mm; white-space: pre-wrap; word-break: break-word; break-inside: avoid; }
+  table { width: 100%; border-collapse: collapse; margin: 1.5mm 0 3mm; font-size: 9pt; break-inside: auto; }
+  th, td { border: 1px solid var(--line); padding: 1.4mm 2mm; text-align: left; vertical-align: top; }
+  th { background: #eaf1ed; }
+  tr { break-inside: avoid; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 3px; padding: 2mm 3mm; margin: 2mm 0 3mm; break-inside: avoid; }
+  .box { border: 1px solid var(--line); border-radius: 3px; padding: 2mm 3mm; margin: 2mm 0; break-inside: avoid; }
+  ul, ol { margin: 1mm 0 2mm 5mm; padding-left: 4mm; }
+  li { margin: 0.6mm 0; }
+  .toc { columns: 2; font-size: 9.5pt; margin: 0 0 2mm; }
+  .footer { margin-top: 8mm; padding-top: 2mm; border-top: 1px solid var(--line); color: var(--muted); font-size: 8.5pt; }
+  .page-break { break-before: page; }
+</style>
+</head>
+<body>
+
+<h1>ROTATE Engine: How to Run</h1>
+<div class="sub">A step-by-step guide for anyone on the team, no programming needed. Updated 6 Nov 2026 (engine 0.1.0, JSON contract 1.0, 188 tests).</div>
+
+<div class="toc">
+<ol>
+  <li>What the engine is</li>
+  <li>Open a terminal</li>
+  <li>First-time install (new machine only)</li>
+  <li>The main commands</li>
+  <li>Giving the engine a farmer's choices</li>
+  <li>What-if, dry/wet years and a 4th card</li>
+  <li>Ready-made outputs (fixtures)</li>
+  <li>Check that everything works</li>
+  <li>Downloading fresh data (needs internet)</li>
+  <li>If something goes wrong</li>
+  <li>Rules when showing the output</li>
+</ol>
+</div>
+
+<h2>1. What the engine is</h2>
+<p>The engine has <b>no screen or buttons</b>. It is a command-line program: you type a command, and it gives back its results as a <b>JSON file</b> (structured text). The app the team builds reads those files and draws the screens.</p>
+<ul>
+  <li><b>No internet needed</b> for any command in sections 4–8. All NASA data is already stored in the <code>data/</code> folder.</li>
+  <li>Two sites are stored: <code>ctg_anwara</code> (Anwara, Chattogram: coastal salinity) and <code>barind_godagari</code> (Godagari, Rajshahi: Barind drought).</li>
+  <li>The demo decision date is <code>2026-11-13</code>.</li>
+</ul>
+
+<h2>2. Open a terminal</h2>
+<p>In VS Code, press <b>Ctrl + `</b> (the key above Tab). Then go to the project folder:</p>
+<pre>cd /home/sudipta/dev/NASA</pre>
+<p>Run every command in this guide from this folder. Every engine command starts with <code>.venv/bin/python -m rotate_engine</code>, which means "run the engine with the project's own Python".</p>
+
+<h2>3. First-time install (new machine only)</h2>
+<p>Skip this on Sudipta's machine: it is already installed. On a fresh clone, with Python 3.12:</p>
+<pre>python3.12 -m venv .venv
+.venv/bin/pip install -e "engine[dev]"</pre>
+<p>If <code>python3.12 -m venv</code> is not available, the fallback with <code>uv venv --seed</code> is in <code>docs/INTEGRATION.md</code>. Then run the tests (section 8); they should all pass.</p>
+
+<h2>4. The main commands</h2>
+<p>Add <code>--out file.json</code> to save the result to a file (open it in VS Code to read it). Without <code>--out</code>, the result prints on the screen.</p>
+
+<h3>4.1 List the sites</h3>
+<pre>.venv/bin/python -m rotate_engine sites</pre>
+<p>Prints both sites with their name, latitude, longitude and hazard.</p>
+
+<h3>4.2 Strategy cards (the main output)</h3>
+<pre>.venv/bin/python -m rotate_engine cards --site ctg_anwara --date 2026-11-13 --out cards.json</pre>
+<div class="box">
+<b>Example result (Anwara, run on 6 Nov):</b>
+<ul>
+  <li>Cards: Boro–Fallow–T.Aman (the farmer's current rotation) | Mungbean–Fallow–T.Aman | Wheat–Fallow–T.Aman</li>
+  <li>Confidence: "In 4 of the 5 past seasons that started like this one, Boro peak (mid-March to mid-April) greenness in the area around this field (250 m) was above normal. Random years agree this much about 38% of the time. These are past examples, not a prediction for this season."</li>
+</ul>
+</div>
+<p>For the drought site, use <code>--site barind_godagari</code>.</p>
+
+<h3>4.3 Look-alike past years (analogs)</h3>
+<pre>.venv/bin/python -m rotate_engine analogs --site ctg_anwara --date 2026-11-13 --out analogs.json</pre>
+<p>The 5 past seasons whose 60 days before the decision date looked most like this year, and what happened afterwards in each.</p>
+
+<h3>4.4 Weather features table</h3>
+<pre>.venv/bin/python -m rotate_engine features --site ctg_anwara --date 2026-11-13</pre>
+<p>Prints a table of each past season's window weather. It prints to the screen only.</p>
+
+<h3>4.5 Greenness curve (NDVI)</h3>
+<pre>.venv/bin/python -m rotate_engine ndvi --site ctg_anwara --out ndvi.json</pre>
+<table>
+  <tr><th>Add this</th><th>What it does</th></tr>
+  <tr><td><code>--from 2024-11-01 --to 2025-05-31</code></td><td>only that date range (here, one Boro season)</td></tr>
+  <tr><td><code>--aqua</code></td><td>adds points from a second MODIS satellite (Aqua), for display</td></tr>
+  <tr><td><code>--window</code></td><td>adds the spread of the 3×3 pixels around the field (Nov 2023 on)</td></tr>
+  <tr><td><code>--hls</code></td><td>the separate, sharper 30 m HLS curve (Nov 2015 on). Cannot be combined with <code>--aqua</code> or <code>--window</code></td></tr>
+</table>
+
+<h3>4.6 One curve per past season</h3>
+<pre>.venv/bin/python -m rotate_engine ndvi-years --site ctg_anwara --years 2003 2015 2019 --out years.json</pre>
+<p>One Boro-season curve (1 Nov to 31 May) per harvest year. Use the look-alike years from section 4.3. <code>--aqua</code> is optional.</p>
+
+<h3>4.7 How well the method did in the past (backtest)</h3>
+<pre>.venv/bin/python -m rotate_engine backtest --site ctg_anwara --date 2026-11-13 --out backtest.json</pre>
+<p>Tests the method on every past season from 2001 to 2024. Its <code>verdict_text</code> currently says <b>"No demonstrable skill…"</b> at both sites, so the look-alike years are shown as historical examples only.</p>
+
+<h2>5. Giving the engine a farmer's choices</h2>
+<p>Create a file called <code>request.json</code> in the project folder:</p>
+<pre>{
+  "current_rotation": "boro-fallow-t_aman",
+  "salinity_class": "slight_4_8",
+  "priorities": { "salinity": 0.7, "water": 0.0, "soil_n": 0.1, "yield_stability": 0.2 },
+  "constraints": { "water_availability": "high" }
+}</pre>
+<p>Then run:</p>
+<pre>.venv/bin/python -m rotate_engine cards --site ctg_anwara --date 2026-11-13 --input request.json --out cards.json</pre>
+<p>Change the numbers and run again to see the cards change.</p>
+
+<table>
+  <tr><th>Field</th><th>Allowed values</th></tr>
+  <tr><td><code>current_rotation</code></td><td>a rotation ID from <code>rules/rules.json</code> (list below). It always becomes card 1</td></tr>
+  <tr><td><code>salinity_class</code></td><td><code>non_saline_lt2</code>, <code>very_slight_2_4</code>, <code>slight_4_8</code>, <code>moderate_8_12</code>, <code>strong_12_16</code>, <code>very_strong_gt16</code>, <code>unknown</code>. This is local information, not NASA data</td></tr>
+  <tr><td><code>priorities</code></td><td><code>water</code>, <code>soil_n</code> (soil nitrogen), <code>salinity</code>, <code>yield_stability</code>: each from 0 to 1. A higher number means it matters more to the farmer</td></tr>
+  <tr><td><code>constraints.water_availability</code></td><td><code>low</code>, <code>medium</code> or <code>high</code></td></tr>
+  <tr><td><code>constraints.equipment</code>, <code>constraints.market</code></td><td>free text (defaults <code>none</code> and <code>local</code>)</td></tr>
+</table>
+
+<h3>Some rotation IDs</h3>
+<table>
+  <tr><th>ID</th><th>Rotation</th><th>ID</th><th>Rotation</th></tr>
+  <tr><td><code>boro-fallow-t_aman</code></td><td>Boro–Fallow–T.Aman</td><td><code>wheat-fallow-t_aman</code></td><td>Wheat–Fallow–T.Aman</td></tr>
+  <tr><td><code>boro-fallow-fallow</code></td><td>Boro–Fallow–Fallow</td><td><code>mungbean-fallow-t_aman</code></td><td>Mungbean–Fallow–T.Aman</td></tr>
+  <tr><td><code>fallow-fallow-t_aman</code></td><td>Fallow–Fallow–T.Aman</td><td><code>maize-fallow-t_aman</code></td><td>Maize–Fallow–T.Aman</td></tr>
+  <tr><td><code>boro-aus-t_aman</code></td><td>Boro–Aus–T.Aman</td><td><code>lentil-fallow-t_aman</code></td><td>Lentil–Fallow–T.Aman</td></tr>
+  <tr><td><code>mustard-boro-t_aman</code></td><td>Mustard–Boro–T.Aman</td><td><code>soybean-fallow-t_aman</code></td><td>Soybean–Fallow–T.Aman</td></tr>
+  <tr><td><code>potato-boro-t_aman</code></td><td>Potato–Boro–T.Aman</td><td><code>boro_st-fallow-t_aman</code></td><td>Boro (BRRI salt-tolerant variety)–Fallow–T.Aman</td></tr>
+</table>
+<p>The full list (28 rotations) is under <code>patterns</code> in <code>rules/rules.json</code>.</p>
+
+<h2>6. What-if, dry/wet years and a 4th card</h2>
+<p>These are extra options. Add them to <code>request.json</code> next to the fields above.</p>
+
+<h3>What-if slider: "what if this season were drier and hotter?"</h3>
+<pre>"mode": "scenario",
+"shift": { "rain_pct": -50, "temp_c": 1.5, "rh_points": 0 }</pre>
+<p><code>rain_pct</code> from −100 to 200 (percent change in rain), <code>temp_c</code> from −5 to 5 (°C added), <code>rh_points</code> from −30 to 30 (humidity points added). Only this season's 60-day window changes; past seasons stay as observed. Everything in the output is tagged <b>Scenario</b>.</p>
+
+<h3>Tercile scenario: "look only at past seasons that turned out dry"</h3>
+<pre>"mode": "scenario",
+"tercile": "dry"</pre>
+<p><code>dry</code>, <code>normal</code> or <code>wet</code>. It can be combined with <code>shift</code>. All output is tagged <b>Scenario</b>.</p>
+
+<h3>A 4th card</h3>
+<pre>"extra_card": true</pre>
+<p>Adds a fourth option to compare, if one with different dry-season crops exists.</p>
+
+<h2>7. Ready-made outputs (fixtures)</h2>
+<p>The <code>fixtures/</code> folder has real engine output for every demo case. You can open them without running anything, and the team builds the app against them.</p>
+<table>
+  <tr><th>File</th><th>What it is</th></tr>
+  <tr><td><code>cards_ctg.json</code></td><td>Anwara, salt class 4–8 dS/m, salinity first, water available</td></tr>
+  <tr><td><code>cards_ctg_farm_a.json</code></td><td>Anwara, same weather, no salt problem, water first (the "two farms, same weather" pair with <code>cards_ctg</code>)</td></tr>
+  <tr><td><code>cards_barind.json</code></td><td>Godagari drought, water first (the "two regions, two hazards" pair with <code>cards_ctg</code>)</td></tr>
+  <tr><td><code>cards_ctg_high_salinity.json</code></td><td>Anwara at 8–12 dS/m: a salt-tolerant option appears</td></tr>
+  <tr><td><code>cards_barind_four.json</code></td><td>Godagari with the 4th card</td></tr>
+  <tr><td><code>cards_barind_whatif_dry.json</code></td><td>what-if: half the rain, 1.5 °C warmer</td></tr>
+  <tr><td><code>cards_ctg_tercile_dry.json</code></td><td>tercile scenario: only past seasons that turned out dry</td></tr>
+  <tr><td><code>ndvi_&lt;site&gt;.json</code></td><td>full greenness curve, 2000–2026</td></tr>
+  <tr><td><code>ndvi_&lt;site&gt;_extras.json</code></td><td>with Aqua points and the 3×3 spread (Nov 2023 on)</td></tr>
+  <tr><td><code>ndvi_&lt;site&gt;_hls.json</code></td><td>the separate 30 m HLS curve (Nov 2015 on)</td></tr>
+  <tr><td><code>ndvi_years_&lt;site&gt;.json</code></td><td>season curves of the 5 look-alike years</td></tr>
+  <tr><td><code>backtest_&lt;site&gt;.json</code></td><td>the backtest result and verdict</td></tr>
+</table>
+<p>The JSON shapes are described in <code>schemas/*.schema.json</code>.</p>
+
+<h2>8. Check that everything works</h2>
+<pre>.venv/bin/python -m pytest -q engine</pre>
+<p>It should end with <b>188 passed</b> (about 16 seconds, no internet).</p>
+<p><b>After changing data, rules or code</b> (engine owner), rebuild the outputs, then rerun the tests:</p>
+<pre>.venv/bin/python scripts/build_fixtures.py
+.venv/bin/python -m rotate_engine schemas --out-dir schemas</pre>
+<p>A test fails on purpose if the fixtures or schemas are out of date.</p>
+
+<h2>9. Downloading fresh data (needs internet)</h2>
+<p>Only scripts in <code>scripts/</code> use the internet; the engine itself never does.</p>
+<table>
+  <tr><th>Command</th><th>What it downloads</th><th>Login?</th></tr>
+  <tr><td><code>.venv/bin/python scripts/fetch_power.py</code></td><td>NASA POWER weather for every site (or name sites: <code>fetch_power.py ctg_anwara</code>)</td><td>No</td></tr>
+  <tr><td><code>.venv/bin/python scripts/fetch_ndvi_ornl.py</code></td><td>Aqua NDVI and the pixel window from ORNL</td><td>No</td></tr>
+  <tr><td><code>.venv/bin/python scripts/fetch_ndvi_appeears.py &lt;task_id&gt;</code></td><td>a finished AppEEARS NDVI task (add <code>hls</code> at the end for the HLS task)</td><td>Yes: <code>.env</code></td></tr>
+  <tr><td><code>.venv/bin/python scripts/submit_ndvi_hls.py</code></td><td>submits a new HLS 30 m task; prints its task ID</td><td>Yes: <code>.env</code></td></tr>
+</table>
+<div class="note">
+<b>Event day:</b> the stored weather stops on 2 Nov 2026, so refetch POWER before the demo. Then rebuild the fixtures and rerun the tests and the backtest (section 8).<br>
+<b>Login:</b> Earthdata username and password go only in the <code>.env</code> file, which is never committed. Never paste them into chat or code.
+</div>
+
+<h2>10. If something goes wrong</h2>
+<table>
+  <tr><th>You see</th><th>What it means</th><th>Fix</th></tr>
+  <tr><td><code>error: invalid input: …</code> (exit code 2)</td><td>a typo or a value outside the allowed range; the message names the field</td><td>check <code>request.json</code> against section 5</td></tr>
+  <tr><td><code>"status": "not_cached"</code></td><td>that site is not downloaded</td><td>use <code>ctg_anwara</code> or <code>barind_godagari</code></td></tr>
+  <tr><td><code>"status": "pending"</code> / "NDVI pending"</td><td>no greenness data for that site or date range</td><td>widen the dates, or download the NDVI data</td></tr>
+  <tr><td><code>No such file or directory: .venv/bin/python</code></td><td>you are not in the project folder, or it is not installed</td><td><code>cd /home/sudipta/dev/NASA</code>, or follow section 3</td></tr>
+  <tr><td><code>… is stale: run python scripts/build_fixtures.py</code></td><td>a test found out-of-date fixtures</td><td>run the two commands in section 8</td></tr>
+</table>
+
+<h2>11. Rules when showing the output</h2>
+<ul>
+  <li>Say "compare" or "explore", never "best" or "you should plant".</li>
+  <li>Never imply a forecast: the tool matches the weeks <i>before</i> the decision and shows past examples.</li>
+  <li>Every card carries "needs local review". Every screen says the tool supports, not replaces, local agricultural expertise.</li>
+  <li>NASA data shows observed conditions and vegetation, not how rotations performed. Rotation benefits come from the cited rule table. Keep them visibly separate.</li>
+  <li>Show the backtest <code>verdict_text</code> word for word next to the look-alike years and the confidence.</li>
+</ul>
+<p>Full details for the app builders: <code>docs/INTEGRATION.md</code>. Method, data sources and limits: <code>docs/ENGINE.md</code>.</p>
+
+<div class="footer">ROTATE, NASA Space Apps Challenge 2026 (Chattogram), "Field Shift: Adapting Farms with NASA Data". Uses NASA data. Not endorsed by NASA.</div>
+
+</body>
+</html>

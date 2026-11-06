@@ -1,0 +1,1010 @@
+{
+  "$defs": {
+    "AnalogFeatures": {
+      "additionalProperties": false,
+      "properties": {
+        "rain_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Rain Mm"
+        },
+        "tmin_c": {
+          "title": "Tmin C",
+          "type": "number"
+        },
+        "rh_pct": {
+          "title": "Rh Pct",
+          "type": "number"
+        }
+      },
+      "required": [
+        "rain_mm",
+        "tmin_c",
+        "rh_pct"
+      ],
+      "title": "AnalogFeatures",
+      "type": "object"
+    },
+    "Analogs": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "enum": [
+            "ledoit_wolf",
+            "euclidean"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "weather_pool": {
+          "items": {
+            "$ref": "#/$defs/WeatherAnalog"
+          },
+          "title": "Weather Pool",
+          "type": "array"
+        },
+        "ndvi_pool": {
+          "items": {
+            "$ref": "#/$defs/NdviAnalog"
+          },
+          "title": "Ndvi Pool",
+          "type": "array"
+        },
+        "euclid_overlap": {
+          "title": "Euclid Overlap",
+          "type": "string"
+        },
+        "shrinkage": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Shrinkage"
+        }
+      },
+      "required": [
+        "method",
+        "weather_pool",
+        "ndvi_pool",
+        "euclid_overlap",
+        "shrinkage"
+      ],
+      "title": "Analogs",
+      "type": "object"
+    },
+    "Benefit": {
+      "additionalProperties": false,
+      "properties": {
+        "attribute": {
+          "title": "Attribute",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "citation_id": {
+          "title": "Citation Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "attribute",
+        "text",
+        "citation_id"
+      ],
+      "title": "Benefit",
+      "type": "object"
+    },
+    "Card": {
+      "additionalProperties": false,
+      "properties": {
+        "card_id": {
+          "title": "Card Id",
+          "type": "string"
+        },
+        "is_existing": {
+          "title": "Is Existing",
+          "type": "boolean"
+        },
+        "strategy": {
+          "$ref": "#/$defs/Strategy"
+        },
+        "why": {
+          "title": "Why",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "benefits": {
+          "items": {
+            "$ref": "#/$defs/Benefit"
+          },
+          "title": "Benefits",
+          "type": "array"
+        },
+        "gaps": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Gaps",
+          "type": "array"
+        },
+        "risks": {
+          "items": {
+            "$ref": "#/$defs/Risk"
+          },
+          "title": "Risks",
+          "type": "array"
+        },
+        "score_breakdown": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Score Breakdown",
+          "type": "object"
+        },
+        "needs_local_review": {
+          "const": true,
+          "default": true,
+          "title": "Needs Local Review",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "card_id",
+        "is_existing",
+        "strategy",
+        "why",
+        "evidence",
+        "benefits",
+        "gaps",
+        "risks",
+        "score_breakdown",
+        "needs_local_review"
+      ],
+      "title": "Card",
+      "type": "object"
+    },
+    "Confidence": {
+      "additionalProperties": false,
+      "properties": {
+        "k": {
+          "title": "K",
+          "type": "integer"
+        },
+        "agree_count": {
+          "title": "Agree Count",
+          "type": "integer"
+        },
+        "direction": {
+          "enum": [
+            "below_normal",
+            "above_normal"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "weighted_agreement": {
+          "title": "Weighted Agreement",
+          "type": "number"
+        },
+        "chance_rate": {
+          "title": "Chance Rate",
+          "type": "number"
+        },
+        "label": {
+          "enum": [
+            "high",
+            "moderate",
+            "split"
+          ],
+          "title": "Label",
+          "type": "string"
+        },
+        "sentence": {
+          "title": "Sentence",
+          "type": "string"
+        },
+        "basis": {
+          "enum": [
+            "ndvi",
+            "rainfall"
+          ],
+          "title": "Basis",
+          "type": "string"
+        },
+        "tag": {
+          "default": "Derived",
+          "enum": [
+            "Derived",
+            "Scenario"
+          ],
+          "title": "Tag",
+          "type": "string"
+        }
+      },
+      "required": [
+        "k",
+        "agree_count",
+        "direction",
+        "weighted_agreement",
+        "chance_rate",
+        "label",
+        "sentence",
+        "basis",
+        "tag"
+      ],
+      "title": "Confidence",
+      "type": "object"
+    },
+    "Constraints": {
+      "additionalProperties": false,
+      "properties": {
+        "water_availability": {
+          "default": "medium",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Water Availability",
+          "type": "string"
+        },
+        "equipment": {
+          "default": "none",
+          "title": "Equipment",
+          "type": "string"
+        },
+        "market": {
+          "default": "local",
+          "title": "Market",
+          "type": "string"
+        }
+      },
+      "required": [
+        "water_availability",
+        "equipment",
+        "market"
+      ],
+      "title": "Constraints",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "tag": {
+          "enum": [
+            "Observed",
+            "Derived",
+            "Scenario"
+          ],
+          "title": "Tag",
+          "type": "string"
+        },
+        "analog_year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Analog Year"
+        }
+      },
+      "required": [
+        "label",
+        "value",
+        "unit",
+        "source",
+        "tag",
+        "analog_year"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "NdviAnalog": {
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "distance": {
+          "title": "Distance",
+          "type": "number"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        },
+        "ndvi_anomaly": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ndvi Anomaly"
+        },
+        "ndvi_status": {
+          "enum": [
+            "ok",
+            "flagged",
+            "missing"
+          ],
+          "title": "Ndvi Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "year",
+        "rank",
+        "distance",
+        "weight",
+        "ndvi_anomaly",
+        "ndvi_status"
+      ],
+      "title": "NdviAnalog",
+      "type": "object"
+    },
+    "NdviProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "product": {
+          "title": "Product",
+          "type": "string"
+        },
+        "layers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Layers",
+          "type": "array"
+        },
+        "route": {
+          "enum": [
+            "appeears",
+            "ornl"
+          ],
+          "title": "Route",
+          "type": "string"
+        },
+        "task_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Task Id"
+        },
+        "accessed": {
+          "format": "date",
+          "title": "Accessed",
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Sha256"
+        }
+      },
+      "required": [
+        "product",
+        "layers",
+        "route",
+        "task_id",
+        "accessed",
+        "sha256"
+      ],
+      "title": "NdviProvenance",
+      "type": "object"
+    },
+    "PowerProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "endpoint": {
+          "title": "Endpoint",
+          "type": "string"
+        },
+        "parameters": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Parameters",
+          "type": "array"
+        },
+        "community": {
+          "title": "Community",
+          "type": "string"
+        },
+        "accessed": {
+          "format": "date",
+          "title": "Accessed",
+          "type": "string"
+        },
+        "api_version": {
+          "title": "Api Version",
+          "type": "string"
+        },
+        "header_sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Header Sources",
+          "type": "array"
+        },
+        "fill_value": {
+          "title": "Fill Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "endpoint",
+        "parameters",
+        "community",
+        "accessed",
+        "api_version",
+        "header_sources",
+        "fill_value"
+      ],
+      "title": "PowerProvenance",
+      "type": "object"
+    },
+    "Priorities": {
+      "additionalProperties": false,
+      "properties": {
+        "water": {
+          "default": 0.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Water",
+          "type": "number"
+        },
+        "soil_n": {
+          "default": 0.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Soil N",
+          "type": "number"
+        },
+        "salinity": {
+          "default": 0.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Salinity",
+          "type": "number"
+        },
+        "yield_stability": {
+          "default": 0.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Yield Stability",
+          "type": "number"
+        },
+        "income": {
+          "default": 0.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Income",
+          "type": "number"
+        },
+        "forage": {
+          "default": 0.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Forage",
+          "type": "number"
+        }
+      },
+      "required": [
+        "water",
+        "soil_n",
+        "salinity",
+        "yield_stability",
+        "income",
+        "forage"
+      ],
+      "title": "Priorities",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "power": {
+          "$ref": "#/$defs/PowerProvenance"
+        },
+        "ndvi": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NdviProvenance"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "power",
+        "ndvi"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "Request": {
+      "additionalProperties": false,
+      "properties": {
+        "site_id": {
+          "title": "Site Id",
+          "type": "string"
+        },
+        "decision_date": {
+          "format": "date",
+          "title": "Decision Date",
+          "type": "string"
+        },
+        "season": {
+          "const": "boro",
+          "default": "boro",
+          "title": "Season",
+          "type": "string"
+        },
+        "mode": {
+          "default": "season_to_date",
+          "enum": [
+            "season_to_date",
+            "scenario"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "current_rotation": {
+          "title": "Current Rotation",
+          "type": "string"
+        },
+        "hazard": {
+          "enum": [
+            "salinity",
+            "drought"
+          ],
+          "title": "Hazard",
+          "type": "string"
+        },
+        "salinity_class": {
+          "default": "unknown",
+          "enum": [
+            "non_saline_lt2",
+            "very_slight_2_4",
+            "slight_4_8",
+            "moderate_8_12",
+            "strong_12_16",
+            "very_strong_gt16",
+            "unknown"
+          ],
+          "title": "Salinity Class",
+          "type": "string"
+        },
+        "priorities": {
+          "$ref": "#/$defs/Priorities",
+          "default": {
+            "water": 0.0,
+            "soil_n": 0.0,
+            "salinity": 0.0,
+            "yield_stability": 0.0,
+            "income": 0.0,
+            "forage": 0.0
+          }
+        },
+        "constraints": {
+          "$ref": "#/$defs/Constraints",
+          "default": {
+            "water_availability": "medium",
+            "equipment": "none",
+            "market": "local"
+          }
+        },
+        "shift": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Shift"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "tercile": {
+          "anyOf": [
+            {
+              "enum": [
+                "dry",
+                "normal",
+                "wet"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tercile"
+        },
+        "extra_card": {
+          "default": false,
+          "title": "Extra Card",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "site_id",
+        "decision_date",
+        "season",
+        "mode",
+        "current_rotation",
+        "hazard",
+        "salinity_class",
+        "priorities",
+        "constraints",
+        "shift",
+        "tercile",
+        "extra_card"
+      ],
+      "title": "Request",
+      "type": "object"
+    },
+    "Risk": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "review_need": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Review Need",
+          "type": "string"
+        },
+        "citation_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Citation Id"
+        }
+      },
+      "required": [
+        "text",
+        "review_need",
+        "citation_id"
+      ],
+      "title": "Risk",
+      "type": "object"
+    },
+    "Shift": {
+      "additionalProperties": false,
+      "description": "What-if change to this season's 60-day window weather (raw daily values, then re-matched).",
+      "properties": {
+        "rain_pct": {
+          "default": 0.0,
+          "maximum": 200,
+          "minimum": -100,
+          "title": "Rain Pct",
+          "type": "number"
+        },
+        "temp_c": {
+          "default": 0.0,
+          "maximum": 5,
+          "minimum": -5,
+          "title": "Temp C",
+          "type": "number"
+        },
+        "rh_points": {
+          "default": 0.0,
+          "maximum": 30,
+          "minimum": -30,
+          "title": "Rh Points",
+          "type": "number"
+        }
+      },
+      "required": [
+        "rain_pct",
+        "temp_c",
+        "rh_points"
+      ],
+      "title": "Shift",
+      "type": "object"
+    },
+    "Site": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "lat": {
+          "title": "Lat",
+          "type": "number"
+        },
+        "lon": {
+          "title": "Lon",
+          "type": "number"
+        },
+        "hazard": {
+          "enum": [
+            "salinity",
+            "drought"
+          ],
+          "title": "Hazard",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "lat",
+        "lon",
+        "hazard"
+      ],
+      "title": "Site",
+      "type": "object"
+    },
+    "Strategy": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "slots": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Slots",
+          "type": "array"
+        },
+        "seasons": {
+          "items": {
+            "enum": [
+              "rabi",
+              "kharif1",
+              "kharif2"
+            ],
+            "type": "string"
+          },
+          "title": "Seasons",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "slots",
+        "seasons"
+      ],
+      "title": "Strategy",
+      "type": "object"
+    },
+    "WeatherAnalog": {
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "distance": {
+          "title": "Distance",
+          "type": "number"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        },
+        "close_match": {
+          "title": "Close Match",
+          "type": "boolean"
+        },
+        "features": {
+          "$ref": "#/$defs/AnalogFeatures"
+        }
+      },
+      "required": [
+        "year",
+        "rank",
+        "distance",
+        "weight",
+        "close_match",
+        "features"
+      ],
+      "title": "WeatherAnalog",
+      "type": "object"
+    },
+    "Window": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "format": "date",
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "format": "date",
+          "title": "End",
+          "type": "string"
+        },
+        "days_available": {
+          "title": "Days Available",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "days_available"
+      ],
+      "title": "Window",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "engine_version": {
+      "title": "Engine Version",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "request": {
+      "$ref": "#/$defs/Request"
+    },
+    "site": {
+      "$ref": "#/$defs/Site"
+    },
+    "window": {
+      "$ref": "#/$defs/Window"
+    },
+    "analogs": {
+      "$ref": "#/$defs/Analogs"
+    },
+    "confidence": {
+      "$ref": "#/$defs/Confidence"
+    },
+    "cards": {
+      "items": {
+        "$ref": "#/$defs/Card"
+      },
+      "maxItems": 4,
+      "minItems": 3,
+      "title": "Cards",
+      "type": "array"
+    },
+    "ndvi_status": {
+      "enum": [
+        "ok",
+        "partial",
+        "pending"
+      ],
+      "title": "Ndvi Status",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "engine_version",
+    "generated_at",
+    "request",
+    "site",
+    "window",
+    "analogs",
+    "confidence",
+    "cards",
+    "ndvi_status",
+    "warnings",
+    "provenance",
+    "disclaimer"
+  ],
+  "title": "CardSet",
+  "type": "object"
+}

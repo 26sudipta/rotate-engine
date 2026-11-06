@@ -1,0 +1,235 @@
+{
+  "$defs": {
+    "BacktestYear": {
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "ndvi_anomaly": {
+          "title": "Ndvi Anomaly",
+          "type": "number"
+        },
+        "predicted": {
+          "title": "Predicted",
+          "type": "number"
+        },
+        "analog_years": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Analog Years",
+          "type": "array"
+        },
+        "agree_count": {
+          "title": "Agree Count",
+          "type": "integer"
+        },
+        "beat_clim": {
+          "title": "Beat Clim",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "year",
+        "ndvi_anomaly",
+        "predicted",
+        "analog_years",
+        "agree_count",
+        "beat_clim"
+      ],
+      "title": "BacktestYear",
+      "type": "object"
+    },
+    "CalibrationBin": {
+      "additionalProperties": false,
+      "properties": {
+        "agree_count": {
+          "title": "Agree Count",
+          "type": "integer"
+        },
+        "n": {
+          "title": "N",
+          "type": "integer"
+        },
+        "hit_rate": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Hit Rate"
+        }
+      },
+      "required": [
+        "agree_count",
+        "n",
+        "hit_rate"
+      ],
+      "title": "CalibrationBin",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "site_id": {
+      "title": "Site Id",
+      "type": "string"
+    },
+    "season": {
+      "const": "boro",
+      "default": "boro",
+      "title": "Season",
+      "type": "string"
+    },
+    "decision_date": {
+      "format": "date",
+      "title": "Decision Date",
+      "type": "string"
+    },
+    "years_tested": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Years Tested",
+      "type": "array"
+    },
+    "k": {
+      "title": "K",
+      "type": "integer"
+    },
+    "predictand": {
+      "title": "Predictand",
+      "type": "string"
+    },
+    "ss_mse": {
+      "title": "Ss Mse",
+      "type": "number"
+    },
+    "mse_analog": {
+      "title": "Mse Analog",
+      "type": "number"
+    },
+    "mse_clim": {
+      "title": "Mse Clim",
+      "type": "number"
+    },
+    "ss_mse_euclid": {
+      "title": "Ss Mse Euclid",
+      "type": "number"
+    },
+    "anomaly_corr": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Anomaly Corr"
+    },
+    "tercile_hit_rate": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Tercile Hit Rate"
+    },
+    "beat_clim_count": {
+      "title": "Beat Clim Count",
+      "type": "integer"
+    },
+    "sign_test_p": {
+      "title": "Sign Test P",
+      "type": "number"
+    },
+    "permutation_p": {
+      "title": "Permutation P",
+      "type": "number"
+    },
+    "n_permutations": {
+      "title": "N Permutations",
+      "type": "integer"
+    },
+    "calibration_bins": {
+      "items": {
+        "$ref": "#/$defs/CalibrationBin"
+      },
+      "title": "Calibration Bins",
+      "type": "array"
+    },
+    "verdict_text": {
+      "title": "Verdict Text",
+      "type": "string"
+    },
+    "excluded_years": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Excluded Years",
+      "type": "array"
+    },
+    "years": {
+      "items": {
+        "$ref": "#/$defs/BacktestYear"
+      },
+      "title": "Years",
+      "type": "array"
+    },
+    "flagged_years": {
+      "items": {
+        "$ref": "#/$defs/BacktestYear"
+      },
+      "title": "Flagged Years",
+      "type": "array"
+    },
+    "tag": {
+      "const": "Derived",
+      "default": "Derived",
+      "title": "Tag",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "site_id",
+    "season",
+    "decision_date",
+    "years_tested",
+    "k",
+    "predictand",
+    "ss_mse",
+    "mse_analog",
+    "mse_clim",
+    "ss_mse_euclid",
+    "anomaly_corr",
+    "tercile_hit_rate",
+    "beat_clim_count",
+    "sign_test_p",
+    "permutation_p",
+    "n_permutations",
+    "calibration_bins",
+    "verdict_text",
+    "excluded_years",
+    "years",
+    "flagged_years",
+    "tag"
+  ],
+  "title": "BacktestResult",
+  "type": "object"
+}

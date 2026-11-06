@@ -1,0 +1,27 @@
+{
+  "task_id": "dfdede24-460a-454b-bdcf-b4c52f397bf8",
+  "route": "appeears",
+  "downloaded": "2026-11-05",
+  "files": [
+    {
+      "file_name": "README.md",
+      "sha256": "99e7bc5e1e9971d3aabe1a76a1b4dc754988ce5d26a72963588e4375c52bbdd9"
+    },
+    {
+      "file_name": "rotate-ndvi-2sites-MOD13Q1-061-metadata.xml",
+      "sha256": "a28a71464d77959022056a1a51730df490fa0910ac539a1cf9b0141a07b34657"
+    },
+    {
+      "file_name": "rotate-ndvi-2sites-MOD13Q1-061-results.csv",
+      "sha256": "2ce76b954bc03a16dbd6f06b254149e7a8363b900312accd83f95f3e2ccff455"
+    },
+    {
+      "file_name": "rotate-ndvi-2sites-granule-list.txt",
+      "sha256": "e50578029a4771e11213d97acc2d0d0dd262d53e004fd39f94c4476f28e273cd"
+    },
+    {
+      "file_name": "rotate-ndvi-2sites-request.json",
+      "sha256": "51690b656dfea436ac9448e1bf3c700577ecc1299f8d14cbd18a3be5237c17a6"
+    }
+  ]
+}

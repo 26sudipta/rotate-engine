@@ -1,0 +1,18 @@
+.env
+CLAUDE.md
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+cache/
+Rotate_Team_Plan_v2.docx
+ROTATE implementation plan.pdf
+ROTATE engine plan.pdf
+NASA Space Apps Plan Optimization.pdf
+
+# CLI scratch output
+/analogs.json
+/backtest.json
+/cards.json
+/ndvi.json
+/request.json

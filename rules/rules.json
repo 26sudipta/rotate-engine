@@ -1,0 +1,1426 @@
+{
+  "review_status": "engine_draft_unreviewed",
+  "drafted": "2026-11-05",
+  "drafted_by": "Engine owner with AI assistance (Claude). Every non-null value is quoted from the cited source as fetched on the drafting date; nothing is filled from memory. Null means no source was found. The team's science translator must review this file before the demo.",
+  "citations": [
+    {
+      "citation_id": "nasim2017",
+      "ref": "Nasim M, Shahidullah SM, Saha A, Muttaleb MA, Aditya TL, Ali MA, Kabir MS (2017). Distribution of Crops and Cropping Patterns in Bangladesh. Bangladesh Rice Journal 21(2): 1-55.",
+      "url": "https://banglajol.info/index.php/BRJ/article/view/38195/25980",
+      "accessed": "2026-11-05"
+    },
+    {
+      "citation_id": "fao29",
+      "ref": "FAO. Water quality for agriculture. FAO Irrigation and Drainage Paper 29, Chapter 3 (Salinity problems), Tables 4 and 5 (adapted from Maas and Hoffman 1977 and Maas 1984).",
+      "url": "https://www.fao.org/4/t0234e/T0234E03.htm",
+      "accessed": "2026-11-05"
+    },
+    {
+      "citation_id": "debsharma2024",
+      "ref": "Debsharma SK, Rahman MA, Khatun M, Disha RF, Jahan N, Quddus MR, Khatun H, Dipti SS, Ibrahim M, Iftekharuddaula KM, Kabir MS (2024). Developing climate-resilient rice varieties (BRRI dhan97 and BRRI dhan99) suitable for salt-stress environments in Bangladesh. PLoS ONE 19(1): e0294573. doi:10.1371/journal.pone.0294573",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10810675/",
+      "accessed": "2026-11-05"
+    },
+    {
+      "citation_id": "emran2022",
+      "ref": "Emran S-A, Krupnik TJ, Aravindakshan S, Kumar V, Pittelkow CM (2022). Impact of cropping system diversification on productivity and resource use efficiencies of smallholder farmers in south-central Bangladesh: a multi-criteria analysis. Agronomy for Sustainable Development 42: 78. doi:10.1007/s13593-022-00795-3",
+      "url": "https://europepmc.org/article/PMC/PMC9355929",
+      "accessed": "2026-11-05"
+    },
+    {
+      "citation_id": "hoque2023",
+      "ref": "Hoque MA, Gathala MK, Timsina J, Ziauddin MATM, Hossain M, Krupnik TJ (2023). Reduced tillage and crop diversification can improve productivity and profitability of rice-based rotations of the Eastern Gangetic Plains. Field Crops Research 291: 108791. doi:10.1016/j.fcr.2022.108791",
+      "url": "https://europepmc.org/article/PMC/PMC9846111",
+      "accessed": "2026-11-05"
+    }
+  ],
+  "salinity_classes": {
+    "citation_id": "debsharma2024",
+    "quote": "Supplementary Table 3: Soli salinity classes and the range of Electrical Conductivity (EC) (Source: Soil Resource Development Institute, 2010) Salinity class EC (dSm-1) Non-saline to very slight saline 2-4 Very slight saline to slight saline 4-8 slight saline to moderate saline 8-12 Moderate saline to strong saline 12-16 strong saline to very strong saline >16",
+    "note": "SRDI 2010 boundaries as reproduced by Debsharma et al.; the SRDI 2010 report itself was not read.",
+    "classes": {
+      "non_saline_lt2": [
+        0,
+        2
+      ],
+      "very_slight_2_4": [
+        2,
+        4
+      ],
+      "slight_4_8": [
+        4,
+        8
+      ],
+      "moderate_8_12": [
+        8,
+        12
+      ],
+      "strong_12_16": [
+        12,
+        16
+      ],
+      "very_strong_gt16": [
+        16,
+        null
+      ]
+    }
+  },
+  "crops": [
+    {
+      "crop_id": "boro",
+      "crop": "Boro rice",
+      "kind": "rice",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 3.0,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": [
+        1186,
+        1795
+      ],
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": [
+        60,
+        120
+      ],
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "strong",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "Highest irrigation and fertilizer costs of the options compared: Boro area has declined largely because of these costs in coastal south-central Bangladesh.",
+          "review_need": "medium",
+          "citation_id": "emran2022"
+        },
+        {
+          "text": "Full yield only up to about 3 dS/m whole-season soil salinity (FAO guide value for paddy rice).",
+          "review_need": "high",
+          "citation_id": "fao29"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Rice (paddy) (Oriza sativa) 3.0 2.0 3.8 2.6 5.1 3.4 7.2 4.8 11 7.6 [Table 4: ECe, ECw at 100%, 90%, 75%, 50%, 0% yield potential]. The soil salinity tolerances in Table 4 apply primarily to crops from late seedling stage to maturity."
+        },
+        {
+          "citation_id": "hoque2023",
+          "columns": [
+            "irrigation_mm"
+          ],
+          "quote": "boro rice, 1186–1795 mm of irrigation water was applied depending on rainfall amount and distribution across the seasons [Jamalpur, northern Bangladesh, 2013–2016]"
+        },
+        {
+          "citation_id": "emran2022",
+          "columns": [
+            "n_fert_extra_kg_ha",
+            "risks"
+          ],
+          "quote": "whereas growing chili and boro required 60–120 kg N ha –1 extra N fertilizer ... boro rice area has been declining in the past decades, largely due to high fertilizer input and irrigation costs."
+        }
+      ]
+    },
+    {
+      "crop_id": "boro_salt_tolerant",
+      "crop": "Boro rice, BRRI salt-tolerant variety",
+      "kind": "rice",
+      "hazards_fit": [
+        "salinity"
+      ],
+      "salinity_whole_season_max_dS_m": 8.0,
+      "salinity_seedling_dS_m": 14.0,
+      "irrigation_mm": [
+        1186,
+        1795
+      ],
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": [
+        60,
+        120
+      ],
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": "BRRI salt-tolerant Boro variety (variety names not shown until checked against BRRI sources)",
+      "evidence_strength": "strong",
+      "benefits": [
+        {
+          "attribute": "salinity",
+          "text": "BRRI salt-tolerant Boro lines produced grain yield at 8–10 dS/m salinity through all the salt-sensitive stages in trials in Satkhira (south-west coast).",
+          "citation_id": "debsharma2024"
+        }
+      ],
+      "risks": [
+        {
+          "text": "Trial sites were in Satkhira; tolerance at this field depends on its actual salinity, which no NASA product measures.",
+          "review_need": "high",
+          "citation_id": "debsharma2024"
+        },
+        {
+          "text": "Irrigation need assumed equal to other Boro rice: no variety-specific water figure was found.",
+          "review_need": "medium",
+          "citation_id": null
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "debsharma2024",
+          "columns": [
+            "salinity_whole_season_max_dS_m",
+            "salinity_seedling_dS_m",
+            "hazards_fit"
+          ],
+          "quote": "The genotypes IR83484-3-B-7-1-1-1 and HHZ5-DT20-DT2-DT1 can tolerate 14 dS/m salinity at the seedling stage. Additionally, it can produce grain yield with 8–10 dS/m salinity level through all the salt-sensitive stages from vegetative to reproductive stages. [Value used: 8, the lower end.]"
+        },
+        {
+          "citation_id": "hoque2023",
+          "columns": [
+            "irrigation_mm"
+          ],
+          "quote": "boro rice, 1186–1795 mm of irrigation water was applied [assumed the same for any Boro variety]"
+        },
+        {
+          "citation_id": "emran2022",
+          "columns": [
+            "n_fert_extra_kg_ha"
+          ],
+          "quote": "growing chili and boro required 60–120 kg N ha –1 extra N fertilizer"
+        }
+      ]
+    },
+    {
+      "crop_id": "wheat",
+      "crop": "Wheat",
+      "kind": "cereal",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 6.0,
+      "salinity_seedling_dS_m": 4.0,
+      "irrigation_mm": [
+        115,
+        189
+      ],
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [
+        {
+          "attribute": "water",
+          "text": "Received 115–189 mm of irrigation in a Bangladesh field trial, against 1,186–1,795 mm for Boro rice in the same trial.",
+          "citation_id": "hoque2023"
+        },
+        {
+          "attribute": "salinity",
+          "text": "FAO guide value for full yield is up to 6.0 dS/m whole-season soil salinity, higher than paddy rice (3.0).",
+          "citation_id": "fao29"
+        }
+      ],
+      "risks": [
+        {
+          "text": "Less salt-tolerant at germination and seedling stage (topsoil should not exceed 4–5 dS/m then); semi-dwarf cultivars may be less tolerant.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        },
+        {
+          "text": "Water figures come from one trial at Jamalpur (northern Bangladesh), not from this site.",
+          "review_need": "medium",
+          "citation_id": "hoque2023"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m",
+            "salinity_seedling_dS_m"
+          ],
+          "quote": "Wheat (Triticum aestivum) 4 , 6 6.0 4.0 7.4 4.9 9.5 6.3 13 8.7 20 13 ... 4 Barley and wheat are less tolerant during germination and seeding stage; ECe should not exceed 4–5 dS/m in the upper soil during this period. ... 6 Semi-dwarf, short cultivars may be less tolerant."
+        },
+        {
+          "citation_id": "hoque2023",
+          "columns": [
+            "irrigation_mm"
+          ],
+          "quote": "wheat crop received 115–189 mm across treatments."
+        }
+      ]
+    },
+    {
+      "crop_id": "maize",
+      "crop": "Maize",
+      "kind": "cereal",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 1.7,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": [
+        254,
+        351
+      ],
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [
+        {
+          "attribute": "water",
+          "text": "Received 254–351 mm of irrigation in a Bangladesh field trial, against 1,186–1,795 mm for Boro rice in the same trial.",
+          "citation_id": "hoque2023"
+        }
+      ],
+      "risks": [
+        {
+          "text": "Salt-sensitive: FAO guide value for full yield is only 1.7 dS/m.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        },
+        {
+          "text": "Water figures come from one trial at Jamalpur (northern Bangladesh), not from this site.",
+          "review_need": "medium",
+          "citation_id": "hoque2023"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Corn (maize) (Zea mays) 1.7 1.1 2.5 1.7 3.8 2.5 5.9 3.9 10 6.7"
+        },
+        {
+          "citation_id": "hoque2023",
+          "columns": [
+            "irrigation_mm"
+          ],
+          "quote": "maize, depending on seasonal rainfall, up to five irrigations at five stages were applied with a total of 254–351 mm during the season"
+        }
+      ]
+    },
+    {
+      "crop_id": "mungbean",
+      "crop": "Mungbean",
+      "kind": "legume",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": null,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": [
+        25,
+        40
+      ],
+      "n_fert_extra_kg_ha": [
+        11,
+        17
+      ],
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [
+        {
+          "attribute": "soil_n",
+          "text": "Mungbean could add 25–40 kg N/ha to the soil-plant system (estimates cited for Bangladesh coastal systems).",
+          "citation_id": "emran2022"
+        },
+        {
+          "attribute": "soil_n",
+          "text": "Farmers in coastal south-central Bangladesh applied only 11–17 kg N/ha for mungbean, against 60–120 kg N/ha extra for Boro.",
+          "citation_id": "emran2022"
+        }
+      ],
+      "risks": [
+        {
+          "text": "No sourced whole-season salinity tolerance for mungbean: check field salinity locally.",
+          "review_need": "high",
+          "citation_id": null
+        },
+        {
+          "text": "Late Aman harvest, wet soil until mid-February and winter soil or water salinity can delay planting of dry-season crops on the coast.",
+          "review_need": "high",
+          "citation_id": "emran2022"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "emran2022",
+          "columns": [
+            "n_fix_kg_ha"
+          ],
+          "quote": "cultivating mungbeans could add 25–40 kg N ha −1 to the soil-plant system (Ahlawat et al. 1998 ; Ali, 1992 )"
+        },
+        {
+          "citation_id": "emran2022",
+          "columns": [
+            "n_fert_extra_kg_ha"
+          ],
+          "quote": "farmers applied 11–17 kg N ha −1 when growing mungbean, lathyrus, or groundnut, in addition to the N rate for aman season rice (31–32 kg N ha −1 )"
+        },
+        {
+          "citation_id": "emran2022",
+          "columns": [
+            "risks"
+          ],
+          "quote": "reasons for farmers avoiding high-yielding dry season crops are the late harvest of aman rice, high soil moisture until mid-February, and lack of dry season irrigation access ... soil and irrigation water salinity during the winter period, and poor drainage which can result in late planting"
+        }
+      ]
+    },
+    {
+      "crop_id": "grasspea",
+      "crop": "Grasspea (lathyrus)",
+      "kind": "legume",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": null,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": [
+        11,
+        17
+      ],
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [
+        {
+          "attribute": "soil_n",
+          "text": "Farmers in coastal south-central Bangladesh applied only 11–17 kg N/ha for lathyrus, against 60–120 kg N/ha extra for Boro.",
+          "citation_id": "emran2022"
+        }
+      ],
+      "risks": [
+        {
+          "text": "No sourced whole-season salinity tolerance or nitrogen-fixation figure for grasspea: check locally.",
+          "review_need": "high",
+          "citation_id": null
+        },
+        {
+          "text": "Late Aman harvest, wet soil until mid-February and winter soil or water salinity can delay planting of dry-season crops on the coast.",
+          "review_need": "high",
+          "citation_id": "emran2022"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "emran2022",
+          "columns": [
+            "n_fert_extra_kg_ha"
+          ],
+          "quote": "farmers applied 11–17 kg N ha −1 when growing mungbean, lathyrus, or groundnut"
+        },
+        {
+          "citation_id": "emran2022",
+          "columns": [
+            "risks"
+          ],
+          "quote": "reasons for farmers avoiding high-yielding dry season crops are the late harvest of aman rice, high soil moisture until mid-February, and lack of dry season irrigation access"
+        }
+      ]
+    },
+    {
+      "crop_id": "mustard",
+      "crop": "Mustard (short duration)",
+      "kind": "oilseed",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": null,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "principle-only",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "No sourced salinity tolerance, water need or nitrogen figure for mustard: its card shows information gaps only.",
+          "review_need": "high",
+          "citation_id": null
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "nasim2017",
+          "columns": [
+            "season"
+          ],
+          "quote": "short duration mustard can be included before Boro. Farmers are reluctant to cultivate DWR because of its low yield. However, short duration mustard can be included in it even with zero tillage."
+        }
+      ]
+    },
+    {
+      "crop_id": "groundnut",
+      "crop": "Groundnut",
+      "kind": "legume",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 3.2,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": [
+        11,
+        17
+      ],
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [
+        {
+          "attribute": "soil_n",
+          "text": "Farmers in coastal south-central Bangladesh applied only 11–17 kg N/ha for groundnut, against 60–120 kg N/ha extra for Boro.",
+          "citation_id": "emran2022"
+        }
+      ],
+      "risks": [
+        {
+          "text": "FAO guide value for full yield is 3.2 dS/m whole-season soil salinity, about the same as paddy rice.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Groundnut (Peanut) (Arachis hypogaea) 3.2 2.1 3.5 2.4 4.1 2.7 4.9 3.3 6.6 4.4"
+        },
+        {
+          "citation_id": "emran2022",
+          "columns": [
+            "n_fert_extra_kg_ha"
+          ],
+          "quote": "farmers applied 11–17 kg N ha −1 when growing mungbean, lathyrus, or groundnut"
+        }
+      ]
+    },
+    {
+      "crop_id": "fallow",
+      "crop": "Fallow",
+      "kind": "fallow",
+      "hazards_fit": [
+        "salinity",
+        "drought"
+      ],
+      "salinity_whole_season_max_dS_m": null,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "principle-only",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "No dry-season harvest.",
+          "review_need": "medium",
+          "citation_id": null
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "nasim2017",
+          "columns": [
+            "hazards_fit"
+          ],
+          "quote": "Single T. Aman CP is practiced in constraints soils e.g., in drought prone Barind tract or in tidal wetland. Soil in Barind tract quickly dries up in Rabi season and Rabi crop cultivation is not possible if there is no irrigation facility. In tidal saline wetland, salinity restricts other crops to be included in dry season."
+        }
+      ]
+    },
+    {
+      "crop_id": "aus",
+      "crop": "Aus rice",
+      "kind": "rice",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 3.0,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "FAO guide value for full yield is 3 dS/m whole-season soil salinity.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Rice (paddy) (Oriza sativa) 3.0 2.0 3.8 2.6 5.1 3.4 7.2 4.8 11 7.6 [applied to Aus rice as paddy rice] The soil salinity tolerances in Table 4 apply primarily to crops from late seedling stage to maturity."
+        }
+      ]
+    },
+    {
+      "crop_id": "jute",
+      "crop": "Jute",
+      "kind": "fibre",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": null,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "principle-only",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "No sourced salinity tolerance, water need or nitrogen figure for this crop in the rule table: check locally.",
+          "review_need": "high",
+          "citation_id": null
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "nasim2017",
+          "columns": [],
+          "quote": "Jute is the major one. It grows in Kharif-I season."
+        }
+      ]
+    },
+    {
+      "crop_id": "potato",
+      "crop": "Potato",
+      "kind": "tuber",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 1.7,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "FAO guide value for full yield is 1.7 dS/m whole-season soil salinity.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Potato (Solanum tuberosum) 1.7 1.1 2.5 1.7 3.8 2.5 5.9 3.9 10 6.7 The soil salinity tolerances in Table 4 apply primarily to crops from late seedling stage to maturity."
+        }
+      ]
+    },
+    {
+      "crop_id": "sweet_potato",
+      "crop": "Sweet potato",
+      "kind": "tuber",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 1.5,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "FAO guide value for full yield is 1.5 dS/m whole-season soil salinity.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Sweet potato (Ipomoea batatas) 1.5 1.0 2.4 1.6 3.8 2.5 6.0 4.0 11 7.1 The soil salinity tolerances in Table 4 apply primarily to crops from late seedling stage to maturity."
+        }
+      ]
+    },
+    {
+      "crop_id": "lentil",
+      "crop": "Lentil",
+      "kind": "legume",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": null,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "principle-only",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "No sourced salinity tolerance, water need or nitrogen-fixation figure for this crop in the rule table: check locally.",
+          "review_need": "high",
+          "citation_id": null
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "nasim2017",
+          "columns": [],
+          "quote": "Grasspea, lentil, chickpea, fieldpea, cowpea and fava beans are grown during Rabi season. ... Mungbean is grown in winter and in the late winter or in Kharif-I seasonas well. Among the oil seed crops, rapeseed and mustard, sesame and groundnut are the major crops while niger, safflower, sunflower and soybean are minor ones. Rapeseed and mustard, niger and linseed are grown in the Rabi season while groundnut, sunflower and soybean in both Rabi and Kharif-II seasons. Sesame is grown both in Kharif-I and Kharif-II seasons."
+        }
+      ]
+    },
+    {
+      "crop_id": "soybean",
+      "crop": "Soybean",
+      "kind": "legume",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 5.0,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "FAO guide value for full yield is 5 dS/m whole-season soil salinity.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        },
+        {
+          "text": "No sourced water need or nitrogen-fixation figure for this crop in the rule table: check locally.",
+          "review_need": "high",
+          "citation_id": null
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Soybean (Glycine max) 5.0 3.3 5.5 3.7 6.3 4.2 7.5 5.0 10 6.7 The soil salinity tolerances in Table 4 apply primarily to crops from late seedling stage to maturity."
+        }
+      ]
+    },
+    {
+      "crop_id": "sesame",
+      "crop": "Sesame",
+      "kind": "oilseed",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": null,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "FAO lists sesame as salt-sensitive (relative rating only, no threshold given).",
+          "review_need": "high",
+          "citation_id": "fao29"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [],
+          "quote": "Table 5 RELATIVE SALT TOLERANCE OF AGRICULTURAL CROPS ... SENSITIVE ... Fibre, Seed and Sugar Crops Bean Phaseolus vulgaris Guayule Parthenium argentatum Sesame Sesamum indicum"
+        }
+      ]
+    },
+    {
+      "crop_id": "onion",
+      "crop": "Onion",
+      "kind": "vegetable",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 1.2,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "FAO guide value for full yield is 1.2 dS/m whole-season soil salinity.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Onion (Allium cepa) 1.2 0.8 1.8 1.2 2.8 1.8 4.3 2.9 7.4 5.0 The soil salinity tolerances in Table 4 apply primarily to crops from late seedling stage to maturity."
+        }
+      ]
+    },
+    {
+      "crop_id": "chilli",
+      "crop": "Chilli",
+      "kind": "vegetable",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": 1.5,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "weak",
+      "benefits": [],
+      "risks": [
+        {
+          "text": "FAO guide value for full yield is 1.5 dS/m whole-season soil salinity.",
+          "review_need": "high",
+          "citation_id": "fao29"
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "fao29",
+          "columns": [
+            "salinity_whole_season_max_dS_m"
+          ],
+          "quote": "Pepper (Capsicum annuum) 1.5 1.0 2.2 1.5 3.3 2.2 5.1 3.4 8.6 5.8 [chilli taken as Capsicum annuum] The soil salinity tolerances in Table 4 apply primarily to crops from late seedling stage to maturity."
+        }
+      ]
+    },
+    {
+      "crop_id": "t_aman",
+      "crop": "T. Aman rice",
+      "kind": "rice",
+      "hazards_fit": [],
+      "salinity_whole_season_max_dS_m": null,
+      "salinity_seedling_dS_m": null,
+      "irrigation_mm": null,
+      "n_fix_kg_ha": null,
+      "n_fert_extra_kg_ha": null,
+      "organic_matter": null,
+      "pest_break": null,
+      "forage": null,
+      "income_note": null,
+      "infiltration": null,
+      "duration_days": null,
+      "varieties": null,
+      "evidence_strength": "principle-only",
+      "benefits": [],
+      "risks": [],
+      "citations": []
+    }
+  ],
+  "patterns": [
+    {
+      "pattern_id": "boro-fallow-t_aman",
+      "name": "Boro–Fallow–T.Aman",
+      "slots": [
+        "boro",
+        "fallow",
+        "t_aman"
+      ],
+      "nca_pct": 26.919,
+      "citation_id": "nasim2017",
+      "quote": "001 Boro−Fallow−T. Aman 2306005 26.919 63 426 ... 15 Chittagong 46420 23.19 2.01 ... 36 Rajshahi 22400 13.40 0.97",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "boro-fallow-fallow",
+      "name": "Boro–Fallow–Fallow",
+      "slots": [
+        "boro",
+        "fallow",
+        "fallow"
+      ],
+      "nca_pct": 13.302,
+      "citation_id": "nasim2017",
+      "quote": "002 Boro−Fallow−Fallow 1139530 13.302 59 342",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "fallow-fallow-t_aman",
+      "name": "Fallow–Fallow–T.Aman",
+      "slots": [
+        "fallow",
+        "fallow",
+        "t_aman"
+      ],
+      "nca_pct": 5.947,
+      "citation_id": "nasim2017",
+      "quote": "003 Fallow−Fallow−T. Aman 509480 5.947 36 162 ... 01 Chittagong 66500 33.23 13.05",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "boro-aus-t_aman",
+      "name": "Boro–Aus–T.Aman",
+      "slots": [
+        "boro",
+        "aus",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 2.44,
+      "citation_id": "nasim2017",
+      "quote": "004 Boro−Aus−T. Aman 209015 2.440 47 177"
+    },
+    {
+      "pattern_id": "fallow-aus-t_aman",
+      "name": "Fallow–Aus–T.Aman",
+      "slots": [
+        "fallow",
+        "aus",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 2.256,
+      "citation_id": "nasim2017",
+      "quote": "005 Fallow−Aus−T. Aman 193275 2.256 30 108"
+    },
+    {
+      "pattern_id": "mustard-boro-t_aman",
+      "name": "Mustard–Boro–T.Aman",
+      "slots": [
+        "mustard",
+        "boro",
+        "t_aman"
+      ],
+      "nca_pct": 2.155,
+      "citation_id": "nasim2017",
+      "quote": "006 Mustard−Boro−T. Aman 184620 2.155 51 203",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "potato-boro-t_aman",
+      "name": "Potato–Boro–T.Aman",
+      "slots": [
+        "potato",
+        "boro",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 2.106,
+      "citation_id": "nasim2017",
+      "quote": "008 Potato−Boro−T. Aman 180380 2.106 33 115"
+    },
+    {
+      "pattern_id": "wheat-jute-t_aman",
+      "name": "Wheat–Jute–T.Aman",
+      "slots": [
+        "wheat",
+        "jute",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 1.718,
+      "citation_id": "nasim2017",
+      "quote": "009 Wheat−Jute−T. Aman 147210 1.718 43 216"
+    },
+    {
+      "pattern_id": "grasspea-fallow-t_aman",
+      "name": "Grasspea–Fallow–T.Aman",
+      "slots": [
+        "grasspea",
+        "fallow",
+        "t_aman"
+      ],
+      "nca_pct": 1.262,
+      "citation_id": "nasim2017",
+      "quote": "012 Grasspea−Fallow−T. Aman 108150 1.262 25 80",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "maize-fallow-t_aman",
+      "name": "Maize–Fallow–T.Aman",
+      "slots": [
+        "maize",
+        "fallow",
+        "t_aman"
+      ],
+      "nca_pct": 1.184,
+      "citation_id": "nasim2017",
+      "quote": "013 Maize−Fallow−T. Aman 101460 1.184 39 126",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "wheat-fallow-t_aman",
+      "name": "Wheat–Fallow–T.Aman",
+      "slots": [
+        "wheat",
+        "fallow",
+        "t_aman"
+      ],
+      "nca_pct": 1.061,
+      "citation_id": "nasim2017",
+      "quote": "014 Wheat−Fallow−T. Aman 90910 1.061 39 100",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "mungbean-fallow-t_aman",
+      "name": "Mungbean–Fallow–T.Aman",
+      "slots": [
+        "mungbean",
+        "fallow",
+        "t_aman"
+      ],
+      "nca_pct": 1.047,
+      "citation_id": "nasim2017",
+      "quote": "015 Mungbean−Fallow−T. Aman 89650 1.047 22 70",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "grasspea-aus-t_aman",
+      "name": "Grasspea–Aus–T.Aman",
+      "slots": [
+        "grasspea",
+        "aus",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.953,
+      "citation_id": "nasim2017",
+      "quote": "016 Grasspea−Aus−T. Aman 81610 0.953 19 61"
+    },
+    {
+      "pattern_id": "onion-jute-t_aman",
+      "name": "Onion–Jute–T.Aman",
+      "slots": [
+        "onion",
+        "jute",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.633,
+      "citation_id": "nasim2017",
+      "quote": "019 Onion−Jute−T. Aman 54185 0.633 39 102"
+    },
+    {
+      "pattern_id": "mungbean-aus-t_aman",
+      "name": "Mungbean–Aus–T.Aman",
+      "slots": [
+        "mungbean",
+        "aus",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.627,
+      "citation_id": "nasim2017",
+      "quote": "020 Mungbean−Aus−T. Aman 53730 0.627 14 43"
+    },
+    {
+      "pattern_id": "chilli-fallow-t_aman",
+      "name": "Chilli–Fallow–T.Aman",
+      "slots": [
+        "chilli",
+        "fallow",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.619,
+      "citation_id": "nasim2017",
+      "quote": "021 Chilli−Fallow−T. Aman 52995 0.619 45 146"
+    },
+    {
+      "pattern_id": "lentil-jute-t_aman",
+      "name": "Lentil–Jute–T.Aman",
+      "slots": [
+        "lentil",
+        "jute",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.606,
+      "citation_id": "nasim2017",
+      "quote": "022 Lentil−Jute−T. Aman 51875 0.606 34 96"
+    },
+    {
+      "pattern_id": "potato-maize-t_aman",
+      "name": "Potato–Maize–T.Aman",
+      "slots": [
+        "potato",
+        "maize",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.56,
+      "citation_id": "nasim2017",
+      "quote": "02 Potato−Maize−T. Aman 47690 0.56 19 68 [Table 10]"
+    },
+    {
+      "pattern_id": "boro-jute-t_aman",
+      "name": "Boro–Jute–T.Aman",
+      "slots": [
+        "boro",
+        "jute",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.472,
+      "citation_id": "nasim2017",
+      "quote": "028 Boro−Jute−T. Aman 40440 0.472 19 56"
+    },
+    {
+      "pattern_id": "groundnut-fallow-t_aman",
+      "name": "Groundnut–Fallow–T.Aman",
+      "slots": [
+        "groundnut",
+        "fallow",
+        "t_aman"
+      ],
+      "nca_pct": 0.341,
+      "citation_id": "nasim2017",
+      "quote": "1 Groundnut−Fallow−T. Aman 29210 0.341 23 60",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    },
+    {
+      "pattern_id": "potato-jute-t_aman",
+      "name": "Potato–Jute–T.Aman",
+      "slots": [
+        "potato",
+        "jute",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.33,
+      "citation_id": "nasim2017",
+      "quote": "039 Potato−Jute−T. Aman 28310 0.330 36 95"
+    },
+    {
+      "pattern_id": "soybean-fallow-t_aman",
+      "name": "Soybean–Fallow–T.Aman",
+      "slots": [
+        "soybean",
+        "fallow",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.276,
+      "citation_id": "nasim2017",
+      "quote": "2 Soybean−Fallow−T. Aman 23670 0.276 5 10 [Table 13]"
+    },
+    {
+      "pattern_id": "wheat-mungbean-t_aman",
+      "name": "Wheat–Mungbean–T.Aman",
+      "slots": [
+        "wheat",
+        "mungbean",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.25,
+      "citation_id": "nasim2017",
+      "quote": "8 Wheat−Mungbean−T. Aman 21760 0.25 20 50 [Table 14]"
+    },
+    {
+      "pattern_id": "sweet_potato-fallow-t_aman",
+      "name": "Sweet potato–Fallow–T.Aman",
+      "slots": [
+        "sweet_potato",
+        "fallow",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.2,
+      "citation_id": "nasim2017",
+      "quote": "08 S.Potato−Fallow−T. Aman 16990 0.20 31 103 [Table 11]"
+    },
+    {
+      "pattern_id": "lentil-fallow-t_aman",
+      "name": "Lentil–Fallow–T.Aman",
+      "slots": [
+        "lentil",
+        "fallow",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.15,
+      "citation_id": "nasim2017",
+      "quote": "13 Lentil−Fallow−T. Aman 12680 0.15 29 68 [Table 14]"
+    },
+    {
+      "pattern_id": "lentil-sesame-t_aman",
+      "name": "Lentil–Sesame–T.Aman",
+      "slots": [
+        "lentil",
+        "sesame",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.15,
+      "citation_id": "nasim2017",
+      "quote": "14 Lentil−Sesame−T. Aman 12450 0.15 14 33 [Table 14]"
+    },
+    {
+      "pattern_id": "fallow-sesame-t_aman",
+      "name": "Fallow–Sesame–T.Aman",
+      "slots": [
+        "fallow",
+        "sesame",
+        "t_aman"
+      ],
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ],
+      "nca_pct": 0.136,
+      "citation_id": "nasim2017",
+      "quote": "8 Fallow−Sesame−T. Aman 11640 0.136 13 20 [Table 13]"
+    },
+    {
+      "pattern_id": "boro_st-fallow-t_aman",
+      "name": "Boro (BRRI salt-tolerant variety)–Fallow–T.Aman",
+      "slots": [
+        "boro_salt_tolerant",
+        "fallow",
+        "t_aman"
+      ],
+      "nca_pct": null,
+      "citation_id": "debsharma2024",
+      "quote": "Same pattern as Boro–Fallow–T.Aman with a salt-tolerant Boro variety; not a separate pattern in Nasim et al. 2017.",
+      "seasons": [
+        "rabi",
+        "kharif1",
+        "kharif2"
+      ]
+    }
+  ],
+  "seasons": {
+    "citation_id": "emran2022",
+    "quote": "There are three cropping seasons in Bangladesh: Rabi (typically mid-November to mid-March, also known as winter or boro season) Kharif -1 (typically mid-March to mid-July, also known as pre-monsoon or spring) Kharif -2 (typically mid-July to mid-November, also known as monsoon or aman season)",
+    "order_citation_id": "nasim2017",
+    "order_quote": "Writing CP generally started from Rabi or Boro season followed by Kharif-I or Aus then Kharif-II or Aman season.",
+    "dry_season_quote": "The problem of salinity increases in the dry season. [nasim2017]",
+    "defs": {
+      "rabi": {
+        "label": "Rabi (winter, Boro season)",
+        "months": "mid-November to mid-March",
+        "dry": true
+      },
+      "kharif1": {
+        "label": "Kharif-1 (pre-monsoon, summer)",
+        "months": "mid-March to mid-July",
+        "dry": true
+      },
+      "kharif2": {
+        "label": "Kharif-2 (monsoon, Aman season)",
+        "months": "mid-July to mid-November",
+        "dry": false
+      }
+    }
+  }
+}

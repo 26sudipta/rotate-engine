@@ -1,0 +1,38 @@
+{
+  "sites": [
+    {
+      "id": "ctg_anwara",
+      "name": "Anwara, Chattogram",
+      "lat": 22.1753,
+      "lon": 91.8846,
+      "hazard": "salinity",
+      "note": "Open paddy block, Dhaila beel area, Burumchhara union; imagery-checked 5 Nov 2026",
+      "match_features": [
+        "tmin_c",
+        "rh_pct"
+      ],
+      "rain_note": "POWER PRECTOTCORR here is 2-4x IMERG from 2015 on (days up to 663 mm); rain is not used or shown.",
+      "ndvi_id": "ctganwara",
+      "ndvi_peak_doy": [
+        81,
+        112
+      ],
+      "ndvi_peak_label": "Boro peak (mid-March to mid-April)"
+    },
+    {
+      "id": "barind_godagari",
+      "name": "Godagari, Rajshahi (Barind)",
+      "lat": 24.5248,
+      "lon": 88.4246,
+      "hazard": "drought",
+      "note": "Terraced paddy block, Dewan Para area, Godagari upazila; imagery-checked 5 Nov 2026",
+      "ndvi_id": "barindgodagari",
+      "ndvi_peak_doy": [
+        33,
+        64
+      ],
+      "ndvi_peak_label": "dry-season peak (February)",
+      "ndvi_peak_note": "Observed Feb peak (median 0.51) vs 0.39 in Mar-Apr; crop to confirm with the science translator. Jan-Feb minimum rose from ~0.27 (2000-11) to 0.40-0.65 (2012 on): possible mango expansion, check in Step 13."
+    }
+  ]
+}

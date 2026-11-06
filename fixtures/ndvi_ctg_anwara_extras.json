@@ -1,0 +1,1356 @@
+{
+  "schema_version": "1.0",
+  "site_id": "ctg_anwara",
+  "product": "MOD13Q1.061 + MYD13Q1.061 (Aqua, via ORNL)",
+  "status": "ok",
+  "points": [
+    {
+      "date": "2023-11-12",
+      "ndvi": 0.8451,
+      "ndvi_smooth": 0.8115,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2023-11-23",
+      "ndvi": 0.7253,
+      "ndvi_smooth": 0.7807,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2023-11-24",
+      "ndvi": 0.7827,
+      "ndvi_smooth": 0.7388,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2023-11-30",
+      "ndvi": 0.6616,
+      "ndvi_smooth": 0.6619,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2023-12-13",
+      "ndvi": 0.5186,
+      "ndvi_smooth": 0.5458,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2023-12-17",
+      "ndvi": 0.5064,
+      "ndvi_smooth": 0.4898,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2023-12-25",
+      "ndvi": 0.46,
+      "ndvi_smooth": 0.4527,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2023-12-29",
+      "ndvi": 0.4085,
+      "ndvi_smooth": 0.4324,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-01-01",
+      "ndvi": 0.4661,
+      "ndvi_smooth": 0.4463,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-01-19",
+      "ndvi": 0.4676,
+      "ndvi_smooth": 0.4781,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-01-26",
+      "ndvi": 0.4793,
+      "ndvi_smooth": 0.4617,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-01-28",
+      "ndvi": 0.4445,
+      "ndvi_smooth": 0.4823,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-02-09",
+      "ndvi": 0.5115,
+      "ndvi_smooth": 0.4655,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-02-17",
+      "ndvi": 0.3873,
+      "ndvi_smooth": 0.3874,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-02-19",
+      "ndvi": 0.3152,
+      "ndvi_smooth": 0.3734,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-03-09",
+      "ndvi": 0.5378,
+      "ndvi_smooth": 0.4913,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-03-16",
+      "ndvi": 0.6182,
+      "ndvi_smooth": 0.6258,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-03-26",
+      "ndvi": 0.662,
+      "ndvi_smooth": 0.6586,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-03-26",
+      "ndvi": 0.6859,
+      "ndvi_smooth": 0.6966,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-04-04",
+      "ndvi": 0.7466,
+      "ndvi_smooth": 0.7454,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-04-10",
+      "ndvi": 0.7765,
+      "ndvi_smooth": 0.7601,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-04-14",
+      "ndvi": 0.7225,
+      "ndvi_smooth": 0.7483,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-04-27",
+      "ndvi": 0.7224,
+      "ndvi_smooth": 0.6861,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-05-03",
+      "ndvi": 0.6131,
+      "ndvi_smooth": 0.6622,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-05-22",
+      "ndvi": 0.6546,
+      "ndvi_smooth": 0.5917,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-05-23",
+      "ndvi": 0.5337,
+      "ndvi_smooth": 0.6101,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-05-24",
+      "ndvi": 0.6715,
+      "ndvi_smooth": 0.5972,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-06-11",
+      "ndvi": 0.5983,
+      "ndvi_smooth": 0.6617,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-06-28",
+      "ndvi": 0.7118,
+      "ndvi_smooth": 0.6609,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-07-15",
+      "ndvi": 0.6702,
+      "ndvi_smooth": 0.6862,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-07-20",
+      "ndvi": 0.7258,
+      "ndvi_smooth": 0.7263,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-08-30",
+      "ndvi": 0.4597,
+      "ndvi_smooth": 0.4283,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-09-08",
+      "ndvi": 0.2464,
+      "ndvi_smooth": 0.3377,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-09-08",
+      "ndvi": 0.3976,
+      "ndvi_smooth": 0.3122,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-09-17",
+      "ndvi": 0.3293,
+      "ndvi_smooth": 0.3641,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-09-23",
+      "ndvi": 0.4537,
+      "ndvi_smooth": 0.4977,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-10-08",
+      "ndvi": 0.7769,
+      "ndvi_smooth": 0.7041,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-10-14",
+      "ndvi": 0.7913,
+      "ndvi_smooth": 0.828,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-10-29",
+      "ndvi": 0.8383,
+      "ndvi_smooth": 0.8263,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-11-02",
+      "ndvi": 0.8308,
+      "ndvi_smooth": 0.8345,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-11-05",
+      "ndvi": 0.8222,
+      "ndvi_smooth": 0.8273,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-11-16",
+      "ndvi": 0.8222,
+      "ndvi_smooth": 0.8187,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-11-20",
+      "ndvi": 0.7814,
+      "ndvi_smooth": 0.7773,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-11-26",
+      "ndvi": 0.6908,
+      "ndvi_smooth": 0.6902,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-12-07",
+      "ndvi": 0.5895,
+      "ndvi_smooth": 0.5954,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-12-16",
+      "ndvi": 0.5241,
+      "ndvi_smooth": 0.5233,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2024-12-22",
+      "ndvi": 0.472,
+      "ndvi_smooth": 0.4707,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "terra"
+    },
+    {
+      "date": "2024-12-26",
+      "ndvi": 0.4204,
+      "ndvi_smooth": 0.413,
+      "reliability": 0,
+      "flagged": false,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-01-13",
+      "ndvi": 0.3711,
+      "ndvi_smooth": 0.3935,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-01-18",
+      "ndvi": 0.4127,
+      "ndvi_smooth": 0.3871,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-01-20",
+      "ndvi": 0.3729,
+      "ndvi_smooth": 0.396,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-02-09",
+      "ndvi": 0.3782,
+      "ndvi_smooth": 0.342,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-02-12",
+      "ndvi": 0.2861,
+      "ndvi_smooth": 0.3292,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-02-24",
+      "ndvi": 0.3763,
+      "ndvi_smooth": 0.3628,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-03-01",
+      "ndvi": 0.4258,
+      "ndvi_smooth": 0.3958,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-03-01",
+      "ndvi": 0.3691,
+      "ndvi_smooth": 0.4144,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-03-11",
+      "ndvi": 0.4907,
+      "ndvi_smooth": 0.4639,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-03-26",
+      "ndvi": 0.5469,
+      "ndvi_smooth": 0.5533,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-03-26",
+      "ndvi": 0.6069,
+      "ndvi_smooth": 0.6214,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-04-13",
+      "ndvi": 0.665,
+      "ndvi_smooth": 0.6264,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-04-15",
+      "ndvi": 0.5463,
+      "ndvi_smooth": 0.5682,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-04-17",
+      "ndvi": 0.5268,
+      "ndvi_smooth": 0.5564,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-05-02",
+      "ndvi": 0.6274,
+      "ndvi_smooth": 0.5673,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-05-09",
+      "ndvi": 0.5241,
+      "ndvi_smooth": 0.5853,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-05-10",
+      "ndvi": 0.5938,
+      "ndvi_smooth": 0.5415,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-05-19",
+      "ndvi": 0.4999,
+      "ndvi_smooth": 0.541,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-06-05",
+      "ndvi": 0.5164,
+      "ndvi_smooth": 0.4818,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-06-08",
+      "ndvi": 0.4374,
+      "ndvi_smooth": 0.4617,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-06-13",
+      "ndvi": 0.4602,
+      "ndvi_smooth": 0.4524,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-07-11",
+      "ndvi": 0.4981,
+      "ndvi_smooth": 0.5076,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-08-05",
+      "ndvi": 0.5553,
+      "ndvi_smooth": 0.5398,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-08-26",
+      "ndvi": 0.5255,
+      "ndvi_smooth": 0.5151,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-09-03",
+      "ndvi": 0.4837,
+      "ndvi_smooth": 0.5086,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-09-05",
+      "ndvi": 0.6257,
+      "ndvi_smooth": 0.6415,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-09-30",
+      "ndvi": 0.8564,
+      "ndvi_smooth": 0.8203,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-10-13",
+      "ndvi": 0.8963,
+      "ndvi_smooth": 0.9028,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-10-15",
+      "ndvi": 0.8869,
+      "ndvi_smooth": 0.8956,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-10-23",
+      "ndvi": 0.8938,
+      "ndvi_smooth": 0.8986,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-10-30",
+      "ndvi": 0.8813,
+      "ndvi_smooth": 0.8514,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-11-12",
+      "ndvi": 0.7574,
+      "ndvi_smooth": 0.798,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-11-12",
+      "ndvi": 0.779,
+      "ndvi_smooth": 0.7661,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-11-17",
+      "ndvi": 0.7292,
+      "ndvi_smooth": 0.7025,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-11-30",
+      "ndvi": 0.5417,
+      "ndvi_smooth": 0.5702,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2025-12-07",
+      "ndvi": 0.4619,
+      "ndvi_smooth": 0.4496,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-12-22",
+      "ndvi": 0.4031,
+      "ndvi_smooth": 0.4142,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2025-12-23",
+      "ndvi": 0.4224,
+      "ndvi_smooth": 0.424,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-01-02",
+      "ndvi": 0.447,
+      "ndvi_smooth": 0.4232,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-01-10",
+      "ndvi": 0.3853,
+      "ndvi_smooth": 0.4172,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-01-13",
+      "ndvi": 0.4233,
+      "ndvi_smooth": 0.3962,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-01-21",
+      "ndvi": 0.3745,
+      "ndvi_smooth": 0.3941,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-02-05",
+      "ndvi": 0.3681,
+      "ndvi_smooth": 0.3313,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-02-05",
+      "ndvi": 0.3042,
+      "ndvi_smooth": 0.3757,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-02-23",
+      "ndvi": 0.5123,
+      "ndvi_smooth": 0.4449,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-02-27",
+      "ndvi": 0.4873,
+      "ndvi_smooth": 0.5135,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-02-28",
+      "ndvi": 0.5101,
+      "ndvi_smooth": 0.5127,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-03-17",
+      "ndvi": 0.5558,
+      "ndvi_smooth": 0.5404,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-03-26",
+      "ndvi": 0.5694,
+      "ndvi_smooth": 0.6051,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-04-03",
+      "ndvi": 0.6759,
+      "ndvi_smooth": 0.6266,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-04-06",
+      "ndvi": 0.5836,
+      "ndvi_smooth": 0.6212,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-04-08",
+      "ndvi": 0.5762,
+      "ndvi_smooth": 0.5627,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-04-26",
+      "ndvi": 0.4985,
+      "ndvi_smooth": 0.4657,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-04-26",
+      "ndvi": 0.3533,
+      "ndvi_smooth": 0.4273,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-05-14",
+      "ndvi": 0.5259,
+      "ndvi_smooth": 0.4627,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-05-17",
+      "ndvi": 0.5385,
+      "ndvi_smooth": 0.5767,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-06-02",
+      "ndvi": 0.6511,
+      "ndvi_smooth": 0.6405,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-06-04",
+      "ndvi": 0.6782,
+      "ndvi_smooth": 0.6771,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-07-25",
+      "ndvi": 0.5027,
+      "ndvi_smooth": 0.5501,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-08-09",
+      "ndvi": 0.5061,
+      "ndvi_smooth": 0.3948,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-08-27",
+      "ndvi": 0.321,
+      "ndvi_smooth": 0.3706,
+      "reliability": 1,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-08-29",
+      "ndvi": 0.4321,
+      "ndvi_smooth": 0.4579,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-09-18",
+      "ndvi": 0.7459,
+      "ndvi_smooth": 0.7033,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "aqua"
+    },
+    {
+      "date": "2026-09-26",
+      "ndvi": 0.8677,
+      "ndvi_smooth": 0.8769,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-10-11",
+      "ndvi": 0.8998,
+      "ndvi_smooth": 0.913,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    },
+    {
+      "date": "2026-10-31",
+      "ndvi": 0.8368,
+      "ndvi_smooth": 0.8286,
+      "reliability": 0,
+      "flagged": true,
+      "satellite": "terra"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2024-07-20",
+      "end": "2024-08-30",
+      "label": "cloud gap"
+    },
+    {
+      "start": "2026-06-04",
+      "end": "2026-07-25",
+      "label": "cloud gap"
+    }
+  ],
+  "low_veg_windows": [],
+  "qa_pass_share_by_month": {
+    "01": 1.0,
+    "02": 1.0,
+    "03": 1.0,
+    "04": 1.0,
+    "05": 0.833,
+    "06": 0.333,
+    "07": 0.333,
+    "08": 0.833,
+    "09": 0.833,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "window_3x3": [
+    {
+      "date": "2023-11-01",
+      "mean": 0.8436,
+      "min": 0.8277,
+      "max": 0.8691,
+      "n_ok": 9
+    },
+    {
+      "date": "2023-11-17",
+      "mean": 0.7917,
+      "min": 0.7583,
+      "max": 0.81,
+      "n_ok": 9
+    },
+    {
+      "date": "2023-12-03",
+      "mean": 0.5792,
+      "min": 0.5186,
+      "max": 0.6519,
+      "n_ok": 9
+    },
+    {
+      "date": "2023-12-19",
+      "mean": 0.5233,
+      "min": 0.46,
+      "max": 0.6433,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-01-01",
+      "mean": 0.5084,
+      "min": 0.4661,
+      "max": 0.5917,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-01-17",
+      "mean": 0.483,
+      "min": 0.437,
+      "max": 0.5487,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-02-02",
+      "mean": 0.4964,
+      "min": 0.3544,
+      "max": 0.5844,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-02-18",
+      "mean": 0.4671,
+      "min": 0.3152,
+      "max": 0.6353,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-03-05",
+      "mean": 0.6353,
+      "min": 0.5862,
+      "max": 0.68,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-03-21",
+      "mean": 0.671,
+      "min": 0.6352,
+      "max": 0.7279,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-04-06",
+      "mean": 0.8166,
+      "min": 0.7765,
+      "max": 0.8535,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-04-22",
+      "mean": 0.7085,
+      "min": 0.6939,
+      "max": 0.7224,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-05-08",
+      "mean": 0.6068,
+      "min": 0.5337,
+      "max": 0.6892,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-05-24",
+      "mean": 0.676,
+      "min": 0.6434,
+      "max": 0.7477,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-06-25",
+      "mean": 0.7163,
+      "min": 0.7118,
+      "max": 0.7195,
+      "n_ok": 5
+    },
+    {
+      "date": "2024-07-11",
+      "mean": 0.7363,
+      "min": 0.7258,
+      "max": 0.7615,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-07-27",
+      "mean": 0.6594,
+      "min": 0.6468,
+      "max": 0.6794,
+      "n_ok": 3
+    },
+    {
+      "date": "2024-08-28",
+      "mean": 0.4544,
+      "min": 0.2889,
+      "max": 0.5826,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-09-13",
+      "mean": 0.3799,
+      "min": 0.1828,
+      "max": 0.6321,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-09-29",
+      "mean": 0.7893,
+      "min": 0.7434,
+      "max": 0.8285,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-10-15",
+      "mean": 0.8286,
+      "min": 0.8021,
+      "max": 0.8505,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-10-31",
+      "mean": 0.8341,
+      "min": 0.8166,
+      "max": 0.861,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-11-16",
+      "mean": 0.7836,
+      "min": 0.7656,
+      "max": 0.8115,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-12-02",
+      "mean": 0.6065,
+      "min": 0.5832,
+      "max": 0.6406,
+      "n_ok": 9
+    },
+    {
+      "date": "2024-12-18",
+      "mean": 0.5252,
+      "min": 0.4593,
+      "max": 0.5733,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-01-01",
+      "mean": 0.4483,
+      "min": 0.3711,
+      "max": 0.6107,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-01-17",
+      "mean": 0.4369,
+      "min": 0.3522,
+      "max": 0.6039,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-02-02",
+      "mean": 0.3628,
+      "min": 0.2861,
+      "max": 0.485,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-02-18",
+      "mean": 0.4648,
+      "min": 0.3691,
+      "max": 0.5553,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-03-06",
+      "mean": 0.5845,
+      "min": 0.4653,
+      "max": 0.6778,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-03-22",
+      "mean": 0.6541,
+      "min": 0.5416,
+      "max": 0.7477,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-04-07",
+      "mean": 0.6227,
+      "min": 0.46,
+      "max": 0.7126,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-04-23",
+      "mean": 0.6233,
+      "min": 0.5485,
+      "max": 0.6878,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-05-09",
+      "mean": 0.5356,
+      "min": 0.4863,
+      "max": 0.584,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-05-25",
+      "mean": 0.5545,
+      "min": 0.4195,
+      "max": 0.7053,
+      "n_ok": 6
+    },
+    {
+      "date": "2025-06-10",
+      "mean": 0.622,
+      "min": 0.4602,
+      "max": 0.7751,
+      "n_ok": 6
+    },
+    {
+      "date": "2025-08-13",
+      "mean": 0.5054,
+      "min": 0.3485,
+      "max": 0.5881,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-08-29",
+      "mean": 0.4891,
+      "min": 0.379,
+      "max": 0.6633,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-09-14",
+      "mean": 0.7915,
+      "min": 0.744,
+      "max": 0.8441,
+      "n_ok": 5
+    },
+    {
+      "date": "2025-09-30",
+      "mean": 0.88,
+      "min": 0.8349,
+      "max": 0.9066,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-10-16",
+      "mean": 0.8646,
+      "min": 0.8177,
+      "max": 0.8938,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-11-01",
+      "mean": 0.7877,
+      "min": 0.759,
+      "max": 0.8169,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-11-17",
+      "mean": 0.7453,
+      "min": 0.7036,
+      "max": 0.7756,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-12-03",
+      "mean": 0.5315,
+      "min": 0.4619,
+      "max": 0.6604,
+      "n_ok": 9
+    },
+    {
+      "date": "2025-12-19",
+      "mean": 0.4678,
+      "min": 0.399,
+      "max": 0.5741,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-01-01",
+      "mean": 0.453,
+      "min": 0.4176,
+      "max": 0.5729,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-01-17",
+      "mean": 0.4216,
+      "min": 0.3153,
+      "max": 0.5283,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-02-02",
+      "mean": 0.3945,
+      "min": 0.2926,
+      "max": 0.4968,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-02-18",
+      "mean": 0.5657,
+      "min": 0.4873,
+      "max": 0.6346,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-03-06",
+      "mean": 0.657,
+      "min": 0.5558,
+      "max": 0.7614,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-03-22",
+      "mean": 0.6786,
+      "min": 0.5836,
+      "max": 0.7863,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-04-07",
+      "mean": 0.685,
+      "min": 0.5762,
+      "max": 0.7673,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-04-23",
+      "mean": 0.5154,
+      "min": 0.3533,
+      "max": 0.6569,
+      "n_ok": 4
+    },
+    {
+      "date": "2026-05-09",
+      "mean": 0.571,
+      "min": 0.5522,
+      "max": 0.5804,
+      "n_ok": 3
+    },
+    {
+      "date": "2026-05-25",
+      "mean": 0.6483,
+      "min": 0.6229,
+      "max": 0.6788,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-07-28",
+      "mean": 0.6729,
+      "min": 0.5061,
+      "max": 0.8327,
+      "n_ok": 7
+    },
+    {
+      "date": "2026-08-13",
+      "mean": 0.4495,
+      "min": 0.321,
+      "max": 0.7663,
+      "n_ok": 9
+    },
+    {
+      "date": "2026-08-29",
+      "mean": 0.5296,
+      "min": 0.4036,
+      "max": 0.7815,
+      "n_ok": 9
+    }
+  ],
+  "tag": "Observed"
+}

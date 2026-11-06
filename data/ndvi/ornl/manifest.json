@@ -1,0 +1,81 @@
+{
+  "files": {
+    "ctg_anwara_MYD13Q1_0km.csv": {
+      "site_id": "ctg_anwara",
+      "lat": 22.1753,
+      "lon": 91.8846,
+      "product": "MYD13Q1",
+      "km": 0,
+      "bands": [
+        "250m_16_days_NDVI",
+        "250m_16_days_pixel_reliability",
+        "250m_16_days_composite_day_of_the_year"
+      ],
+      "first": null,
+      "nrows": 1,
+      "ncols": 1,
+      "cellsize": 231.656358264,
+      "xllcorner": "9461308.95",
+      "yllcorner": "2465750.28",
+      "sha256": "273d2e597f62d71108deab32d195e00297d48e62716f2b6995ac29f87feaa226"
+    },
+    "ctg_anwara_MOD13Q1_1km.csv": {
+      "site_id": "ctg_anwara",
+      "lat": 22.1753,
+      "lon": 91.8846,
+      "product": "MOD13Q1",
+      "km": 1,
+      "bands": [
+        "250m_16_days_NDVI",
+        "250m_16_days_pixel_reliability"
+      ],
+      "first": "2023-11-01",
+      "nrows": 9,
+      "ncols": 9,
+      "cellsize": 231.656358264,
+      "xllcorner": "9460382.31",
+      "yllcorner": "2464823.69",
+      "sha256": "641371439d086f08c7d9d1252d21094c8816608fd46874d0d2f4627912e96873"
+    },
+    "barind_godagari_MYD13Q1_0km.csv": {
+      "site_id": "barind_godagari",
+      "lat": 24.5248,
+      "lon": 88.4246,
+      "product": "MYD13Q1",
+      "km": 0,
+      "bands": [
+        "250m_16_days_NDVI",
+        "250m_16_days_pixel_reliability",
+        "250m_16_days_composite_day_of_the_year"
+      ],
+      "first": null,
+      "nrows": 1,
+      "ncols": 1,
+      "cellsize": 231.656358264,
+      "xllcorner": "8945178.64",
+      "yllcorner": "2726827.03",
+      "sha256": "efab221acd3d86954f6a14208eb26591e0b31de13c6ac939957268eb81d5d5d7"
+    },
+    "barind_godagari_MOD13Q1_1km.csv": {
+      "site_id": "barind_godagari",
+      "lat": 24.5248,
+      "lon": 88.4246,
+      "product": "MOD13Q1",
+      "km": 1,
+      "bands": [
+        "250m_16_days_NDVI",
+        "250m_16_days_pixel_reliability"
+      ],
+      "first": "2023-11-01",
+      "nrows": 9,
+      "ncols": 9,
+      "cellsize": 231.656358264,
+      "xllcorner": "8944252.03",
+      "yllcorner": "2725900.33",
+      "sha256": "d1b97e49d006307a213cbf2c030883f48d1f5bb902aa49135939b66ce02a3d80"
+    }
+  },
+  "route": "ornl",
+  "service": "https://modis.ornl.gov/rst/api/v1",
+  "accessed": "2026-11-06"
+}

@@ -1,0 +1,432 @@
+{
+  "schema_version": "1.0",
+  "site_id": "barind_godagari",
+  "season": "boro",
+  "decision_date": "2026-11-13",
+  "years_tested": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "k": 5,
+  "predictand": "Boro peak-window NDVI (day of year 33–64) minus the training-year trend; matched on the 60 days before 13 Nov each year",
+  "ss_mse": -0.3109,
+  "mse_analog": 0.008764,
+  "mse_clim": 0.006686,
+  "ss_mse_euclid": -0.323,
+  "anomaly_corr": -0.2664,
+  "tercile_hit_rate": 0.2917,
+  "beat_clim_count": 10,
+  "sign_test_p": 0.8463,
+  "permutation_p": 0.8711,
+  "n_permutations": 1000,
+  "calibration_bins": [
+    {
+      "agree_count": 3,
+      "n": 13,
+      "hit_rate": 0.5385
+    },
+    {
+      "agree_count": 4,
+      "n": 10,
+      "hit_rate": 0.4
+    },
+    {
+      "agree_count": 5,
+      "n": 1,
+      "hit_rate": 1.0
+    }
+  ],
+  "verdict_text": "No demonstrable skill: MSE skill score -0.311 against the plain average over 24 Boro seasons (2001–2024), permutation p = 0.871. The analog years are shown as historical examples only.",
+  "excluded_years": [],
+  "years": [
+    {
+      "year": 2001,
+      "ndvi_anomaly": 0.0275,
+      "predicted": -0.0245,
+      "analog_years": [
+        2017,
+        2011,
+        2024,
+        2007,
+        2003
+      ],
+      "agree_count": 4,
+      "beat_clim": false
+    },
+    {
+      "year": 2002,
+      "ndvi_anomaly": 0.1022,
+      "predicted": 0.0291,
+      "analog_years": [
+        2004,
+        2021,
+        2018,
+        2014,
+        2006
+      ],
+      "agree_count": 5,
+      "beat_clim": true
+    },
+    {
+      "year": 2003,
+      "ndvi_anomaly": -0.0082,
+      "predicted": -0.0251,
+      "analog_years": [
+        2009,
+        2011,
+        2007,
+        2017,
+        2012
+      ],
+      "agree_count": 3,
+      "beat_clim": false
+    },
+    {
+      "year": 2004,
+      "ndvi_anomaly": 0.0197,
+      "predicted": 0.0198,
+      "analog_years": [
+        2002,
+        2021,
+        2007,
+        2011,
+        2001
+      ],
+      "agree_count": 3,
+      "beat_clim": true
+    },
+    {
+      "year": 2005,
+      "ndvi_anomaly": -0.041,
+      "predicted": -0.0533,
+      "analog_years": [
+        2010,
+        2020,
+        2008,
+        2023,
+        2003
+      ],
+      "agree_count": 4,
+      "beat_clim": true
+    },
+    {
+      "year": 2006,
+      "ndvi_anomaly": -0.0071,
+      "predicted": -0.0065,
+      "analog_years": [
+        2024,
+        2002,
+        2021,
+        2020,
+        2008
+      ],
+      "agree_count": 3,
+      "beat_clim": true
+    },
+    {
+      "year": 2007,
+      "ndvi_anomaly": -0.0125,
+      "predicted": -0.0253,
+      "analog_years": [
+        2011,
+        2009,
+        2012,
+        2015,
+        2017
+      ],
+      "agree_count": 3,
+      "beat_clim": false
+    },
+    {
+      "year": 2008,
+      "ndvi_anomaly": -0.1114,
+      "predicted": 0.0234,
+      "analog_years": [
+        2023,
+        2014,
+        2017,
+        2020,
+        2018
+      ],
+      "agree_count": 4,
+      "beat_clim": false
+    },
+    {
+      "year": 2009,
+      "ndvi_anomaly": -0.1173,
+      "predicted": -0.0144,
+      "analog_years": [
+        2011,
+        2007,
+        2003,
+        2012,
+        2015
+      ],
+      "agree_count": 3,
+      "beat_clim": true
+    },
+    {
+      "year": 2010,
+      "ndvi_anomaly": -0.1565,
+      "predicted": -0.0334,
+      "analog_years": [
+        2005,
+        2020,
+        2003,
+        2023,
+        2008
+      ],
+      "agree_count": 4,
+      "beat_clim": true
+    },
+    {
+      "year": 2011,
+      "ndvi_anomaly": -0.0843,
+      "predicted": -0.0076,
+      "analog_years": [
+        2007,
+        2009,
+        2017,
+        2012,
+        2003
+      ],
+      "agree_count": 3,
+      "beat_clim": true
+    },
+    {
+      "year": 2012,
+      "ndvi_anomaly": 0.0814,
+      "predicted": -0.047,
+      "analog_years": [
+        2009,
+        2007,
+        2011,
+        2015,
+        2003
+      ],
+      "agree_count": 4,
+      "beat_clim": false
+    },
+    {
+      "year": 2013,
+      "ndvi_anomaly": 0.1775,
+      "predicted": -0.0385,
+      "analog_years": [
+        2010,
+        2005,
+        2003,
+        2023,
+        2020
+      ],
+      "agree_count": 4,
+      "beat_clim": false
+    },
+    {
+      "year": 2014,
+      "ndvi_anomaly": 0.0635,
+      "predicted": -0.0143,
+      "analog_years": [
+        2008,
+        2017,
+        2023,
+        2018,
+        2002
+      ],
+      "agree_count": 3,
+      "beat_clim": false
+    },
+    {
+      "year": 2015,
+      "ndvi_anomaly": 0.0187,
+      "predicted": -0.0164,
+      "analog_years": [
+        2007,
+        2016,
+        2009,
+        2011,
+        2012
+      ],
+      "agree_count": 3,
+      "beat_clim": false
+    },
+    {
+      "year": 2016,
+      "ndvi_anomaly": 0.045,
+      "predicted": -0.0057,
+      "analog_years": [
+        2019,
+        2015,
+        2007,
+        2009,
+        2012
+      ],
+      "agree_count": 3,
+      "beat_clim": false
+    },
+    {
+      "year": 2017,
+      "ndvi_anomaly": 0.0714,
+      "predicted": -0.0213,
+      "analog_years": [
+        2014,
+        2011,
+        2008,
+        2001,
+        2007
+      ],
+      "agree_count": 3,
+      "beat_clim": false
+    },
+    {
+      "year": 2018,
+      "ndvi_anomaly": 0.0217,
+      "predicted": 0.0239,
+      "analog_years": [
+        2014,
+        2002,
+        2021,
+        2008,
+        2022
+      ],
+      "agree_count": 4,
+      "beat_clim": true
+    },
+    {
+      "year": 2019,
+      "ndvi_anomaly": -0.0159,
+      "predicted": -0.0077,
+      "analog_years": [
+        2016,
+        2015,
+        2009,
+        2007,
+        2003
+      ],
+      "agree_count": 3,
+      "beat_clim": true
+    },
+    {
+      "year": 2020,
+      "ndvi_anomaly": 0.1025,
+      "predicted": -0.0626,
+      "analog_years": [
+        2005,
+        2008,
+        2023,
+        2010,
+        2014
+      ],
+      "agree_count": 4,
+      "beat_clim": false
+    },
+    {
+      "year": 2021,
+      "ndvi_anomaly": 0.0355,
+      "predicted": 0.0385,
+      "analog_years": [
+        2002,
+        2018,
+        2004,
+        2006,
+        2014
+      ],
+      "agree_count": 4,
+      "beat_clim": true
+    },
+    {
+      "year": 2022,
+      "ndvi_anomaly": 0.0095,
+      "predicted": -0.0022,
+      "analog_years": [
+        2018,
+        2023,
+        2014,
+        2012,
+        2008
+      ],
+      "agree_count": 3,
+      "beat_clim": false
+    },
+    {
+      "year": 2023,
+      "ndvi_anomaly": -0.0991,
+      "predicted": 0.0093,
+      "analog_years": [
+        2008,
+        2014,
+        2017,
+        2020,
+        2003
+      ],
+      "agree_count": 3,
+      "beat_clim": false
+    },
+    {
+      "year": 2024,
+      "ndvi_anomaly": -0.1307,
+      "predicted": 0.0456,
+      "analog_years": [
+        2006,
+        2001,
+        2020,
+        2017,
+        2002
+      ],
+      "agree_count": 4,
+      "beat_clim": false
+    }
+  ],
+  "flagged_years": [
+    {
+      "year": 2025,
+      "ndvi_anomaly": -0.0548,
+      "predicted": 0.0327,
+      "analog_years": [
+        2021,
+        2002,
+        2006,
+        2018,
+        2004
+      ],
+      "agree_count": 4,
+      "beat_clim": false
+    },
+    {
+      "year": 2026,
+      "ndvi_anomaly": -0.1249,
+      "predicted": -0.0052,
+      "analog_years": [
+        2014,
+        2018,
+        2008,
+        2023,
+        2017
+      ],
+      "agree_count": 3,
+      "beat_clim": true
+    }
+  ],
+  "tag": "Derived"
+}
