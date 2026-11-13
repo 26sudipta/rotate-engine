@@ -1,0 +1,19 @@
+{
+  "name": "rotate-server",
+  "version": "1.0.0",
+  "description": "ROTATE climate-resilient crop rotation intelligence - API server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1"
+  }
+}

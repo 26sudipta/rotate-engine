@@ -1,6 +1,6 @@
 # Data sources (draft)
 
-Draft from the engine, started in Step 2 (5 Nov 2026) and updated through Step 15 (6 Nov 2026). The storyteller owns the final version. Every value below comes from the saved responses in `data/`, not from memory. What each source feeds in the engine is summarised in `docs/ENGINE.md` → "Data sources".
+Draft from the engine (Step 2, 5 Nov 2026). The storyteller owns the final version. Every value below comes from the saved responses in `data/raw/`, not from memory.
 
 ## NASA POWER, daily point (Agroclimatology)
 
@@ -51,12 +51,12 @@ This affects the matching method. It goes in the limits panel and in `docs/ENGIN
   T2M_MIN shows no step.
 
 - **GWETROOT (root-zone soil wetness) follows the same breaks** (Sep–Nov mean, found 6 Nov 2026):
-
+  
   |          | 1981–96 | 1997–2014 | 2015 on |
   | -------- | ------- | --------- | ------- |
   | Anwara   | 0.56    | 0.84      | 0.94    |
   | Godagari | 0.48    | 0.71      | 0.75    |
-
+  
   It is model output driven by the model's rain, so Anwara's 2015 rain jump carries into it.
 
 - **Consequence:** years before about 1998 are not comparable with later years, and Anwara rain and soil wetness are not comparable across 2015.
