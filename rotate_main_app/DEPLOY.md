@@ -1,34 +1,20 @@
-# Demo deployment
+# Free demo deployment
 
-The demo is deployed as two services:
+The judge demo can run as a **single free Vercel frontend**. The client includes local demonstration data and falls back to it when the optional Express API is unavailable, so no paid backend service is needed.
 
-1. **API:** Render Web Service from the repository root, using `render.yaml`.
-2. **Frontend:** Vercel project rooted at `rotate_main_app/client`.
+## Vercel
 
-## Render API
+1. Push the repository to GitHub.
+2. Open [vercel.com](https://vercel.com) and sign in with GitHub.
+3. Import `26sudipta/rotate-engine`.
+4. Set **Root Directory** to:
 
-Connect the GitHub repository in Render and apply the `render.yaml` blueprint. The service uses:
+   ```text
+   rotate_main_app/client
+   ```
 
-- Build command: `npm ci`
-- Start command: `npm start`
-- Health check: `/api/health`
+5. Keep the framework as **Vite** and deploy.
 
-After the service is created, copy its public URL, for example:
+No environment variable is required for the free demo. The `vercel.json` rewrite keeps React Router routes working on direct navigation and refresh.
 
-```text
-https://rotate-api.onrender.com
-```
-
-## Vercel frontend
-
-Create a Vercel project from the same repository with **Root Directory** set to `rotate_main_app/client`.
-
-Set this production environment variable before deploying:
-
-```text
-VITE_API_URL=https://rotate-api.onrender.com/api
-```
-
-The `vercel.json` rewrite keeps React Router routes working on direct navigation and refresh.
-
-This deployment uses the current demonstration dataset from the Express API. The frontend is not yet wired to the Python engine contract.
+The deployed demo uses the current illustrative/mock dataset. The Express API remains available for local development, but is not required for the public demo. The frontend is not yet wired to the Python engine contract.

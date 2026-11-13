@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, FlaskConical, TriangleAlert, SearchX } from "lucide-react";
 import { api } from "../services/api.js";
+import { crops as fallbackCrops } from "../data/mockCrops.js";
 
 const roles = ["All", "Cereal", "Legume", "Oilseed", "Fiber"];
 
@@ -21,7 +22,7 @@ export default function Crops() {
   const [role, setRole] = useState("All");
 
   useEffect(() => {
-    api.getCrops().then(setCrops).catch((e) => setError(e.message));
+    api.getCrops().then(setCrops).catch(() => setCrops(fallbackCrops));
   }, []);
 
   const filtered = useMemo(() => {
