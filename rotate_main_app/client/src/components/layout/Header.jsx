@@ -28,10 +28,10 @@ export default function Header() {
     <header className="sticky top-0 z-50">
       <div className="bg-forest-deep text-white">
         <div className="mx-auto flex h-9 max-w-[1280px] items-center justify-between px-6 text-[12.5px]">
-          <span className="hidden text-white/80 sm:block">Prototype for NASA Space Apps Challenge 2026 · not affiliated with NASA</span>
+          <span className="hidden text-white/80 sm:block">Explore historical climate analogs for Bangladesh farms</span>
           <div className="ml-auto flex items-center gap-4 sm:gap-5">
             <span className="flex items-center gap-1.5"><MapPin size={13} className="text-sun" />{selectedLocation.name}</span>
-            <span className="flex items-center gap-1.5"><Radio size={13} className="text-sun" />Demo data</span>
+            <span className="flex items-center gap-1.5"><Radio size={13} className="text-sun" />Engine output</span>
           </div>
         </div>
       </div>

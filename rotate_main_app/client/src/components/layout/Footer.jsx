@@ -28,7 +28,7 @@ export default function Footer({ flush = false }) {
             <span className="font-display text-[26px] font-bold leading-none">ROTATE</span>
           </div>
           <p className="mt-4 max-w-sm text-[14.5px] leading-relaxed text-white/75">
-            A decision-support prototype connecting climate observations, historical analogs, crop-rotation characteristics and scenario analysis for Bangladesh farmland.
+            ROTATE helps farmers and local experts explore crop-rotation options using cached NASA observations, local information and cited crop rules.
           </p>
         </div>
         <div>
@@ -48,9 +48,9 @@ export default function Footer({ flush = false }) {
           </ul>
         </div>
         <div className="card-dashed card-dashed-light rounded-[26px] bg-white/[0.06] p-6">
-          <div className="flex items-center gap-2 text-sun"><FlaskConical size={17} /><span className="font-script text-[22px] leading-none">Prototype notice</span></div>
+        <div className="flex items-center gap-2 text-sun"><FlaskConical size={17} /><span className="font-script text-[22px] leading-none">Use with local expertise</span></div>
           <p className="mt-3 text-[13.5px] leading-relaxed text-white/75">
-            Values labelled “Demonstration dataset” are illustrative. They are not NASA measurements or validated crop recommendations.
+          ROTATE compares historical examples; it does not forecast the season or replace agricultural advice. Every card needs local review.
           </p>
         </div>
       </div>

@@ -38,7 +38,7 @@ export default function Crops() {
     <div className="mx-auto max-w-[1240px] px-6 py-14">
       <div className="flex items-start gap-3 rounded-2xl border border-clay/30 bg-clay-soft p-4 text-[13.5px] text-ink">
         <FlaskConical size={18} className="mt-0.5 shrink-0 text-clay" />
-        <p>Crop profiles are illustrative placeholders for the prototype, not validated agronomic data. They exist so real crop-rotation information can replace them without changing the interface.</p>
+        <p>Crop benefits and risks are local agronomic information from the cited rule table, not NASA observations. Named varieties require source review before use in a farm decision.</p>
       </div>
 
       <div className="mt-8 flex flex-wrap items-center justify-between gap-4">

@@ -37,7 +37,7 @@ export default function Scenario() {
       .sort((a, b) => b.suitability.suitability - a.suitability.suitability);
   }, [strategies, scenario, priorities]);
 
-  const recommended = results[0];
+  const leadingOption = results[0];
 
   const handleScenarioChange = (key, value) => {
     setScenario({ ...scenario, [key]: value });
@@ -91,37 +91,37 @@ export default function Scenario() {
           title="Precipitation"
           unit="mm"
           data={[{ label: selectedLocation.name, current: baseline.precipitationMm, scenario: projectedPrecipitation }]}
-          note="Baseline demonstration value adjusted by the rainfall slider."
+          note="Scenario value adjusted from the contextual baseline; it is not an observation."
         />
         <BaselineScenarioChart
           title="Soil moisture"
           unit="%"
           data={[{ label: selectedLocation.name, current: baseline.soilMoisturePct, scenario: projectedMoisture }]}
-          note="Prototype assumption: moisture moves at half the rainfall change."
+          note="Scenario assumption for exploration only; it is not a field measurement."
         />
         <BaselineScenarioChart
           title="Strategy suitability"
           domain={[0, 100]}
           data={results.map((r) => ({ label: r.name.replace("Strategy ", "") , current: r.noChangeScore, scenario: r.suitability.suitability }))}
-          note="Scenario score uses the prototype formula (see Methodology)."
+          note="Scenario comparison is labelled Scenario and is not a forecast."
         />
       </div>
 
-      {recommended && (
+      {leadingOption && (
         <div className="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[24px] border border-paddy/30 bg-crop-soft/40 p-5">
-            <p className="text-[12px] font-medium text-paddy">Recommended Strategy to Explore</p>
+            <p className="text-[12px] font-medium text-paddy">Leading option to compare</p>
             <h2 className="mt-1 font-display text-[18px] font-semibold text-ink">
-              {recommended.name} — {recommended.label}
+              {leadingOption.name} — {leadingOption.label}
             </h2>
             <p className="mt-1 text-[13px] text-ink-soft">
-              Scenario suitability score: <span className="font-mono text-ink">{recommended.suitability.suitability}</span> / 100
-              <span className="ml-1 text-[11px] text-clay">(prototype analysis)</span>
+              Scenario comparison score: <span className="font-mono text-ink">{leadingOption.suitability.suitability}</span> / 100
+              <span className="ml-1 text-[11px] text-clay">(Scenario, not a forecast)</span>
             </p>
             <button
               type="button"
               onClick={() => {
-                setSelectedStrategyId(recommended.id);
+                setSelectedStrategyId(leadingOption.id);
                 navigate("/results");
               }}
               className="mt-4 inline-flex items-center gap-2 rounded-md bg-paddy px-5 py-2.5 text-[13px] font-medium text-white hover:bg-paddy-light"
@@ -130,7 +130,7 @@ export default function Scenario() {
               <ArrowRight size={14} />
             </button>
           </div>
-          <ProjectionChart projection={recommended.projection} />
+          <ProjectionChart projection={leadingOption.projection} />
         </div>
       )}
     </div>

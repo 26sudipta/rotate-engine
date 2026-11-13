@@ -36,7 +36,7 @@ export default function FarmAnalysis() {
         <div className="rounded-[24px] border border-border bg-surface-raised p-5">
           <div className="flex items-center justify-between">
             <h3 className="font-display text-[16px] font-semibold text-ink">Plot summary</h3>
-            <DataSourceBadge source="demo" />
+            <DataSourceBadge source="context" />
           </div>
           <dl className="mt-4 space-y-3 text-[13px]">
             <div className="flex justify-between border-b border-border/70 pb-3">

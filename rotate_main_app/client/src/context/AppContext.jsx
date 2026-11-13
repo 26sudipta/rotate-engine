@@ -20,7 +20,7 @@ export function AppProvider({ children }) {
   const [analysisStatus, setAnalysisStatus] = useState("idle"); // idle | analyzing | ready
   const [priorities, setPriorities] = useState(DEFAULT_PRIORITIES);
   const [scenario, setScenario] = useState(DEFAULT_SCENARIO);
-  const [selectedStrategyId, setSelectedStrategyId] = useState("strategy-b");
+  const [selectedStrategyId, setSelectedStrategyId] = useState("existing");
 
   const selectedLocation = useMemo(
     () => fallbackLocations.find((l) => l.id === selectedLocationId) || fallbackLocations[0],

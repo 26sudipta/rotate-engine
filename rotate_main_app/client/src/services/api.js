@@ -4,7 +4,7 @@
 
 const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:4000/api";
 
-export { loadEngineStrategies } from "./engineAdapter.js";
+export { loadEngineSnapshot, loadEngineStrategies } from "./engineAdapter.js";
 
 async function request(path, options = {}) {
   const response = await fetch(`${BASE_URL}${path}`, {

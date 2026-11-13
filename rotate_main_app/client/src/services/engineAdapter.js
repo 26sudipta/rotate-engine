@@ -64,3 +64,11 @@ export async function loadEngineStrategies(locationId) {
     cardSet,
   };
 }
+
+export async function loadEngineSnapshot(locationId) {
+  const file = ENGINE_FILES[locationId];
+  if (!file) return null;
+  const response = await fetch(`/engine/${file}`);
+  if (!response.ok) throw new Error(`Engine snapshot request failed (${response.status})`);
+  return response.json();
+}

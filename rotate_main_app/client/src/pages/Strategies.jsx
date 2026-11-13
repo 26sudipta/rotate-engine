@@ -81,7 +81,7 @@ export default function Strategies() {
 
       {selectedStrategy && (
         <div className="mt-8 rounded-[24px] border border-paddy/30 bg-crop-soft/40 p-5">
-          <p className="text-[12px] font-medium text-paddy">Recommended Strategy to Explore</p>
+          <p className="text-[12px] font-medium text-paddy">Option selected for comparison</p>
           <h2 className="mt-1 font-display text-[19px] font-semibold text-ink">
             {selectedStrategy.name} — {selectedStrategy.label}
           </h2>
@@ -96,7 +96,7 @@ export default function Strategies() {
             onClick={() => navigate("/results")}
             className="mt-4 inline-flex items-center gap-2 rounded-md bg-paddy px-5 py-2.5 text-[13px] font-medium text-white hover:bg-paddy-light"
           >
-            View recommendation summary
+            Review evidence and local-review needs
             <ArrowRight size={14} />
           </button>
         </div>

@@ -7,16 +7,18 @@ import DataSourceBadge from "../components/DataSourceBadge.jsx";
 import { useApp } from "../context/AppContext.jsx";
 import { getHistoricalSeries } from "../data/mockHistorical.js";
 import { getCurrentConditions } from "../data/mockClimate.js";
-import { api } from "../services/api.js";
+import { api, loadEngineSnapshot } from "../services/api.js";
 
 export default function HistoricalAnalog() {
   const { selectedLocationId, selectedLocation } = useApp();
   const [historical, setHistorical] = useState(null);
   const [current, setCurrent] = useState(null);
+  const [engine, setEngine] = useState(null);
 
   useEffect(() => {
     api.getHistorical(selectedLocationId).catch(() => getHistoricalSeries(selectedLocationId)).then(setHistorical);
     api.getClimate(selectedLocationId).catch(() => getCurrentConditions(selectedLocationId)).then(setCurrent);
+    loadEngineSnapshot(selectedLocationId).then(setEngine).catch(() => setEngine(null));
   }, [selectedLocationId]);
 
   if (!historical || !current) {
@@ -36,10 +38,37 @@ export default function HistoricalAnalog() {
   return (
     <div className="mx-auto max-w-[1200px] px-6 py-8">
       <div className="flex justify-end">
-        <DataSourceBadge source="demo" />
+        <DataSourceBadge source="engine" />
       </div>
 
       <div className="mt-6">
+        {engine && (
+          <div className="mb-5 rounded-[24px] border border-paddy/30 bg-crop-soft/40 p-5">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="text-[12px] font-semibold uppercase tracking-wide text-paddy">ROTATE engine output</p>
+                <h2 className="mt-1 font-display text-[20px] font-semibold text-ink">
+                  {engine.window.start} to {engine.window.end}: five historical analog seasons
+                </h2>
+              </div>
+              <span className="rounded-full bg-white px-3 py-1 text-[12px] font-medium text-paddy">
+                {engine.confidence?.agree_count} of {engine.confidence?.k} agree
+              </span>
+            </div>
+            <p className="mt-3 text-[13px] leading-relaxed text-ink-soft">{engine.confidence?.sentence}</p>
+            <div className="mt-4 grid gap-2 sm:grid-cols-5">
+              {engine.analogs.weather_pool.map((analog) => (
+                <div key={analog.year} className="rounded-lg border border-border bg-white p-3 text-center">
+                  <p className="font-mono text-[16px] font-semibold text-ink">{analog.year}</p>
+                  <p className="mt-1 text-[11px] text-ink-soft">rank {analog.rank} · D {analog.distance}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-3 text-[11px] text-ink-soft">
+              Historical examples only. This engine output does not forecast the coming season.
+            </p>
+          </div>
+        )}
         <HistoricalTimeline series={historical.series} analogYear={historical.closestAnalogYear} />
       </div>
 
@@ -56,7 +85,7 @@ export default function HistoricalAnalog() {
             {historical.closestAnalog.precipitationMm} mm · {historical.closestAnalog.temperatureC}°C ·{" "}
             {historical.closestAnalog.soilMoisturePct}% moisture
           </p>
-          <p className="mt-1 text-[11px] text-clay">Demonstration result</p>
+          <p className="mt-1 text-[11px] text-clay">Contextual chart; engine analogs are shown above</p>
         </div>
       </div>
 

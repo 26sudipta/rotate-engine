@@ -12,7 +12,7 @@ export default function HistoricalTimeline({ series, analogYear }) {
     <div className="rounded-lg border border-border bg-surface p-4">
       <div className="mb-1 flex items-center justify-between text-[12px] text-ink-soft">
         <span>{minYear}</span>
-        <span>{maxYear - minYear + 1}-year demonstration timeline</span>
+        <span>{maxYear - minYear + 1}-year contextual timeline</span>
         <span>{maxYear}</span>
       </div>
       <div className="relative h-2 rounded-full bg-canvas">
@@ -24,8 +24,7 @@ export default function HistoricalTimeline({ series, analogYear }) {
         />
       </div>
       <p className="mt-2 text-[12px] text-ink-soft">
-        Marker indicates the year in this demonstration series whose conditions most closely
-        resemble current conditions.
+        This contextual chart is separate from the engine's five-year analog output shown above.
       </p>
     </div>
   );

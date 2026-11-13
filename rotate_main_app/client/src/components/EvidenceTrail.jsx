@@ -7,25 +7,25 @@ const steps = [
     icon: Satellite,
     title: "NASA Earth Observations",
     body:
-      "Structured to accept precipitation, temperature, soil moisture, and salinity signals from NASA Earth Observation sources. This prototype uses demonstration values in their place.",
+      "NASA POWER observations provide the cached weather window. MODIS NDVI describes vegetation in the area around the field (250 m); it does not measure field-level salinity.",
   },
   {
     icon: LineChart,
     title: "Climate Pattern Analysis",
     body:
-      "Current conditions are compared against a historical timeline to identify the closest climate analog year, giving context for how conditions have shifted.",
+      "ROTATE compares the 60 days before the decision date with comparable past Boro seasons using transparent analog matching.",
   },
   {
     icon: Sprout,
     title: "Crop & Rotation Characteristics",
     body:
-      "Each candidate rotation carries indicator scores for water demand, soil recovery, salinity resilience, and yield stability, based on example agronomic profiles.",
+      "Rotation benefits and risks come from the cited crop rule table. Salinity class, priorities, and constraints are local information supplied by the user.",
   },
   {
     icon: FlaskConical,
     title: "Scenario Result",
     body:
-      "A deterministic prototype formula combines climate signals, crop characteristics, and stated priorities into a single suitability score for the current scenario.",
+      "The output keeps Observed NASA values, Derived ROTATE calculations, and Scenario what-if values separate. Every card needs local review.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function EvidenceTrail() {
         onClick={() => setOpen((v) => !v)}
         className="flex w-full items-center justify-between px-5 py-4 text-left"
       >
-        <span className="font-display text-[15px] font-semibold text-ink">Why this strategy?</span>
+        <span className="font-display text-[15px] font-semibold text-ink">How ROTATE reached this comparison</span>
         <motion.span animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.2 }}>
           <ChevronDown size={17} className="text-ink-soft" />
         </motion.span>

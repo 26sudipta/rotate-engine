@@ -7,7 +7,7 @@ export default function ClimateOverview({ climate, loading }) {
     <div className="rounded-[24px] border border-border bg-surface-raised p-5">
       <div className="mb-4 flex items-center justify-between">
         <h3 className="font-display text-[17px] font-semibold text-ink">Current Conditions</h3>
-        <DataSourceBadge source="demo" />
+        <DataSourceBadge source="context" />
       </div>
 
       {loading || !climate ? (
@@ -26,8 +26,8 @@ export default function ClimateOverview({ climate, loading }) {
       )}
 
       <p className="mt-4 text-[12px] leading-relaxed text-ink-soft">
-        Values shown are illustrative demonstration data for this prototype, not live NASA
-        satellite measurements.
+        POWER values are cached reanalysis/model output, not field measurements. The engine's
+        decision window and analog evidence are shown on the Historical Analog page.
       </p>
     </div>
   );

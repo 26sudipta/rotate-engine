@@ -14,9 +14,9 @@ function getBanner(pathname, locationName) {
     ["/historical", { title: "Historical Analog", subtitle: `Compare current environmental conditions with historical climate patterns for ${locationName}.`, crumbs: ["Historical Analog"] }],
     ["/strategies", { title: "Crop Rotation Strategies", subtitle: "Compare example rotations and weight what matters most to you.", crumbs: ["Strategies"] }],
     ["/scenario", { title: "What If?", subtitle: "Explore how environmental changes could affect crop-rotation strategies.", crumbs: ["What If?"] }],
-    ["/results", { title: "Results", subtitle: "Final recommendation and how it was reached.", crumbs: ["Results"] }],
-    ["/crops", { title: "Crop Library", subtitle: "Example crop profiles used by the prototype scoring model.", crumbs: ["Crop Library"] }],
-    ["/methodology", { title: "Methodology", subtitle: "How scores are calculated and how real data will plug in.", crumbs: ["Methodology"] }],
+    ["/results", { title: "Comparison", subtitle: "Review the evidence, trade-offs and local-review needs.", crumbs: ["Results"] }],
+    ["/crops", { title: "Crop Library", subtitle: "Crop traits and cited rule-table information used in comparisons.", crumbs: ["Crop Library"] }],
+    ["/methodology", { title: "Methodology", subtitle: "How NASA observations, local information and ROTATE reasoning stay separate.", crumbs: ["Methodology"] }],
     ["/contact", { title: "Contact", subtitle: "Questions, feedback or collaboration ideas.", crumbs: ["Contact"] }],
   ];
   for (const [pattern, banner] of rules) {

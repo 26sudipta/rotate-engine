@@ -19,19 +19,19 @@ import { strategies } from "../data/mockStrategies.js";
 import { calculateSuitability } from "../utils/scenarioModel.js";
 
 const stats = [
-  ["6", "Demo locations across Bangladesh"],
-  ["40", "Years in the demo climate timeline"],
-  ["4", "Indicators scored per rotation"],
-  ["3", "Example crop rotations to compare"],
+  ["2", "Cached ROTATE sites"],
+  ["60", "Days matched before the decision"],
+  ["5", "Historical analog seasons"],
+  ["3", "Rotation cards to compare"],
 ];
 
 const features = [
-  { icon: Satellite, title: "Observation-ready", body: "The data layer is built so NASA Earth Observation feeds can replace the demonstration dataset without touching the UI." },
-  { icon: History, title: "Historical analogs", body: "Compare today's precipitation, temperature and soil moisture with a multi-decade timeline to find the closest matching year." },
-  { icon: Scale, title: "Priority-weighted ranking", body: "Drag the priority sliders and watch strategies re-rank using a calculation driven by your weights." },
-  { icon: CloudRain, title: "What-If scenarios", body: "Shift rainfall and soil salinity and see suitability and a three-year projection update instantly." },
-  { icon: Waypoints, title: "Explainable evidence trail", body: "Every recommendation expands into a step-by-step trail from observations to the scenario result." },
-  { icon: FlaskConical, title: "Transparent about data", body: "Demonstration values are labelled wherever they appear, so no placeholder is mistaken for a measurement." },
+  { icon: Satellite, title: "NASA observations", body: "Cached NASA POWER weather and MODIS NDVI are shown as observed inputs, with their limits made explicit." },
+  { icon: History, title: "Historical analogs", body: "The engine matches the 60 days before the decision date with comparable past Boro seasons." },
+  { icon: Scale, title: "Transparent reasoning", body: "Ledoit-Wolf analog distance, weighted agreement and chance rates are part of the output." },
+  { icon: CloudRain, title: "What-if scenarios", body: "Change the input window as a labelled Scenario; ROTATE never presents it as observed weather." },
+  { icon: Waypoints, title: "Evidence trail", body: "Observed, Derived and Scenario tags keep NASA data, local information and ROTATE reasoning separate." },
+  { icon: FlaskConical, title: "Local review first", body: "Cards compare options; they do not choose what to plant and every card needs local review." },
 ];
 
 const steps = [
@@ -47,7 +47,7 @@ const views = [
   { to: "/strategies", icon: Sprout, title: "Strategies", body: "Compare rotations and re-rank by priority." },
   { to: "/scenario", icon: CloudRain, title: "What If?", body: "Scenario sliders and a three-year projection." },
   { to: "/crops", icon: BookOpenText, title: "Crop Library", body: "Example crop profiles and rotation roles." },
-  { to: "/methodology", icon: Beaker, title: "Methodology", body: "How scores work and how real data plugs in." },
+  { to: "/methodology", icon: Beaker, title: "Methodology", body: "How observations, local information and ROTATE reasoning stay separate." },
 ];
 
 function HistoryPreview() {
@@ -56,7 +56,7 @@ function HistoryPreview() {
     <div className="card-dashed rounded-[28px] bg-cream p-7">
       <div className="flex items-center justify-between">
         <span className="flex items-center gap-1.5 text-[13px] font-semibold text-ink"><MapPin size={14} className="text-leaf-dark" />Coastal Chattogram</span>
-        <span className="rounded-full bg-clay-soft px-2.5 py-1 text-[11px] font-semibold text-clay">Demonstration data</span>
+        <span className="rounded-full bg-crop-soft px-2.5 py-1 text-[11px] font-semibold text-forest">Contextual climate view</span>
       </div>
       <p className="mt-3 font-display text-[15px] font-bold text-ink">Precipitation, 40-year timeline</p>
       <div className="mt-2 h-[220px]">
@@ -71,7 +71,7 @@ function HistoryPreview() {
           </LineChart>
         </ResponsiveContainer>
       </div>
-      <p className="mt-1 text-[12.5px] text-ink-soft">Yellow marker: closest analog year in this demo series ({closestAnalogYear}).</p>
+      <p className="mt-1 text-[12.5px] text-ink-soft">Yellow marker: closest analog in the contextual timeline ({closestAnalogYear}).</p>
     </div>
   );
 }
@@ -116,7 +116,7 @@ function ScenarioPreview() {
           </div>
         ))}
       </div>
-      <p className="mt-4 text-[12px] text-white/65">Prototype calculation on demonstration indicators.</p>
+      <p className="mt-4 text-[12px] text-white/65">Scenario values are labelled and are not a forecast.</p>
     </div>
   );
 }
@@ -142,7 +142,7 @@ export default function Landing() {
               <PillButton to="/scenario" variant="outline" icon={ArrowRight}>Try a What If? scenario</PillButton>
             </div>
             <div className="mt-8 flex flex-wrap gap-2 text-[12.5px] font-semibold">
-              <span className="rounded-full bg-clay-soft px-3 py-1.5 text-clay">Runs on a demonstration dataset</span>
+              <span className="rounded-full bg-crop-soft px-3 py-1.5 text-forest">Cached engine outputs for offline demo</span>
               <span className="rounded-full bg-crop-soft px-3 py-1.5 text-forest">NASA Space Apps Challenge 2026</span>
             </div>
           </div>
@@ -156,7 +156,8 @@ export default function Landing() {
         <div className="mx-auto flex max-w-[1240px] items-center gap-6 px-6 pb-14 pt-6">
           <span className="hidden h-[84px] w-[84px] shrink-0 items-center justify-center rounded-full bg-sun text-forest sm:flex"><FlaskConical size={34} /></span>
           <p className="font-script text-[27px] leading-[1.15] text-ink">
-            Hello! ROTATE is a research prototype. Every value shown comes from a clearly labelled demonstration dataset until real NASA Earth Observation data is connected — so please explore the trade-offs, not the exact numbers.
+            ROTATE helps you compare historical examples with NASA observations and cited crop
+            rules. It does not forecast the season or replace local agricultural expertise.
           </p>
         </div>
       </section>
@@ -224,7 +225,7 @@ export default function Landing() {
             <CheckItem>Three comparison charts</CheckItem>
             <CheckItem>Closest-analog highlight</CheckItem>
             <CheckItem>Hover tooltips on every chart</CheckItem>
-            <CheckItem>Clearly labelled demo values</CheckItem>
+            <CheckItem>Observed, Derived and Scenario labels</CheckItem>
           </ul>
           <div className="mt-8"><PillButton to="/historical">Open Historical Analog</PillButton></div>
         </Reveal>
@@ -305,7 +306,7 @@ export default function Landing() {
         <div className="mx-auto grid max-w-[1240px] gap-14 px-6 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <SectionHeading eyebrow="FAQ" title="Questions, answered honestly.">
-              Short answers about what this prototype does — and what it does not yet do.
+              Short answers about what ROTATE compares — and where local review is needed.
             </SectionHeading>
             <div className="mt-6"><PillButton to="/contact" variant="outline" icon={Mail}>Ask us something</PillButton></div>
           </div>

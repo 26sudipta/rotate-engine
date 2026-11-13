@@ -32,11 +32,11 @@ export default function Results() {
   return (
     <div className="mx-auto max-w-[900px] px-6 py-10">
       <div className="flex items-center justify-between">
-        <p className="text-[12px] font-medium text-ink-soft">Prototype analysis for {selectedLocation.name}</p>
+        <p className="text-[12px] font-medium text-ink-soft">ROTATE comparison for {selectedLocation.name}</p>
         <DataSourceBadge source={engineLoaded ? "engine" : "demo"} />
       </div>
 
-      <h1 className="mt-2 font-display text-[28px] font-semibold text-ink">Recommended Strategy to Explore</h1>
+      <h1 className="mt-2 font-display text-[28px] font-semibold text-ink">Rotation options to compare</h1>
       <h2 className="mt-1 font-display text-[20px] font-medium text-paddy">
         {strategy.name} — {strategy.label}
       </h2>
@@ -64,10 +64,10 @@ export default function Results() {
       </div>
 
       <div className="mt-6 rounded-lg border border-border bg-surface-raised p-4 text-[13px] text-ink-soft">
-        Evaluated under a scenario of{" "}
+        Current view is the engine's historical comparison. Scenario controls are separate:{" "}
         <span className="font-mono text-ink">{scenario.rainfallPct > 0 ? "+" : ""}{scenario.rainfallPct}% rainfall</span> and{" "}
         <span className="font-mono text-ink">{scenario.salinityPct > 0 ? "+" : ""}{scenario.salinityPct}% soil salinity</span>{" "}
-        relative to current demonstration conditions.
+        use the What If? page to explore changed conditions. This is not a forecast.
       </div>
 
       <div className="mt-6">
@@ -75,8 +75,9 @@ export default function Results() {
       </div>
 
       <p className="mt-6 text-[12px] text-ink-soft">
-        This output is a demonstration result from a prototype scoring model. It is not a
-        scientifically validated crop recommendation.
+        This output is a historical comparison from ROTATE's cached engine data. NASA observations
+        describe weather and vegetation response; crop benefits and risks come from the cited rule
+        table. Review every option with local agricultural expertise.
       </p>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
