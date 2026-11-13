@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import EvidenceTrail from "../components/EvidenceTrail.jsx";
@@ -6,18 +6,34 @@ import DataSourceBadge from "../components/DataSourceBadge.jsx";
 import { useApp } from "../context/AppContext.jsx";
 import { strategies } from "../data/mockStrategies.js";
 import { rankStrategiesByPriority } from "../utils/scenarioModel.js";
+import { loadEngineStrategies } from "../services/api.js";
 
 export default function Results() {
-  const { selectedLocation, priorities, scenario, selectedStrategyId } = useApp();
+  const { selectedLocation, selectedLocationId, priorities, scenario, selectedStrategyId } = useApp();
+  const [availableStrategies, setAvailableStrategies] = useState(strategies);
+  const [engineLoaded, setEngineLoaded] = useState(false);
 
-  const ranked = useMemo(() => rankStrategiesByPriority(strategies, priorities), [priorities]);
+  useEffect(() => {
+    let cancelled = false;
+    loadEngineStrategies(selectedLocationId).then((result) => {
+      if (cancelled || !result) return;
+      setAvailableStrategies(result.strategies);
+      setEngineLoaded(true);
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [selectedLocationId]);
+
+  const ranked = useMemo(
+    () => engineLoaded ? availableStrategies : rankStrategiesByPriority(availableStrategies, priorities),
+    [availableStrategies, engineLoaded, priorities]
+  );
   const strategy = ranked.find((s) => s.id === selectedStrategyId) ?? ranked[0];
 
   return (
     <div className="mx-auto max-w-[900px] px-6 py-10">
       <div className="flex items-center justify-between">
         <p className="text-[12px] font-medium text-ink-soft">Prototype analysis for {selectedLocation.name}</p>
-        <DataSourceBadge source="demo" />
+        <DataSourceBadge source={engineLoaded ? "engine" : "demo"} />
       </div>
 
       <h1 className="mt-2 font-display text-[28px] font-semibold text-ink">Recommended Strategy to Explore</h1>

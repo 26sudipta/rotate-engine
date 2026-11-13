@@ -8,21 +8,33 @@ import EvidenceTrail from "../components/EvidenceTrail.jsx";
 import { useApp } from "../context/AppContext.jsx";
 import { strategies as fallbackStrategies } from "../data/mockStrategies.js";
 import { rankStrategiesByPriority } from "../utils/scenarioModel.js";
-import { api } from "../services/api.js";
+import { api, loadEngineStrategies } from "../services/api.js";
+import DataSourceBadge from "../components/DataSourceBadge.jsx";
 
 export default function Strategies() {
-  const { priorities, setPriorities, selectedStrategyId, setSelectedStrategyId } = useApp();
+  const { priorities, setPriorities, selectedLocationId, selectedStrategyId, setSelectedStrategyId } = useApp();
   const [baseStrategies, setBaseStrategies] = useState(fallbackStrategies);
+  const [engineLoaded, setEngineLoaded] = useState(false);
   const [justUpdated, setJustUpdated] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    api.getStrategies().then(setBaseStrategies).catch(() => {});
-  }, []);
+    let cancelled = false;
+    loadEngineStrategies(selectedLocationId).then((result) => {
+      if (cancelled || !result) return;
+      setBaseStrategies(result.strategies);
+      setEngineLoaded(true);
+    }).catch(() => {
+      api.getStrategies().then((data) => {
+        if (!cancelled) setBaseStrategies(data);
+      }).catch(() => {});
+    });
+    return () => { cancelled = true; };
+  }, [selectedLocationId]);
 
   const ranked = useMemo(
-    () => rankStrategiesByPriority(baseStrategies, priorities),
-    [baseStrategies, priorities]
+    () => engineLoaded ? baseStrategies : rankStrategiesByPriority(baseStrategies, priorities),
+    [baseStrategies, priorities, engineLoaded]
   );
 
   const handlePriorityChange = (next) => {
@@ -36,6 +48,7 @@ export default function Strategies() {
 
   return (
     <div className="mx-auto max-w-[1200px] px-6 py-8">
+      {engineLoaded && <DataSourceBadge source="engine" />}
 
       <div className="mt-6">
         <PrioritySlider priorities={priorities} onChange={handlePriorityChange} />
@@ -43,7 +56,9 @@ export default function Strategies() {
           <AnimatePresence>
             {justUpdated && (
               <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                Strategy comparison updated.
+                {engineLoaded
+                  ? "Python engine snapshot loaded; live priority reranking needs a backend."
+                  : "Strategy comparison updated."}
               </motion.span>
             )}
           </AnimatePresence>

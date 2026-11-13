@@ -2,6 +2,7 @@ import { FlaskConical, Satellite } from "lucide-react";
 
 export default function DataSourceBadge({ source = "demo", className = "" }) {
   const isLive = source === "live";
+  const isEngine = source === "engine";
 
   return (
     <span
@@ -12,7 +13,11 @@ export default function DataSourceBadge({ source = "demo", className = "" }) {
       } ${className}`}
     >
       {isLive ? <Satellite size={12} /> : <FlaskConical size={12} />}
-      {isLive ? "Data source: NASA Earth Observation API" : "Data source: Demonstration dataset"}
+      {isLive
+        ? "Data source: NASA Earth Observation API"
+        : isEngine
+          ? "Data source: ROTATE Python engine snapshot"
+          : "Data source: Demonstration dataset"}
     </span>
   );
 }
